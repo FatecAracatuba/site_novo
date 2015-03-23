@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid #FF6B02;
+  height: 100%;
+  background-color: #181C33;
+}
+
+.footer{
+  color: white;
+}
+
+.footer h3, h5{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer img{
+  width: 90px;
+  margin-right: 30px;
+}
+
+.footer a{
+  color: #FF6B02;
+}
+
+.footer span{
+  margin-right: 9px;
+}
+
+.footer .down span{
+  margin: 0;
+  margin-top: 16px;
+}
