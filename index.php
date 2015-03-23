@@ -32,7 +32,7 @@
         <div class="col-lg-4">
           <p class="lead">Biocombustíveis</p>
           <img src="images/logo-fatec.svg" class="img-thumbnail" alt="">
-          <p class="text-justify">Teste Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris.</p>
           <a href="#" class="btn btn-large btn-warning centrali">Saiba Mais</a>
