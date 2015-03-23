@@ -14,23 +14,18 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
     <hr>
-	<h2 class="h2 text-center">Turmas Formadas</h2>
-	<hr>
+    <h2 class="h2 text-center">Turmas Formadas</h2>
+    <hr>
     <div class="container">
-      
       <h2 class="h3 text-center">Listagem</h3>
       <hr>
       <div class="row">
         <article class="content">
          
-		  
-			
-		  
         </article>
       </div>
     </div>
-	<hr>
-	
+    <hr>
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
