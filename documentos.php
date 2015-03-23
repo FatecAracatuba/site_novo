@@ -14,11 +14,11 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
     <hr>
-	<h2 class="h2 text-center">Biblioteca</h2>
+	<h2 class="h2 text-center">Documentos</h2>
 	<hr>
     <div class="container">
       
-      <h2 class="h3 text-center">Horários da Biblioteca</h3>
+      <h2 class="h3 text-center">Cadastro para acesso à rede wireless</h3>
       <hr>
       <div class="row">
         <article class="content">
@@ -29,10 +29,12 @@
         </article>
       </div>
     </div>
+	
 	<hr>
+	
 	<div class="container">
       
-      <h2 class="h3 text-center">Contato e Atendimento</h3>
+      <h2 class="h3 text-center">Formulário de pedido de atestado de frequência</h3>
       <hr>
       <div class="row">
         <article class="content">
@@ -43,6 +45,9 @@
         </article>
       </div>
     </div>
+	
+	
+	
   <?php include ("templates/footer.html.php") ?>
   </body>
 </html>
