@@ -13,7 +13,7 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
     <div class="container main">
-      <p>Vinculada ao Centro Paula Souza, a Fatec (Faculdade de Tecnologia) é uma instituição de educação superior mantida pelo governo do estado de São Paulo, assim como a Universidade de São Paulo (USP), Universidade Estadual de Campinas (Unicamp) e a Universidade Estadual Paulista (Unesp). </p>
+      <p>Vinculad ao Centro Paula Souza, a Fatec (Faculdade de Tecnologia) é uma instituição de educação superior mantida pelo governo do estado de São Paulo, assim como a Universidade de São Paulo (USP), Universidade Estadual de Campinas (Unicamp) e a Universidade Estadual Paulista (Unesp). </p>
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
