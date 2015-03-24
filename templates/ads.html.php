@@ -58,7 +58,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
-				        		1ºSemestre
+				        		1º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-pri-sem" class="panel-collapse collapse">
@@ -70,7 +70,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
-				        		2ºSemestre
+				        		2º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-seg-sem" class="panel-collapse collapse">
@@ -82,7 +82,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
-				        		3ºSemestre
+				        		3º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-ter-sem" class="panel-collapse collapse">
@@ -94,7 +94,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
-				        		4ºSemestre
+				        		4º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-qua-sem" class="panel-collapse collapse">
@@ -106,7 +106,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
-				        		5ºSemestre
+				        		5º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-qui-sem" class="panel-collapse collapse">
@@ -118,7 +118,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
-				        		6ºSemestre
+				        		6º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-sex-sem" class="panel-collapse collapse">
@@ -225,7 +225,7 @@
 			</article>
 		</div>
 		<div class="tab-pane fade" id="discipline">
-			<a class="media" href="pdf/disciplinas-ads.pdf"></a> 
+				<a class="media" href="pdf/disciplinas-ads.pdf"></a> 
 		</div>
 	</div>
 </div>
