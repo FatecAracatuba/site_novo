@@ -30,10 +30,10 @@
 			<li><a href="monitoria.php">Monitoria</a></li>
 			<li><a href="iniciacao.php">Iniciação Científica</a></li>
 			<li><a href="concursos.php">Concursos</a></li>
-			<li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx">Siga</a></li>
+			<li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
           </ul>
         </li>
-        <li><a href="http://www.vestibularfatec.com.br/home">Vestibular</a></li>
+        <li><a href="http://www.vestibularfatec.com.br/home" target="_blank">Vestibular</a></li>
         <li class="dropdown">
           <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Graduação <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
