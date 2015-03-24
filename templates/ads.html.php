@@ -54,6 +54,8 @@
 			<article class="content">
 				<h2 class="h2">Horários</h2>
 				<hr>
+				<h3 class="h3">Diurno</h3>
+				<hr>
 				<div class="panel-group" id="horarios">
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
@@ -127,7 +129,7 @@
 				    		</div>
 				    	</div>
 				    </div>
-				</div>
+				</div>	
 			</article>
 			</div>				
 		<div class="tab-pane fade" id="prof">
