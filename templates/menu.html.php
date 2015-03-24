@@ -41,16 +41,7 @@
             <li><a href="curso_bio.php">Biocombustíveis</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="trabalho-graduacao.php"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Trabalho de Graduação <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Declaração de Orientação</a></li>
-            <li><a href="#">Decalaração de Entrega de Boneco</a></li>
-            <li><a href="#">Manual de Apres. de Trabalho de Graduação</a></li>
-            <li><a href="#">Normas ABNT</a></li>
-            <li><a href="#">Modelo de Boneco</a></li>
-          </ul>
-        </li>
+        <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
         <li><a href="estagio.php">Estágio</a></li>
         <li><a href="documentos.php">Pedido de Documentos</a></li>
       </ul>
