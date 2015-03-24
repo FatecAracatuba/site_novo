@@ -84,7 +84,7 @@
       <div class="col-md-4">
         <h3>Participar do site</h3>
         <p>Teve alguma ideia para o site? Gostaria de implementar?</p>        
-        <p>Acesse nossa página no <a href="https://github.com/FatecAracatuba/site_fatec_aracatuba">Github</a> e compartilhe a ideia!</p>     
+        <p>Acesse nossa página no <a href="https://github.com/FatecAracatuba/site_fatec_aracatuba" target="_blank">Github</a> e compartilhe a ideia!</p>     
         <p>Aprenda a utilizar o GitHub. Clique <a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html">aqui</a>. </p>
       </div>
       <div class="col-md-4">
