@@ -49,14 +49,14 @@
 				<hr>
 				<h3 class="h3">Vespertino</h3>
 				<hr>
-				<div class="panel-group" id="horarios-vesp">
+				<div class="panel-group" id="horarios">
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-vesp" data-target="#hor-pri-sem-vesp">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
 				        		1º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-pri-sem-vesp" class="panel-collapse collapse">
+				    	<div id="hor-pri-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio1v.png" class="centralized img-responsive" >	
 				    		</div>
@@ -64,11 +64,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-vesp" href="#hor-seg-sem-vesp">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
 				        		2º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-seg-sem-vesp" class="panel-collapse collapse">
+				    	<div id="hor-seg-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio2v.png" class="centralized img-responsive" >
 				    		</div>
@@ -76,11 +76,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-vesp" href="#hor-ter-sem-vesp">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
 				        		3º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-ter-sem-vesp" class="panel-collapse collapse">
+				    	<div id="hor-ter-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio3v.png" class="centralized img-responsive" >
 				    		</div>
@@ -88,11 +88,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-vesp" href="#hor-qua-sem-vesp">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
 				        		4º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-qua-sem-vesp" class="panel-collapse collapse">
+				    	<div id="hor-qua-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio4v.png" class="centralized img-responsive" >
 				    		</div>
@@ -100,11 +100,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-vesp" href="#hor-qui-sem-vesp">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
 				        		5º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-qui-sem-vesp" class="panel-collapse collapse">
+				    	<div id="hor-qui-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio5v.png" class="centralized img-responsive" >
 				    		</div>
@@ -112,11 +112,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-vesp" href="#hor-sex-sem-vesp">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
 				        		6º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-sex-sem-vesp" class="panel-collapse collapse">
+				    	<div id="hor-sex-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio6v.png" class="centralized img-responsive" >
 				    		</div>
@@ -128,14 +128,14 @@
 				<hr>
 				<h3 class="h3">Noturno</h3>
 				<hr>
-				<div class="panel-group" id="horarios-not">
+				<div class="panel-group" id="horarios">
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-not" data-target="#hor-pri-sem-not">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
 				        		1º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-pri-sem-not" class="panel-collapse collapse">
+				    	<div id="hor-pri-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio1n.png" class="centralized img-responsive" >	
 				    		</div>
@@ -143,11 +143,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-not" href="#hor-seg-sem-not">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
 				        		2º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-seg-sem-not" class="panel-collapse collapse">
+				    	<div id="hor-seg-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio2n.png" class="centralized img-responsive" >
 				    		</div>
@@ -155,11 +155,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-not" href="#hor-ter-sem-not">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
 				        		3º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-ter-sem-not" class="panel-collapse collapse">
+				    	<div id="hor-ter-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio3n.png" class="centralized img-responsive" >
 				    		</div>
@@ -167,11 +167,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-not" href="#hor-qua-sem-not">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
 				        		4º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-qua-sem-not" class="panel-collapse collapse">
+				    	<div id="hor-qua-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio4n.png" class="centralized img-responsive" >
 				    		</div>
@@ -179,11 +179,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-not" href="#hor-qui-sem-not">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
 				        		5º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-qui-sem-not" class="panel-collapse collapse">
+				    	<div id="hor-qui-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio5n.png" class="centralized img-responsive" >
 				    		</div>
@@ -191,11 +191,11 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios-not" href="#hor-sex-sem-not">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
 				        		6º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-sex-sem-not" class="panel-collapse collapse">
+				    	<div id="hor-sex-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio6n.png" class="centralized img-responsive" >
 				    		</div>
