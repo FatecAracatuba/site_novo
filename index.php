@@ -26,7 +26,7 @@
           <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris.</p>
-          <a href="#" class="btn btn-large btn-warning text-center">Saiba Mais</a>
+          <a href="curso_ads.php" class="btn btn-large btn-warning text-center">Saiba Mais</a>
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-4">
@@ -35,7 +35,7 @@
           <p class="text-justify">Teste Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris.</p>
-          <a href="#" class="btn btn-large btn-warning centrali">Saiba Mais</a>
+          <a href="curso_bio.php" class="btn btn-large btn-warning centrali">Saiba Mais</a>
         </div>
         <div class="col-lg-1"></div>
       </div>
