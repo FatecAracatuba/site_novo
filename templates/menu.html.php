@@ -42,7 +42,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Trabalho de Graduação <span class="caret"></span></a>
+          <a href="trabalho-graduacao.php"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Trabalho de Graduação <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Declaração de Orientação</a></li>
             <li><a href="#">Decalaração de Entrega de Boneco</a></li>
