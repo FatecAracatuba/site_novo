@@ -14,7 +14,7 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
     <?php include ("templates/carousel.html.php") ?>
-    <div class="container">
+    <div class="container page">
       <hr>
       <h2 class="h2 text-center">Cursos</h2>
       <hr>

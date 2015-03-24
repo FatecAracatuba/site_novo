@@ -12,8 +12,8 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container">
-      <?php include ("templates/ads.html.php") ?> 
+    <div class="container page">  
+      <?php include ("templates/ads.html.php") ?>   
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
