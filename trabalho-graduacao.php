@@ -7,24 +7,25 @@
     
     <link rel='stylesheet' href='css/index.css'/>
     <script src="js/jquery.min.js"></script>
-    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/facebook_timeline.js"></script>
     <title>.:: Fatec Araçatuba ::.</title>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-	
-    <h2 class="h2 text-center">Quem Somos</h2>
-   
+    <hr>
+    <h2 class="h2 text-center">Trabalho de Graduação</h2>
+    <hr>
     <div class="container">
+      <h2 class="h3 text-center">Documentos</h3>
       <hr>
       <div class="row">
-        <article class="content" style="height: 290px;">
-			 <p>Vinculada ao Centro Paula Souza, a Fatec (Faculdade de Tecnologia) é uma instituição de educação superior mantida pelo governo 
-				do estado de São Paulo, assim como a Universidade de São Paulo (USP), Universidade Estadual de Campinas (Unicamp) e a Universidade 
-				Estadual Paulista (Unesp). 
-			</p>
+        <article class="content">
+	  
         </article>
       </div>
+    </div>
+    <hr>
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
