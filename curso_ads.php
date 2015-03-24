@@ -8,12 +8,18 @@
     <link rel='stylesheet' href='css/index.css'/>
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.media.js" ></script>
+    <script type="text/javascript">
+      $(function() {
+          $('a.media').media({width:770, height:700});
+      });
+    </script>
     <title>.:: Fatec Araçatuba ::.</title>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container">
-      <?php include ("templates/ads.html.php") ?> 
+    <div class="container page">  
+      <?php include ("templates/ads.html.php") ?>   
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>

@@ -30,6 +30,23 @@
 					<li>
 						Planejar e desenvolver o modelo de dados que atendam às necessidades atuais e futuras da empresa.
 					</li>
+					<li>Elaborar os planos de desenvolvimento de sistemas de informação focalizando todas as áreas de negócio da empresa.</li>
+					<li>Organizar e apresentar de maneira clara aos usuários os processos envolvidos nos sistemas.</li>
+					<li>Transformar o potencial dos sistemas de informação em suporte para toda a empresa.</li>
+					<li>Avaliar os modelos de organização das empresas garantindo a sua sobrevivência em ambiente interconectado e competitivo.</li>
+					<li>Conhecer técnicas de avaliação da qualidade dos processos empresariais.</li>
+					<li>Avaliar os sistemas oferecidos pelo mercado e indicá-los quando convenientes para a empresa.</li>
+					<li>Identificar oportunidades para futuros empreendimentos.</li>
+					<li>Avaliar os sistemas operacionais e gerenciadores de banco de dados oferecidos pelo mercado e indicá-los quando convenientes para a empresa.</li>
+					<li>Avaliar a infra-estrutura e propor soluções técnicas adequadas às necessidades das instituições.</li>
+					<li>Planejar a implementação do modelo de dados especificados pelo administrador de dados que atendam às necessidades atuais e futuras da empresa.</li>
+					<li>Planejar e desenvolver redes que atendam às necessidades atuais e futuras da empresa.</li>
+					<li>Identificar e avaliar os dispositivos e padrões de comunicação, reconhecendo suas implicações nos ambientes de rede.</li>
+					<li>Integrar os sistemas de informação da empresa otimizando o uso das bases de dados e dos recursos em rede.</li>
+					<li>Garantir segurança, integridade e performance do sistema operacional, das bases de dados e das redes utilizadas nas empresas.</li>
+					<li>Conhecer as restrições impostas às redes pelos sistemas de telecomunicações.</li>
+					<li>Elaborar planos de contingências para manter os sistemas em funcionamento.</li>
+					<li>Facilitar a comunicação entre as diversas áreas de negócio da empresa e os profissionais de tecnologia da informação.</li>
 				</ul>
 			</article>		
 		</div>
@@ -41,7 +58,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
-				        		1ºSemestre
+				        		1º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-pri-sem" class="panel-collapse collapse">
@@ -53,7 +70,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
-				        		2ºSemestre
+				        		2º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-seg-sem" class="panel-collapse collapse">
@@ -65,7 +82,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
-				        		3ºSemestre
+				        		3º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-ter-sem" class="panel-collapse collapse">
@@ -77,7 +94,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
-				        		4ºSemestre
+				        		4º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-qua-sem" class="panel-collapse collapse">
@@ -89,7 +106,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
-				        		5ºSemestre
+				        		5º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-qui-sem" class="panel-collapse collapse">
@@ -101,7 +118,7 @@
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
 				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
-				        		6ºSemestre
+				        		6º Semestre
 				      		</div>
 				    	</div>
 				    	<div id="hor-sex-sem" class="panel-collapse collapse">
@@ -208,7 +225,7 @@
 			</article>
 		</div>
 		<div class="tab-pane fade" id="discipline">
-			Content 4
+				<a class="media" href="pdf/disciplinas-ads.pdf"></a> 
 		</div>
 	</div>
 </div>
