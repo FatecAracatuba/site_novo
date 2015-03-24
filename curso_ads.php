@@ -8,6 +8,12 @@
     <link rel='stylesheet' href='css/index.css'/>
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.media.js" ></script>
+    <script type="text/javascript">
+      $(function() {
+          $('a.media').media({width:770, height:700});
+      });
+    </script>
     <title>.:: Fatec Araçatuba ::.</title>
   </head>
   <body>

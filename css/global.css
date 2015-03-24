@@ -4,6 +4,11 @@ body .container.main{
 div.page{
   margin: 20px auto;
 }
+
+.media{
+  margin: 0 auto;
+}
+
 .centralized{
   text-align: center;
   vertical-align: middle;

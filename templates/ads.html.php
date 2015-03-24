@@ -225,7 +225,7 @@
 			</article>
 		</div>
 		<div class="tab-pane fade" id="discipline">
-			Content 4
+			<a class="media" href="pdf/disciplinas-ads.pdf"></a> 
 		</div>
 	</div>
 </div>
