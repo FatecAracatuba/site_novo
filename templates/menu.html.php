@@ -18,22 +18,24 @@
     </div>
     <div class="collapse navbar-collapse" id="fatec-menu">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li class="dropdown">
           <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Instituição <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="quem_somos.php">Quem Somos</a></li>
-            <li><a href="#">Turmas Formadas</a></li>
-            <li><a href="#">Biblioteca</a></li>
+            <li><a href="turmas.php">Turmas Formadas</a></li>
+            <li><a href="biblioteca.php">Biblioteca</a></li>
             <li><a href="#">Docentes</a></li>
             <li><a href="#">Servidores</a></li>
+			<li><a href="iniciacao.php">Iniciação Científica</a></li>
+			<li><a href="concursos.php">Concursos</a></li>
           </ul>
         </li>
         <li><a href="#">Vestibular</a></li>
         <li class="dropdown">
           <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Graduação <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">ADS</a></li>
+            <li><a href="curso_ads.php">ADS</a></li>
             <li><a href="#">Biocombustíveis</a></li>
           </ul>
         </li>
@@ -47,8 +49,8 @@
             <li><a href="#">Modelo de Boneco</a></li>
           </ul>
         </li>
-        <li><a href="#">Estágio</a></li>
-        <li><a href="#">Pedido de Documentos</a></li>
+        <li><a href="estagio.php">Estágio</a></li>
+        <li><a href="documentos.php">Pedido de Documentos</a></li>
       </ul>
     </div>
   </div>

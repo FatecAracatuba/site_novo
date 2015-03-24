@@ -1,6 +1,13 @@
 body .container.main{
   min-height: 755px;
 }
+div.page{
+  margin: 20px auto;
+}
+
+.media{
+  margin: 0 auto;
+}
 
 .centralized{
   text-align: center;
@@ -17,5 +24,4 @@ body .container.main{
 /*Torna a fb like box responsiva*/
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 100% !important;
-    margin-bottom: 20px !important;
 }
