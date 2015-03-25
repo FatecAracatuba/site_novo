@@ -13,7 +13,7 @@
       <article class="content">
         <h2 class="h2">O que é o TG?</h2>
         <hr>
-        <p class="lead">Perfil do Profissional</p>
+        <p class="lead">Definição</p>
         <p>O Trabalho de Graduação é uma atividade curricular obrigatória dos Cursos Superiores das
             Faculdades de Tecnologia do Centro Estadual de Educação Tecnológica Paula Souza, instituído 
             pela Deliberação CEETEPS -12, de 14/12/2009.
