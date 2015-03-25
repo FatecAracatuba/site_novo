@@ -135,7 +135,7 @@
 				        		1º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-pri-sem-n" class="panel-collapse collapse">
+				    	<div id="hor-pri-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio1n.png" class="centralized img-responsive" >	
 				    		</div>
