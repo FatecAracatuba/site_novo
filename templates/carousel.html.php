@@ -14,7 +14,7 @@
       <div class="carousel-caption">
         <h1 class="h1">Vestibular</h1>
         <p>
-          <a href="" class="btn btn-primary btn-large" role="button">Saiba Mais</a>
+          <a href="http://www.vestibularfatec.com.br/home" target="_blank" class="btn btn-primary btn-large" role="button">Saiba Mais</a>
         </p>
       </div>
     </div>
@@ -23,7 +23,7 @@
       <div class="carousel-caption">
         <h1 class="h1">Quem Somos</h1>
         <p>
-          <a href="" class="btn btn-primary btn-large" role="button">Ler</a>
+          <a href="quem_somos.php" class="btn btn-primary btn-large" role="button">Ler</a>
         </p>
       </div>
     </div>
