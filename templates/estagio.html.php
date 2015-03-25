@@ -117,7 +117,7 @@
             <tr>
               <th>Arquivo</th>
               <th class="text-center">Pré Visualizar</th>
-              <th class="text-center">Link</th>
+              <th class="text-center">PDF</th>
 			  <th class="text-center">Word</th>
             </tr>
           </thead>
