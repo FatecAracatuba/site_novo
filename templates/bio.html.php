@@ -147,7 +147,7 @@
 				        		2º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-seg-sem-n" class="panel-collapse collapse">
+				    	<div id="hor-seg-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio2n.png" class="centralized img-responsive" >
 				    		</div>
@@ -159,7 +159,7 @@
 				        		3º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-ter-sem-n" class="panel-collapse collapse">
+				    	<div id="hor-ter-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio3n.png" class="centralized img-responsive" >
 				    		</div>
@@ -171,7 +171,7 @@
 				        		4º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-qua-sem-n" class="panel-collapse collapse">
+				    	<div id="hor-qua-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio4n.png" class="centralized img-responsive" >
 				    		</div>
@@ -183,7 +183,7 @@
 				        		5º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-qui-sem-n" class="panel-collapse collapse">
+				    	<div id="hor-qui-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio5n.png" class="centralized img-responsive" >
 				    		</div>
@@ -195,7 +195,7 @@
 				        		6º Semestre
 				      		</div>
 				    	</div>
-				    	<div id="hor-sex-sem-n" class="panel-collapse collapse">
+				    	<div id="hor-sex-sem" class="panel-collapse collapse">
 				      		<div class="panel-body">
 				        		<img src="images/horarios/bio6n.png" class="centralized img-responsive" >
 				    		</div>
