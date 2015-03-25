@@ -25,7 +25,6 @@
             <li><a href="quem_somos.php">Quem Somos</a></li>
             <li><a href="turmas.php">Turmas Formadas</a></li>
             <li><a href="biblioteca.php">Biblioteca</a></li>
-            <li><a href="#">Docentes</a></li>
             <li><a href="#">Servidores</a></li>
 			<li><a href="monitoria.php">Monitoria</a></li>
 			<li><a href="iniciacao.php">Iniciação Científica</a></li>

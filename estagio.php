@@ -9,23 +9,20 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/facebook_timeline.js"></script>
+	<script type="text/javascript">
+      function preview(link){
+          $('div.media').remove();
+          $('.content').append('<a href="#" class="media"></a>')
+          $('a.media').attr("href", link);
+          $('a.media').media({width:770, height:1080});
+      };
+    </script>
     <title>.:: Fatec Araçatuba ::.</title>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <hr>
-    <h2 class="h2 text-center">Estágio</h2>
-    <hr>
-    <div class="container">
-      <h2 class="h3 text-center">Horário de Atendimento</h3>
-      <hr>
-      <div class="row">
-        <article class="content">
-	  
-        </article>
-      </div>
-    </div>
-    <hr>
+    <div class="container page">  
+      <?php include ("templates/estagio.html.php") ?>   
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
