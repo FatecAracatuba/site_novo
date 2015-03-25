@@ -118,6 +118,7 @@
               <th>Arquivo</th>
               <th class="text-center">Pré Visualizar</th>
               <th class="text-center">Link</th>
+			  <th class="text-center">Word</th>
             </tr>
           </thead>
           <tbody>
@@ -125,21 +126,25 @@
               <td>Termo de Compromisso</td>
               <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/termo_compromisso.pdf');" href="#"></a></td>        
               <td><a class="glyphicon glyphicon-download-alt centralized" href="pdf/termo_compromisso.pdf" target="_blank" ></a></td>
+			  <td><a class="glyphicon glyphicon-download-alt centralized" href="docx/termo_compromisso.docx" target="_blank" ></a></td>
             </tr>
             <tr>
               <td>Ficha de Início e Plano de Atividades</td>
               <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/ficha_inicio_plano_atividades.pdf');" href="#"></a></td>
               <td><a class="glyphicon glyphicon-download-alt centralized" href="pdf/ficha_inicio_plano_atividades.pdf" target="_blank" ></a></td>
+			  <td><a class="glyphicon glyphicon-download-alt centralized" href="docx/ficha_inicio_plano_atividades.docx" target="_blank" ></a></td>
             </tr>
             <tr>
               <td>Relatório do Estágio</td>
               <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/relatorio_estagio.pdf');" href="#"></a></td>
               <td><a class="glyphicon glyphicon-download-alt centralized" href="pdf/relatorio_estagio.pdf" target="_blank" ></a></td>
+			  <td><a class="glyphicon glyphicon-download-alt centralized" href="docx/relatorio_estagio.pdf" target="_blank" ></a></td>
             </tr>
             <tr>
               <td>Avaliação do Desempenho</td>
               <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/avaliacao_desempenho.pdf');" href="#"></a></td>
               <td><a class="glyphicon glyphicon-download-alt centralized" href="pdf/avaliacao_desempenho.pdf" target="_blank" ></a></td>
+			  <td><a class="glyphicon glyphicon-download-alt centralized" href="docx/avaliacao_desempenho.docx" target="_blank" ></a></td>
             </tr>
           </tbody>
         </table>
