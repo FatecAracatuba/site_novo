@@ -131,7 +131,7 @@
 				<div class="panel-group" id="horarios">
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem-n">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
 				        		1º Semestre
 				      		</div>
 				    	</div>
@@ -143,7 +143,7 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem-n">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
 				        		2º Semestre
 				      		</div>
 				    	</div>
@@ -155,7 +155,7 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem-n">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
 				        		3º Semestre
 				      		</div>
 				    	</div>
@@ -167,7 +167,7 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem-n">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
 				        		4º Semestre
 				      		</div>
 				    	</div>
@@ -179,7 +179,7 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem-n">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
 				        		5º Semestre
 				      		</div>
 				    	</div>
@@ -191,7 +191,7 @@
 				    </div>
 				    <div class="panel panel-default">
 				    	<div class="panel-heading">
-				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem-n">
+				      		<div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
 				        		6º Semestre
 				      		</div>
 				    	</div>
