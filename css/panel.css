@@ -1,3 +1,19 @@
 .panel-title{
   cursor: pointer;
 }
+
+.panel-heading:hover{
+  background-color: #CAD4D4;
+  color: white;
+  transition: background-color 300ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  
+  transition: color 200ms linear;
+  -webkit-transition: color 200ms linear;
+  -moz-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  -ms-transition: color 200ms linear;
+}
