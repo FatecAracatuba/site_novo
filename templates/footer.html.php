@@ -13,10 +13,11 @@
             <h3>Contato e Atendimento</h3>
           </div>
         </div>
-        <p><span class="glyphicon glyphicon-pushpin"></span> Av. Prestes Maia, 1764 - Jd. Ipanema, Araçatuba/SP </p>
+        <p><span class="glyphicon glyphicon-pushpin"></span> Av. Prestes Maia, 1764 - Jd. Ipanema, Araçatuba/SP</p>
         <p><span class="glyphicon glyphicon-time"></span> Segunda à Sexta-feira das 7:30 às 22:30</p>
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
+		<a type="button" class="btn btn-large btn-warning centrali" href="mapa.php">Veja o Mapa</a>
       </div>
       <div class="col-md-4">
         <div class="row">
