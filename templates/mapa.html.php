@@ -1,5 +1,4 @@
 <article class="content">
-
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 		var map;
@@ -13,9 +12,6 @@
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
-
     </script>
-	
 	<div id="map-canvas"></div>
-
 </article>
