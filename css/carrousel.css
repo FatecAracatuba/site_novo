@@ -1,22 +1,44 @@
+#content-carrousel{
+	margin-left: 0px auto;
+	height: 100px;
+}
+
+
+
+
 .carousel-inner{
 	height: 180px;
-	width: 790px;
-	margin-left: 240px;
+	width: 100%;
+	margin: 0px auto;
 }
 
 .item{
 	height: 120px;	
 }
 
-.active{
-	height: 120px;
-}
 
 .carousel-caption{
 	top: -15px;
 }
 
-.carousel-indicators{
-	bottom: 5px;
-	left: 640px;
+
+@media (max-width: 767px) {
+	
+	
+	.carousel-inner{
+		height: 180px;
+		width: 100%;
+
+	}
 }
+
+@media (max-width: 976px) {
+	
+	
+	.carousel-inner{
+		height: 180px;
+		width: 100%;
+
+	}
+} 
+
