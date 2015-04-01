@@ -3,10 +3,6 @@
 	height: 100px;
 }
 
-#img-item{
-
-}
-
 .carousel-inner{
 	height: 180px;
 	width: 100%;
@@ -17,29 +13,21 @@
 	height: 120px;	
 }
 
-
 .carousel-caption{
 	top: -15px;
 }
 
-
 @media (max-width: 767px) {
-	
-	
 	.carousel-inner{
 		height: 180px;
 		width: 100%;
-
 	}
 }
 
 @media (max-width: 976px) {
-	
-	
 	.carousel-inner{
 		height: 180px;
 		width: 100%;
-
 	}
 } 
 
