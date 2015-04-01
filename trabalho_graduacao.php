@@ -9,6 +9,7 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.media.js" ></script>
+    <script src="js/stick.js"></script>
     <script type="text/javascript">
       function preview(link){
           $('div.media').remove();

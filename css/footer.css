@@ -37,3 +37,14 @@
   margin: 0;
   margin-top: 16px;
 }
+
+.footer .map-btn{
+  background-color: transparent;
+  color: #FF6B02;
+  border: 1px solid #FF6B02;
+}
+
+.footer .map-btn:hover{
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
