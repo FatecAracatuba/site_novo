@@ -13,8 +13,8 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <?php include ("templates/carousel.html.php") ?>
     <div class="container page">
+      <?php include ("templates/carousel.html.php") ?>
       <hr>
       <h2 class="h2 text-center">Cursos</h2>
       <hr>

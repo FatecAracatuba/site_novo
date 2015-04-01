@@ -1,4 +1,4 @@
-body .container .main{
+body .container.main{
   min-height: 755px;
 }
 div.page{
