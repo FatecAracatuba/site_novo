@@ -16,7 +16,7 @@
 	
     <h2 class="h2 text-center">Quem Somos</h2>
    
-    <div class="container">
+    <div class="container main">
       <hr>
       <div class="row">
         <article class="content" style="height: 290px;">

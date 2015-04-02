@@ -19,7 +19,7 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container page">  
+    <div class="container page main">  
       <?php include ("templates/bio.html.php") ?>   
     </div>
   <?php include ("templates/footer.html.php") ?>

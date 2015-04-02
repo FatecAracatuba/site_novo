@@ -16,7 +16,7 @@
     <hr>
 	<h2 class="h2 text-center">Iniciação Científica</h2>
 	<hr>
-    <div class="container">
+    <div class="container main">
       
       <h2 class="h3 text-center">O que é</h3>
       <hr>

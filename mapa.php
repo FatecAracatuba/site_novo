@@ -15,7 +15,7 @@
     <?php include ("templates/menu.html.php") ?>
     <h2 class="h2 text-center">Mapa da Fatec</h2>
 	<hr>
-    <div class="container page">  
+    <div class="container page main">  
 		<?php include ("templates/mapa.html.php") ?>   
     </div>
   <?php include ("templates/footer.html.php") ?>

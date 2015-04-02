@@ -17,7 +17,7 @@
     <div class="carousel">
       <?php include ("templates/carousel.html.php") ?>
     </div>
-    <div class="container page">
+    <div class="container page main">
       <hr>
       <h2 class="h2 text-center">Cursos</h2>
       <hr>

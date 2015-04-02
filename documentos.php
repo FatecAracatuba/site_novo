@@ -16,8 +16,8 @@
     <hr>
 	<h2 class="h2 text-center">Documentos</h2>
 	<hr>
-    <div class="container">
-      
+    <div class="container main">
+      <hr>
       <h2 class="h3 text-center">Cadastro para acesso à rede wireless</h3>
       <hr>
       <div class="row">
@@ -28,23 +28,20 @@
 		  
         </article>
       </div>
-    </div>
-	
-	<hr>
-	
-	<div class="container">
       
       <h2 class="h3 text-center">Formulário de pedido de atestado de frequência</h3>
       <hr>
       <div class="row">
         <article class="content">
          
-		  
-			
-		  
+      
+      
+      
         </article>
       </div>
     </div>
+	
+	
 	
 	
 	
