@@ -11,7 +11,7 @@
 		
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="images/flor.jpg" alt="fatec">
+				<img src="images/flor1.jpg" alt="fatec">
 				<div class="carousel-caption">
 					<h1 class="h1">Vestibular</h1>
 					<p>
