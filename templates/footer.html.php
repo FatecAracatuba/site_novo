@@ -89,13 +89,10 @@
         <p>Aprenda a utilizar o GitHub. Clique <a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html">aqui</a>. </p>
       </div>
       <div class="col-md-4">
-        <h3>Fatec nas Redes</h3>       
+        <h3>Fatec no Facebook</h3>       
         <a href="https://www.facebook.com/fatecaracatuba" target="_blank">
           <img src="images/footer/icon-facebook.png" class="img-circle"></img>
-        </a>       
-        <a href="https://twitter.com/fatec_aracatuba" target="_blank" >
-          <img src="images/footer/icon-twitter.png" class="img-circle"></img>
-        </a>   
+        </a>         
       </div>
     </div>
     <hr>
