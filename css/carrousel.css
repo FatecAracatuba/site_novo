@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #content-carrousel{
 	margin-left: 0px auto;
 	height: 100px;
@@ -6,9 +5,9 @@
 
 .carousel-inner{
 	height: 180px;
-=======
+}
+
 .carousel{
->>>>>>> origin/luana3
 	width: 100%;
 }
 
@@ -16,6 +15,10 @@
 	margin: 0 auto;
 	height: 400px;
 	width: 100%;
+}
+
+.carousel-caption{
+	top: -10px;
 }
 
 @media (max-width: 767px) {
