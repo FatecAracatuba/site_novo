@@ -8,7 +8,7 @@
     <link rel='stylesheet' href='css/index.css'/>
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/facebook_timeline.js"></script>
+    <script src="js/stick.js"></script>
     <title>.:: Fatec Araçatuba ::.</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
     <hr>
       <h2 class="h2 text-center">Concursos</h2>
       <hr>
-    <div class="container">
+    <div class="container main">
       <h2 class="h3 text-center">Lorem ipsum</h3>
       <hr>
       <div class="row">

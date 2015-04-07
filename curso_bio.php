@@ -9,6 +9,7 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.media.js" ></script>
+    <script src="js/stick.js"></script>
     <script type="text/javascript">
       $(function() {
           $('a.media').media({width:770, height:700});
@@ -18,7 +19,7 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container page">  
+    <div class="container page main">  
       <?php include ("templates/bio.html.php") ?>   
     </div>
   <?php include ("templates/footer.html.php") ?>

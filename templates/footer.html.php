@@ -17,7 +17,11 @@
         <p><span class="glyphicon glyphicon-time"></span> Segunda à Sexta-feira das 7:30 às 22:30</p>
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
-		<a type="button" class="btn btn-large btn-warning centrali" href="mapa.php">Veja o Mapa</a>
+		    <a type="button" class="btn btn-large foot-btn centrali" href="mapa.php">Veja o Mapa</a>
+        <a href="login.php" class="btn btn-large foot-btn ">
+          <i class="glyphicon glyphicon-log-in"></i>
+          Área Restrita
+        </a>
       </div>
       <div class="col-md-4">
         <div class="row">

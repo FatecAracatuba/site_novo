@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='css/index.css'/>
     <script src="js/jquery.min.js"></script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/stick.js"></script>
     <title>.:: Fatec Araçatuba ::.</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
 	
     <h2 class="h2 text-center">Quem Somos</h2>
    
-    <div class="container">
+    <div class="container main">
       <hr>
       <div class="row">
         <article class="content" style="height: 290px;">
