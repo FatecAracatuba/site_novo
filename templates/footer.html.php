@@ -90,8 +90,11 @@
       </div>
       <div class="col-md-4">
         <h3>Fatec no Facebook</h3>       
-        <a href="https://www.facebook.com/fatecaracatuba" target="_blank">
-          <img src="images/footer/icon-facebook.png" class="img-circle"></img>
+        <!--<a href="https://www.facebook.com/fatecaracatuba" target="_blank">
+          <img src="images/footer/icon-facebook.png" class="img-circle"></img> -->
+		  <div class="fb-page" data-href="https://www.facebook.com/fatecaracatuba?fref=ts" data-width="300" data-height="130" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+		  </div>
+		  <?php include ("templates/page-plugin.html.php") ?>
         </a>         
       </div>
     </div>
