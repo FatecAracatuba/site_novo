@@ -14,7 +14,7 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
 	<h2 class="h2 text-center">Biblioteca</h2>
-    <div class="container page main">
+    <div class="container main">
       <?php include ("templates/biblioteca.html.php") ?> 
     </div>
 

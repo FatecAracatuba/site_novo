@@ -16,7 +16,7 @@
 	
 	<h2 class="h2 text-center">Turmas Formadas</h2>
 	
-    <div class="container page main">
+    <div class="container main">
       <?php include ("templates/turmas.html.php") ?> 
     </div>
     

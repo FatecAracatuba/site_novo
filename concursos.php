@@ -15,7 +15,7 @@
     <?php include ("templates/menu.html.php") ?>
       <h2 class="h2 text-center">Concursos</h2>
       <hr>
-    <div class="container page main">
+    <div class="container main">
       <?php include ("templates/concursos.html.php") ?> 
     </div>
   <?php include ("templates/footer.html.php") ?>
