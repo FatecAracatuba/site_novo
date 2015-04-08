@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container main">
 	<ul class="nav nav-tabs">
 		<li role="presentation" class="active">
 			<a href="#ads" data-toggle="tab">ADS</a>

@@ -15,7 +15,7 @@
     <?php include ("templates/menu.html.php") ?>
 	<h2 class="h2 text-center">Iniciação Científica</h2>
 	<hr>
-    <div class="container main">
+    <div class="container page main">
       <?php include ("templates/iniciacao.html.php") ?> 
     </div>
   <?php include ("templates/footer.html.php") ?>
