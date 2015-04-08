@@ -17,15 +17,7 @@
     <h2 class="h2 text-center">Quem Somos</h2>
    
     <div class="container main">
-      <hr>
-      <div class="row">
-        <article class="content" style="height: 290px;">
-			 <p>Vinculada ao Centro Paula Souza, a Fatec (Faculdade de Tecnologia) é uma instituição de educação superior mantida pelo governo 
-				do estado de São Paulo, assim como a Universidade de São Paulo (USP), Universidade Estadual de Campinas (Unicamp) e a Universidade 
-				Estadual Paulista (Unesp). 
-			</p>
-        </article>
-      </div>
+      <?php include ("templates/quem_somos.html.php") ?> 
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>

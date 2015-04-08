@@ -13,24 +13,10 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <hr>
 	<h2 class="h2 text-center">Iniciação Científica</h2>
 	<hr>
-    <div class="container main">
-      
-      <h2 class="h3 text-center">O que é</h3>
-      <hr>
-      <div class="row">
-        <article class="content">
-         
-		  
-			
-		  
-        </article>
-      </div>
-    </div>
-	<hr>
-	
+    <div class="container page main">
+      <?php include ("templates/iniciacao.html.php") ?> 
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
