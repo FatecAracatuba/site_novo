@@ -13,11 +13,33 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
+    <hr>
 	<h2 class="h2 text-center">Biblioteca</h2>
+	<hr>
     <div class="container main">
-      <?php include ("templates/biblioteca.html.php") ?> 
-    </div>
+      <hr>
+      <h2 class="h3 text-center">Horários da Biblioteca</h3>
+      <hr>
+      <div class="row">
+        <article class="content">
+         
+		  
+			
+		  
+        </article>
+      </div>
 
+      <h2 class="h3 text-center">Contato e Atendimento</h3>
+      <hr>
+      <div class="row">
+        <article class="content">
+         
+      
+      
+      
+        </article>
+      </div>
+    </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
 </html>

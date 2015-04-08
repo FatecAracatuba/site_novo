@@ -13,13 +13,20 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-	
-	<h2 class="h2 text-center">Turmas Formadas</h2>
-	
+    <hr>
+    <h2 class="h2 text-center">Turmas Formadas</h2>
+    <hr>
     <div class="container main">
-      <?php include ("templates/turmas.html.php") ?> 
+      <h2 class="h3 text-center">Listagem</h3>
+      <hr>
+      <div class="row">
+        <article class="content">
+         
+        </article>
+      </div>
     </div>
-    
+    <hr>
+    </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
 </html>

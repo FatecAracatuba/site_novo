@@ -13,10 +13,19 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
+    <hr>
       <h2 class="h2 text-center">Concursos</h2>
       <hr>
     <div class="container main">
-      <?php include ("templates/concursos.html.php") ?> 
+      <h2 class="h3 text-center">Lorem ipsum</h3>
+      <hr>
+      <div class="row">
+        <article class="content">
+        
+        </article>
+      </div>
+    </div>
+    <hr>
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>

@@ -13,9 +13,19 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
+    <hr>
     <h2 class="h2 text-center">Monitoria</h2>
+    <hr>
     <div class="container main">
-      <?php include ("templates/monitoria.html.php") ?> 
+      <h2 class="h3 text-center">Horário de Atendimento</h3>
+      <hr>
+      <div class="row">
+        <article class="content">
+	  
+        </article>
+      </div>
+    </div>
+    <hr>
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>
