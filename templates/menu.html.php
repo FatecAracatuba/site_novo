@@ -29,7 +29,6 @@
 			<li><a href="monitoria.php">Monitoria</a></li>
 			<li><a href="iniciacao.php">Iniciação Científica</a></li>
 			<li><a href="concursos.php">Concursos</a></li>
-			<li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
           </ul>
         </li>
         <li><a href="http://www.vestibularfatec.com.br/home" target="_blank">Vestibular</a></li>
@@ -42,7 +41,7 @@
         </li>
         <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
         <li><a href="estagio.php">Estágio</a></li>
-        <li><a href="documentos.php">Pedido de Documentos</a></li>
+		<li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
       </ul>
     </div>
   </div>
