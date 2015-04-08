@@ -14,7 +14,7 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
     <h2 class="h2 text-center">Monitoria</h2>
-    <div class="container main">
+    <div class="container page main">
       <?php include ("templates/monitoria.html.php") ?> 
     </div>
   <?php include ("templates/footer.html.php") ?>
