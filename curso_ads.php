@@ -11,7 +11,7 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container page main">  
+    <div class="container main">  
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
