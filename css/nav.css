@@ -9,8 +9,9 @@
 .navbar-brand img {
   border: auto;
   margin-top: -3px;
+	margin-left: 60px;
 }
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand{
   color: #f6fafb;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -19,6 +20,9 @@
 .navbar-default .navbar-text {
   color: #f6fafb;
 }
+/*.navbar-default .navbar-nav {
+  margin-left: 90px;
+}*/
 .navbar-default .navbar-nav > li > a {
   color: #f6fafb;
 }
@@ -72,7 +76,10 @@
   .navbar-default .navbar-brand {
     display: none;
   }
-}
+	
+	.navbar-default .navbar-nav {
+		margin-left: 40px;
+	}
 
 @media (max-width: 767px) {
   .navbar-default{
