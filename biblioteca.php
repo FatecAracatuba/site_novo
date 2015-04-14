@@ -9,6 +9,5 @@
 
     </div>
     <?php include ("templates/footer.html.php") ?>
->>>>>>> master
   </body>
 </html>
