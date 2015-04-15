@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-4">
-          <p class="lead">ADS</p>
+          <p class="lead">Análise e Desen. de Sistemas</p>
           <img src="images/cursos/ads.svg" class="img-thumbnail" alt="">
           <p class="text-justify">
             O técnólogo de ADS analisa, projeta, implementa e atualiza sistemas de informação para diversas áreas de atividade, além de ter noções de gerenciamento. 
@@ -29,7 +29,7 @@
           <p class="lead">Biocombustíveis</p>
           <img src="images/cursos/bio.svg" class="img-thumbnail" alt="">
           <p class="text-justify">
-            O tecnólogo da área de biocombustíveis conhece os processos de obtenção de biocombustíveis produzidos de materiais como cana-de-açúcar, 
+            O tecnólogo da área de biocombustíveis conhece e aplica os processos de obtenção de biocombustíveis produzidos de materiais como cana-de-açúcar, 
       			carvão vegetal e plantas oleaginosas (girassol, dendê, soja, amendoim, mamona). Desenvolve produtos 
       			bioenergéticos (álcool combustível e biodiesel) e controla a produção e a qualidade das fontes alternativas de energia. 
 		      </p>
