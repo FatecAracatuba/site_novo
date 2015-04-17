@@ -33,21 +33,21 @@
           <div class="col-md-6">
             <h5>Biocombustíveis</h5>    
             <ul>
-              <li><a href="curso_bio.php">O curso</a></li>
-              <li><a href="curso_bio.php">Docentes</a></li>
-              <li><a href="curso_bio.php">Disciplinas</a></li>
-              <li><a href="curso_bio.php">Horario das Aulas</a></li>
+              <li><a href="curso_bio.php#sobre">O curso</a></li>
+              <li><a href="curso_bio.php#docente">Docentes</a></li>
+              <li><a href="curso_bio.php#disciplina">Disciplinas</a></li>
+              <li><a href="curso_bio.php#horario">Horario das Aulas</a></li>
               <li><a href="curso_bio.php">Atendimento</a></li>
             </ul> 
           </div>
           <div class="col-md-6">
             <h5>ADS</h5>      
             <ul>
-              <li><a href="curso_bio.php">O curso</a></li>
-              <li><a href="curso_bio.php">Docentes</a></li>
-              <li><a href="curso_bio.php">Disciplinas</a></li>
-              <li><a href="curso_bio.php">Horario das Aulas</a></li>
-              <li><a href="curso_bio.php">Atendimento</a></li>
+              <li><a href="curso_ads.php#sobre">O curso</a></li>
+              <li><a href="curso_ads.php#docente">Docentes</a></li>
+              <li><a href="curso_ads.php#disciplina">Disciplinas</a></li>
+              <li><a href="curso_ads.php#horario">Horario das Aulas</a></li>
+              <li><a href="curso_ads.php">Atendimento</a></li>
             </ul>      
           </div>
         </div>
