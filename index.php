@@ -33,7 +33,7 @@
       			carvão vegetal e plantas oleaginosas (girassol, dendê, soja, amendoim, mamona). Desenvolve produtos 
       			bioenergéticos (álcool combustível e biodiesel) e controla a produção e a qualidade das fontes alternativas de energia. 
 		      </p>
-          <a href="curso_bio.php" class="btn btn-large btn-warning centrali">Saiba Mais</a>
+          <a href="curso_bio.php" class="btn btn-large btn-warning text-center">Saiba Mais</a>
         </div>
         <div class="col-lg-1"></div>
       </div>
