@@ -6,7 +6,7 @@
   <body>
     <?php include ("templates/menu.html.php") ?>
     <div class="container main">
-      
+
     </div>
     <?php include ("templates/footer.html.php") ?>
   </body>

@@ -33,21 +33,21 @@
           <div class="col-md-6">
             <h5>Biocombustíveis</h5>    
             <ul>
-              <li><a href="">O curso</a></li>
-              <li><a href="">Docentes</a></li>
-              <li><a href="">Disciplinas</a></li>
-              <li><a href="">Horario das Aulas</a></li>
-              <li><a href="">Atendimento</a></li>
+              <li><a href="curso_bio.php#sobre">O curso</a></li>
+              <li><a href="curso_bio.php#docente">Docentes</a></li>
+              <li><a href="curso_bio.php#disciplina">Disciplinas</a></li>
+              <li><a href="curso_bio.php#horario">Horario das Aulas</a></li>
+              <li><a href="curso_bio.php">Atendimento</a></li>
             </ul> 
           </div>
           <div class="col-md-6">
             <h5>ADS</h5>      
             <ul>
-              <li><a href="">O curso</a></li>
-              <li><a href="">Docentes</a></li>
-              <li><a href="">Disciplinas</a></li>
-              <li><a href="">Horario das Aulas</a></li>
-              <li><a href="">Atendimento</a></li>
+              <li><a href="curso_ads.php#sobre">O curso</a></li>
+              <li><a href="curso_ads.php#docente">Docentes</a></li>
+              <li><a href="curso_ads.php#disciplina">Disciplinas</a></li>
+              <li><a href="curso_ads.php#horario">Horario das Aulas</a></li>
+              <li><a href="curso_ads.php">Atendimento</a></li>
             </ul>      
           </div>
         </div>
@@ -55,7 +55,7 @@
           <div class="col-md-6">
             <h5>Faculdade</h5>
             <ul>
-              <li><a href="">Quem somos</a></li>      
+              <li><a href="quem_somos.php">Quem somos</a></li>      
             </ul>
 
             <h5>Alunos</h5> 
@@ -66,11 +66,11 @@
           <div class="col-md-6">
             <h5>Trabalho de Graduação</h5>
             <ul>
-              <li><a href="">Orientação</a></li>
-              <li><a href="">Entrega do Boneco</a></li>
-              <li><a href="">Apresentação</a></li>
-              <li><a href="">Normas de ABNT</a></li>
-              <li><a href="">Modelo de Boneco</a></li>
+              <li><a href="trabalho_graduacao.php">Orientação</a></li>
+              <li><a href="trabalho_graduacao.php">Entrega do Boneco</a></li>
+              <li><a href="trabalho_graduacao.php">Apresentação</a></li>
+              <li><a href="trabalho_graduacao.php">Normas de ABNT</a></li>
+              <li><a href="trabalho_graduacao.php">Modelo de Boneco</a></li>
             </ul>
           </div>
         </div>
