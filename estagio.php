@@ -11,6 +11,18 @@
         $('a.media').media({width:770, height:1000});
       };
     </script>
+		<script type="text/javascript">
+      $(function(){
+				var url = document.location.toString();
+				if (url.match('#')){
+					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+					} 
+				// Change hash for page-reload
+				$('.nav-tabs a').on('shown.bs.tab', function (e) {
+					window.location.hash = e.target.hash;
+				});
+			});
+    </script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
@@ -21,7 +33,7 @@
             <a href="#about" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#prof" data-toggle="tab">Arquivos do Estágio</a>
+            <a href="#archives" data-toggle="tab">Arquivos do Estágio</a>
           </li>
         </ul>
 
@@ -122,7 +134,7 @@
             </article>    
           </div>  
 
-          <div class="tab-pane fade" id="prof">
+          <div class="tab-pane fade" id="archives">
             <article class="content">
               <h2 class="h2">Arquivos do Estágio</h2>
               <hr>

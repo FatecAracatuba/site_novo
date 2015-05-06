@@ -53,24 +53,26 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <h5>Faculdade</h5>
+            <h5>Estágio</h5>
             <ul>
-              <li><a href="quem_somos.php">Quem somos</a></li>      
+              <li><a href="estagio.php#about">Sobre</a></li>  
+							<li><a href="estagio.php#archives">Termo de Compromisso</a></li>
+              <li><a href="estagio.php#archives">Ficha de Início e Plano de Atividades</a></li>
+              <li><a href="estagio.php#archives">Relatório do Estágio</a></li>
+              <li><a href="estagio.php#archives">Avaliação do Desempenho</a></li>
             </ul>
 
-            <h5>Alunos</h5> 
-            <ul>
-              <li><a href="">Calendário</a></li>
-            </ul>
+            
           </div>
           <div class="col-md-6">
             <h5>Trabalho de Graduação</h5>
             <ul>
-              <li><a href="trabalho_graduacao.php">Orientação</a></li>
-              <li><a href="trabalho_graduacao.php">Entrega do Boneco</a></li>
-              <li><a href="trabalho_graduacao.php">Apresentação</a></li>
-              <li><a href="trabalho_graduacao.php">Normas de ABNT</a></li>
-              <li><a href="trabalho_graduacao.php">Modelo de Boneco</a></li>
+							<li><a href="trabalho_graduacao.php#about">Sobre</a></li>
+              <li><a href="trabalho_graduacao.php#archives">Orientação</a></li>
+              <li><a href="trabalho_graduacao.php#archives">Entrega do Boneco</a></li>
+              <li><a href="trabalho_graduacao.php#archives">Apresentação</a></li>
+              <li><a href="trabalho_graduacao.php#archives">Normas de ABNT</a></li>
+              <li><a href="trabalho_graduacao.php#archives">Modelo de Boneco</a></li>
             </ul>
           </div>
         </div>

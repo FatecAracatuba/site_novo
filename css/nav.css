@@ -1,5 +1,6 @@
 .navbar-default {
-  background-color: #181c33;
+  background-color: #181c33;  /*azul escuro*/
+	/*background-color: #004B4B; /*verde turquesa*/
   border-color: #10121c;
   border-bottom: 4px solid #FF6B02;
   border-radius: 0;
@@ -20,9 +21,7 @@
 .navbar-default .navbar-text {
   color: #f6fafb;
 }
-/*.navbar-default .navbar-nav {
-  margin-left: 90px;
-}*/
+
 .navbar-default .navbar-nav > li > a {
   color: #f6fafb;
 }

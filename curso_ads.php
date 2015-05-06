@@ -42,7 +42,7 @@
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="aobre">
+          <div class="tab-pane fade in active" id="sobre">
             <article class="content">
               <h2 class="h2">Sobre</h2>
               <hr>
