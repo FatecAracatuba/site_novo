@@ -18,10 +18,32 @@
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
 		    <a type="button" class="btn btn-large foot-btn centrali" href="mapa.php">Veja o Mapa</a>
-        <a href="login.php" class="btn btn-large foot-btn ">
+        <a type="button" class="btn map-btn " data-toggle="modal" data-target="#loginForm">
           <i class="glyphicon glyphicon-log-in"></i>
           Área Restrita
         </a>
+        <div class="modal fade bs-example-modal-sm" id="loginForm" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Login</h4>
+              </div>
+              <div class="modal-body">
+                <div class="col-md-3"></div> 
+                <div class="input-group col-md-6">   
+                  <input type="text" class="form-control" name="user" required placeholder="Usuário" autofocus/>
+                  <input type="password" class="form-control" name="pwd" placeholder="Senha" required/>
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
         <div class="row">
