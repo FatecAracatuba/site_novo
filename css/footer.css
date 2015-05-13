@@ -11,6 +11,14 @@
   color: white;
 }
 
+.modal-title{
+  color: #FF6B02;
+}
+
+.modal-body{
+  min-height: 100px;
+}
+
 .footer h3, h5{
   margin-bottom: 10px;
   font-weight: bold;
