@@ -8,28 +8,40 @@
           $('a.media').media({width:770, height:700});
       });
     </script>
+		<script type="text/javascript">
+      $(function(){
+				var url = document.location.toString();
+				if (url.match('#')){
+					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+					}
+				// Change hash for page-reload
+				$('.nav-tabs a').on('shown.bs.tab', function (e) {
+					window.location.hash = e.target.hash;
+				});
+			});
+    </script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container main">  
+    <div class="container main">
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#about" data-toggle="tab">Sobre</a>
+            <a href="#sobre" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#schedule" data-toggle="tab">Horários</a>
+            <a href="#horario" data-toggle="tab">Horários</a>
           </li>
           <li role="presentation">
-            <a href="#prof" data-toggle="tab">Docentes</a>
+            <a href="#docente" data-toggle="tab">Docentes</a>
           </li>
           <li role="presentation">
-            <a href="#discipline" data-toggle="tab">Disciplinas</a>
+            <a href="#disciplina" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="about">
+          <div class="tab-pane fade in active" id="sobre">
             <article class="content">
               <h2 class="h2">Sobre</h2>
               <hr>
@@ -62,9 +74,9 @@
                 <li>Elaborar planos de contingências para manter os sistemas em funcionamento.</li>
                 <li>Facilitar a comunicação entre as diversas áreas de negócio da empresa e os profissionais de tecnologia da informação.</li>
               </ul>
-            </article>    
+            </article>
           </div>
-          <div class="tab-pane fade" id="schedule">
+          <div class="tab-pane fade" id="horario">
             <article class="content">
               <h2 class="h2">Horários</h2>
               <hr>
@@ -79,7 +91,7 @@
                     </div>
                     <div id="hor-pri-sem" class="panel-collapse collapse">
                         <div class="panel-body">
-                          <img src="images/horarios/ads1.png" class="centralized img-responsive" >  
+                          <img src="images/horarios/ads1.png" class="centralized img-responsive" >
                       </div>
                     </div>
                   </div>
@@ -143,10 +155,10 @@
                       </div>
                     </div>
                   </div>
-              </div>  
+              </div>
             </article>
-            </div>        
-          <div class="tab-pane fade" id="prof">
+            </div>
+          <div class="tab-pane fade" id="docente">
             <article class="content">
               <h2 class="h2">Docentes</h2>
               <hr>
@@ -240,8 +252,8 @@
               </table>
             </article>
           </div>
-          <div class="tab-pane fade" id="discipline">
-            <a class="media" href="pdf/disciplinas-ads.pdf"></a> 
+          <div class="tab-pane fade" id="disciplina">
+            <a class="media" href="pdf/disciplinas-ads.pdf"></a>
           </div>
         </div>
       </div>

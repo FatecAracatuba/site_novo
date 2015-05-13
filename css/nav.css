@@ -10,7 +10,7 @@
   border: auto;
   margin-top: -3px;
 }
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand{
   color: #f6fafb;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -72,25 +72,20 @@
   .navbar-default .navbar-brand {
     display: none;
   }
-}
 
 @media (max-width: 767px) {
   .navbar-default{
     font-size: 14px;
   }
-
   .navbar-default .navbar-brand {
     display: inline-block;
   }
-  
   .banner{
 	display: none;
   }
-
   .banner img{
     display: none;
   }
-
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #f6fafb;
   }
