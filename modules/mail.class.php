@@ -15,21 +15,31 @@
     }
 
     function save(){
-      $query = "INSERT INTO message VALUES (null, $this->name, $this->mail, $this->phone, $this->message)";
-      mysql_query($query);
-      return mysql_error() ? false : true;
+      try{
+        $query = "INSERT INTO message VALUES (null, $this->name, $this->mail, $this->phone, $this->message)";
+        mysql_query($query);
+        $this-send();
+        return true;
+      }catch (Exception $e) {
+        echo 'Error: ',  $e->getMessage(), "\n";
+        return false;
+      }
     }
 
     function send(){
-      $to = "teste@example.com";
+      $to = "teste@example.com";//precisa colocar o do Giuliano
       $subject = "Site da Fatec - " . $this->name;
       $message = "
       <html>
         <head>
-          <title>HTML email</title>
+          <title>Contato com a Direção</title>
         </head>
         <body>
-          <p>This email contains HTML Tags!</p>
+          <p>$this->message</p>
+
+          <p>Dados do remetente</p>
+          <p>Email: $this->email</p>
+          <p>Fone: $this->phone</p>
         </body>
       </html>
       ";
