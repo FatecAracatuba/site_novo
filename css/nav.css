@@ -77,19 +77,15 @@
   .navbar-default{
     font-size: 14px;
   }
-
   .navbar-default .navbar-brand {
     display: inline-block;
   }
-
   .banner{
 	display: none;
   }
-
   .banner img{
     display: none;
   }
-
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #f6fafb;
   }
