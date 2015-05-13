@@ -16,7 +16,7 @@
 				var url = document.location.toString();
 				if (url.match('#')){
 					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-					} 
+					}
 				// Change hash for page-reload
 				$('.nav-tabs a').on('shown.bs.tab', function (e) {
 					window.location.hash = e.target.hash;
@@ -26,31 +26,31 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container main">  
+    <div class="container main">
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#about" data-toggle="tab">Sobre</a>
+            <a href="#sobre" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#archives" data-toggle="tab">Arquivos do TG</a>
+            <a href="#arquivos" data-toggle="tab">Arquivos do TG</a>
           </li>
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="about">
+          <div class="tab-pane fade in active" id="sobre">
             <article class="content">
               <h2 class="h2">O que é o TG?</h2>
               <hr>
               <p class="lead">Definição</p>
               <p>O Trabalho de Graduação é uma atividade curricular obrigatória dos Cursos Superiores das
-                  Faculdades de Tecnologia do Centro Estadual de Educação Tecnológica Paula Souza, instituído 
+                  Faculdades de Tecnologia do Centro Estadual de Educação Tecnológica Paula Souza, instituído
                   pela Deliberação CEETEPS -12, de 14/12/2009.
               </p>
               <p>
                 É uma atividade orientada por docente interno,
-                desenvolvida por meio de um trabalho monográfico, de uma pesquisa científico-tecnológica, da 
-                publicação de contribuições na área ou da participação de eventos com apresentação de trabalho 
+                desenvolvida por meio de um trabalho monográfico, de uma pesquisa científico-tecnológica, da
+                publicação de contribuições na área ou da participação de eventos com apresentação de trabalho
                 acadêmico, com carga horária computada para a integralização do curso.
               </p>
               <hr>
@@ -58,13 +58,13 @@
               <ul>
                 <li>Colocar os alunos em contato com problemas reais do mercado de trabalho nas áreas dos cursos.</li>
                 <li>Possibilitar a pesquisa científica tecnológica, em trabalho apropriado, de que o aluno
-                    desenvolveu uma habilidade investigativa, conseguindo aplicar uma síntese dos conhecimentos 
+                    desenvolveu uma habilidade investigativa, conseguindo aplicar uma síntese dos conhecimentos
                     obtidos no curso.
                 </li>
               </ul>
-            </article>    
-          </div>        
-          <div class="tab-pane fade" id="archives">
+            </article>
+          </div>
+          <div class="tab-pane fade" id="arquivos">
             <article class="content">
               <h2 class="h2">Arquivos do TG</h2>
               <hr>
@@ -79,7 +79,7 @@
                 <tbody>
                   <tr>
                     <td>Declaração de Orientação</td>
-                    <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/declaracao_orientacao.pdf');" href="#"></a></td>        
+                    <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/declaracao_orientacao.pdf');" href="#"></a></td>
                     <td><a class="glyphicon glyphicon-download-alt centralized" href="pdf/declaracao_orientacao.pdf" target="_blank" ></a></td>
                   </tr>
                   <tr>

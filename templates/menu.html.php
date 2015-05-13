@@ -3,8 +3,6 @@
 </div>
 <nav class="navbar navbar-default text-center">
   <div class="container">
-    <div class="col-md-1">  
-    </div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fatec-menu">
         <span class="sr-only">Alternar Navegação</span>
@@ -26,9 +24,9 @@
             <li><a href="turmas.php">Turmas Formadas</a></li>
             <li><a href="biblioteca.php">Biblioteca</a></li>
             <li><a href="#">Servidores</a></li>
-			<li><a href="monitoria.php">Monitoria</a></li>
-			<li><a href="iniciacao.php">Iniciação Científica</a></li>
-			<li><a href="concursos.php">Concursos</a></li>
+      			<li><a href="monitoria.php">Monitoria</a></li>
+      			<li><a href="iniciacao.php">Iniciação Científica</a></li>
+      			<li><a href="concursos.php">Concursos</a></li>
           </ul>
         </li>
         <li><a href="http://www.vestibularfatec.com.br/home" target="_blank">Vestibular</a></li>
@@ -41,7 +39,7 @@
         </li>
         <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
         <li><a href="estagio.php">Estágio</a></li>
-		<li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
+		    <li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
       </ul>
     </div>
   </div>
