@@ -18,7 +18,7 @@
       try{
         $query = "INSERT INTO message VALUES (null, $this->name, $this->mail, $this->phone, $this->message)";
         mysql_query($query);
-        $this-send();
+        $this->send();
         return true;
       }catch (Exception $e) {
         echo 'Error: ',  $e->getMessage(), "\n";
