@@ -4,8 +4,7 @@
   width: 100%;
   border-top: 4px solid #FF6B02;
   height: 100%;
-  background-color: #181C33; /*azul escuro*/
-	/*background-color: #004B4B; /*verde turquesa*/
+  background-color: #181C33;
 }
 
 .footer{
@@ -49,4 +48,3 @@
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
-

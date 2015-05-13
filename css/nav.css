@@ -1,6 +1,5 @@
 .navbar-default {
-  background-color: #181c33;  /*azul escuro*/
-	/*background-color: #004B4B; /*verde turquesa*/
+  background-color: #181c33;
   border-color: #10121c;
   border-bottom: 4px solid #FF6B02;
   border-radius: 0;
@@ -10,7 +9,6 @@
 .navbar-brand img {
   border: auto;
   margin-top: -3px;
-	margin-left: 60px;
 }
 .navbar-default .navbar-brand{
   color: #f6fafb;
@@ -21,7 +19,6 @@
 .navbar-default .navbar-text {
   color: #f6fafb;
 }
-
 .navbar-default .navbar-nav > li > a {
   color: #f6fafb;
 }
@@ -75,10 +72,6 @@
   .navbar-default .navbar-brand {
     display: none;
   }
-	
-	.navbar-default .navbar-nav {
-		margin-left: 40px;
-	}
 
 @media (max-width: 767px) {
   .navbar-default{
@@ -88,7 +81,7 @@
   .navbar-default .navbar-brand {
     display: inline-block;
   }
-  
+
   .banner{
 	display: none;
   }
