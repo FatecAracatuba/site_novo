@@ -12,10 +12,10 @@
             <a href="#sobre" data-toggle="tab">A biblioteca</a>
           </li>
           <li role="presentation">
-            <a href="#horarios" data-toggle="tab">Horários de Atendimento</a>
+            <a href="#servicos" data-toggle="tab">Serviços</a>
           </li>
           <li role="presentation">
-            <a href="#acervo" data-toggle="tab">Acervo</a>
+            <a href="#funcionamento" data-toggle="tab">Funcionamento</a>
           </li>
           <li role="presentation">
             <a href="#contato" data-toggle="tab">Contato</a>
@@ -37,18 +37,31 @@
 							<p>Consulta ao acervo da biblioteca pela internet : <a href="http://www.biblioceeteps.com.br/">http://www.biblioceeteps.com.br/</a></p>
 						</article>
 					</div>
-					<div class="tab-pane fade" id="horarios">
+					<div class="tab-pane fade" id="servicos">
 						<article class="content">
-							<h2>Horários de Atendimento</h2>
+							<h2>Serviços</h2>
 							<hr>
+							<ul>
+								<li>Consulta e Empréstimo com prazo definido pela categoria de usuários: </li>
+									<ul>
+										<li>Aluno/Funcionários: 3 documentos/ 7 dias </li>
+										<li>Professor/ Coordenação: 5 documento/ 15 dias </li>
+									</ul>
+								<li>Levantamento Bibliográfico; </li>
+								<li>Treinamento na utilização da Biblioteca </li>
+								<li>Ficha Catalográfica; </li>
+								<li>Comutação Bibliográfica. </li>
+								<li>Auxílio na Normalização Bibliográfica.</li>
+							</ul>
 								
 						</article>
 					</div>
-					<div class="tab-pane fade" id="acervo">
+					<div class="tab-pane fade" id="funcionamento">
 						<article class="content">
-							<h2>Acervo</h2>
+							<h2 class="text-center">Horário de Funcionamento</h2>
 							<hr>
-								
+							<p class="text-center">Segunda à Sexta - Feira: 07h00 às 21h50</p>
+							<p class="text-center">Sábados: 09h00 às 12h00</p>
 						</article>
 					</div>
 					<div class="tab-pane fade" id="contato">
