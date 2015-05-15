@@ -9,7 +9,7 @@
       });
     </script>
 		<script type="text/javascript">
-      $(function(){
+			$(function(){
 				var url = document.location.toString();
 				if (url.match('#')){
 					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
@@ -18,7 +18,7 @@
 				$('.nav-tabs a').on('shown.bs.tab', function (e) {
 					window.location.hash = e.target.hash;
 				});
-			});
+			});  
     </script>
   </head>
   <body>
@@ -30,13 +30,13 @@
             <a href="#sobre" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#horario" data-toggle="tab">Horários</a>
+            <a href="#horarios" data-toggle="tab">Horários</a>
           </li>
           <li role="presentation">
-            <a href="#docente" data-toggle="tab">Docentes</a>
+            <a href="#docentes" data-toggle="tab">Docentes</a>
           </li>
           <li role="presentation">
-            <a href="#disciplina" data-toggle="tab">Disciplinas</a>
+            <a href="#disciplinas" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
 
@@ -76,13 +76,13 @@
               </ul>
             </article>
           </div>
-          <div class="tab-pane fade" id="horario">
+          <div class="tab-pane fade" id="horarios">
             <article class="content">
               <h2 class="h2">Horários</h2>
               <hr>
               <h3 class="h3">Diurno</h3>
               <hr>
-              <div class="panel-group" id="horarios">
+              <div class="panel-group" id="horarios" data-toggle="tab">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
@@ -158,7 +158,7 @@
               </div>
             </article>
             </div>
-          <div class="tab-pane fade" id="docente">
+          <div class="tab-pane fade" id="docentes">
             <article class="content">
               <h2 class="h2">Docentes</h2>
               <hr>
@@ -252,7 +252,7 @@
               </table>
             </article>
           </div>
-          <div class="tab-pane fade" id="disciplina">
+          <div class="tab-pane fade" id="disciplinas">
             <a class="media" href="pdf/disciplinas-ads.pdf"></a>
           </div>
         </div>

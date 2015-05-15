@@ -1,0 +1,3 @@
+$(function() {		
+	$( '#ri-grid' ).gridrotator();
+});

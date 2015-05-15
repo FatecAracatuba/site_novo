@@ -12,6 +12,11 @@
       };
     </script>
 		<script type="text/javascript">
+      $(function() {
+          $('a.media').media({width:770, height:700});
+      });
+    </script>
+		<script type="text/javascript">
       $(function(){
 				var url = document.location.toString();
 				if (url.match('#')){
@@ -38,7 +43,7 @@
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="sobre">
+          <div class="tab-pane fade in active" id="sobre" data-toggle="tab">
             <article class="content">
               <h2 class="h2">O que é o TG?</h2>
               <hr>
@@ -64,7 +69,7 @@
               </ul>
             </article>
           </div>
-          <div class="tab-pane fade" id="arquivos">
+          <div class="tab-pane fade" id="arquivos" data-toggle="tab">
             <article class="content">
               <h2 class="h2">Arquivos do TG</h2>
               <hr>

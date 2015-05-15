@@ -8,3 +8,13 @@ $(function(){
 		window.location.hash = e.target.hash;
 	});
 });
+
+$(function () {
+	var navTabs = $('.nav-tabs a'); 
+	var hash = window.location.hash; 
+	hash && navTabs.filter('[data-value="' + hash + '"]').tab('show'); 
+	navTabs.on('show', function (e) { 
+		var newhash = $(e.target).attr('data-value'); 
+		window.location.hash = newhash; 
+	}); 
+})
