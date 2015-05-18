@@ -12,11 +12,6 @@
       };
     </script>
 		<script type="text/javascript">
-      $(function() {
-          $('a.media').media({width:770, height:700});
-      });
-    </script>
-		<script type="text/javascript">
       $(function(){
 				var url = document.location.toString();
 				if (url.match('#')){
