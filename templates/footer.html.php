@@ -61,7 +61,7 @@
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
         <a type="button" class="btn btn-large btn-warning text-center" href="mapa.php">Veja o Mapa</a>
-        <a type="button" class="btn map-btn " data-toggle="modal" data-target="#loginForm">
+        <a type="button" class="btn btn-large btn-warning text-center" data-toggle="modal" data-target="#loginForm">
           <i class="glyphicon glyphicon-log-in"></i>
           Área Restrita
         </a>
