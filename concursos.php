@@ -50,7 +50,8 @@
 					</div>
 					<div class="tab-pane fade" id="datas">
 						<article class="content">
-							<h2>Datas</h2>
+							<h2>Datas</h2>             
+              <p class="lead text-center">Não existem concursos abertos</p>
 							<hr>
 
 						</article>
