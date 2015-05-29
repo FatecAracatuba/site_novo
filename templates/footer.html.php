@@ -4,8 +4,51 @@
       <center><span class="glyphicon glyphicon-chevron-down"></span></center>
     </div>
     <div class="row">
-      <div class="col-md-4">
-
+      <div class="col-md-4 message-form">
+        <div class="row">
+          <div class="page-header">
+            <h3>Fale Com a Direção</h3>
+          </div>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="input-group">
+                <span class="input-group-addon" id="NameAddon"><span class="glyphicon glyphicon-user"></span></span>
+                <input name="name" type="name" class="form-control" id="nomeCompleto" placeholder="Insira o nome completo" aria-describedby="NameAddon">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="input-group">
+                <span class="input-group-addon" id="MailAddon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <input name="mail" type="tel" class="form-control" id="Mail" placeholder="algumacoisa@email.com" aria-describedby="MailAddon">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="input-group">
+                <span class="input-group-addon" id="PhoneAddon"><span class="glyphicon glyphicon-phone"></span></span>
+                <input name="phone" type="tel" class="form-control" id="Phone" placeholder="(xx)xxxx-xxxx" aria-describedby="PhoneAddon">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="input-group">
+                <span class="input-group-addon" id="MessageAddon"><span class="glyphicon glyphicon-pencil"></span></span>
+                <textarea name="message" type="text" class="form-control" id="message" placeholder="Digite aqui sua mensagem para a direção." rows="4" aria-describedby="MessageAddon"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <button type="submit" target="modules/send-mail.php" class="btn btn-large btn-warning">Enviar</button>
+            </div>
+          </div>
+        </form>
       </div>
       <div class="col-md-4">
         <div class="row">
@@ -17,7 +60,7 @@
         <p><span class="glyphicon glyphicon-time"></span> Segunda à Sexta-feira das 7:30 às 22:30</p>
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
-		    <a type="button" class="btn btn-large foot-btn centrali" href="mapa.php">Veja o Mapa</a>
+        <a type="button" class="btn btn-large btn-warning text-center" href="mapa.php">Veja o Mapa</a>
         <a type="button" class="btn map-btn " data-toggle="modal" data-target="#loginForm">
           <i class="glyphicon glyphicon-log-in"></i>
           Área Restrita
@@ -94,12 +137,8 @@
       </div>
       <div class="col-md-4">
         <h3>Fatec no Facebook</h3>
-        <!--<a href="https://www.facebook.com/fatecaracatuba" target="_blank">
-          <img src="images/footer/icon-facebook.png" class="img-circle"></img> -->
-		  <div class="fb-page" data-href="https://www.facebook.com/fatecaracatuba?fref=ts" data-width="300" data-height="130" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-		  </div>
-		  <?php include ("templates/page-plugin.html.php") ?>
-        </a>
+        <div class="fb-page" data-href="https://www.facebook.com/fatecaracatuba?fref=ts" data-width="300" data-height="130" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
+        <?php include ("templates/page-plugin.html.php") ?>
       </div>
     </div>
     <hr>
@@ -140,7 +179,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <button type="button" class="btn btn-success">Entrar</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
             </div>
           </div>
         </div>
