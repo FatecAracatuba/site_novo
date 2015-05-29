@@ -19,6 +19,10 @@ body .container.main{
   text-align: center;
 }
 
+.graduacoes img{
+  margin-bottom: 15px;
+}
+
 /*Torna a fb like box responsiva*/
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 100% !important;
