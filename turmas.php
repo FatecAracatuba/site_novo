@@ -21,50 +21,39 @@
 			<div class="container">
 				<ul class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#sobre" data-toggle="tab">Como funciona</a>
+            <a href="#bio" data-toggle="tab">Biocombustíveis</a>
+          </li>
+					<li role="presentation">
+            <a href="#ads" data-toggle="tab">Análise e Desenvolvimento de Sistemas</a>
           </li>
           <li role="presentation">
-            <a href="#inscricoes" data-toggle="tab">Inscrições</a>
+            <a href="#gestao" data-toggle="tab">Gestão Empresarial</a>
           </li>
-          <li role="presentation">
-            <a href="#datas" data-toggle="tab">Datas</a>
-          </li>
-          <li role="presentation">
-            <a href="#aprovados" data-toggle="tab">Aprovados</a>
-          </li>
-        </ul>
+				</ul>
 				<div class="tab-content">
-          <div class="tab-pane fade in active" id="sobre">
+          <div class="tab-pane fade in active" id="bio">
 						<article class="content">
-							<h2>Como funciona</h2>
-							<hr>
+							<h2 class="h2">Biocombustíveis</h2>
+
 
 						</article>
 					</div>
-					<div class="tab-pane fade" id="horarios">
+          <div class="tab-pane fade" id="ads">
 						<article class="content">
-							<h2>Inscrições</h2>
-							<hr>
+							<h2 class="h2">Análise e Desenvolvimento de Sistemas</h2>
 
 						</article>
 					</div>
-					<div class="tab-pane fade" id="datas">
+				<div class="tab-pane fade" id="gestao">
 						<article class="content">
-							<h2>Datas</h2>
-							<hr>
+							<h2 class="h2">Gestão Empresarial</h2>
 
-						</article>
-					</div>
-					<div class="tab-pane fade" id="aprovados">
-						<article class="content">
-							<h2>Aprovados</h2>
-							<hr>
 
 						</article>
 					</div>
 				</div>
 			</div>
-    </div>
+		</div>
     <?php include ("templates/footer.html.php") ?>
   </body>
 </html>

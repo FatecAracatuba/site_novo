@@ -18,6 +18,9 @@
             <a href="#about" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
+            <a href="#schedule" data-toggle="tab">Horários</a>
+          </li>
+          <li role="presentation">
             <a href="#prof" data-toggle="tab">Docentes</a>
           </li>
           <li role="presentation">
@@ -43,7 +46,12 @@
 								particulares, tais como cooperativas e associações.
 							</p>
             </article>    
-          </div>       
+          </div>
+          <div class="tab-pane fade" id="schedule">
+            <article class="content">
+              
+            </article>
+            </div>        
           <div class="tab-pane fade" id="prof">
             <article class="content">
               
