@@ -16,18 +16,7 @@
           $('a.media').media({width:770, height:700});
       });
     </script>
-		<script type="text/javascript">
-      $(function(){
-				var url = document.location.toString();
-				if (url.match('#')){
-					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-					}
-				// Change hash for page-reload
-				$('.nav-tabs a').on('shown.bs.tab', function (e) {
-					window.location.hash = e.target.hash;
-				});
-			});
-    </script>
+    <script type="text/javascript" src="js/tabs-links.js" ></script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
