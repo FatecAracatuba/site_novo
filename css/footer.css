@@ -33,7 +33,7 @@
   color: #FF6B02;
 }
 
-.footer .btn a{
+.footer .btn{
   color: #FFFFFF;
 }
 
@@ -55,4 +55,13 @@
 .footer .foot-btn:hover{
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+.message-form .input-group{
+  margin-bottom: 10px;
+}
+
+.message-form button{
+  float: right;
+  width: 50%;
 }
