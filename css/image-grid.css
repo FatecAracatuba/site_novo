@@ -8,6 +8,10 @@
 }
 #ul-img #li-img img {
   cursor: pointer;
-	height: 300px;
-	width: 500px;
+	height: 200px;
+	width: 280px;
+} 
+.img-responsive{
+	height: 500px;
+	width: 700px;
 }
