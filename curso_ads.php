@@ -3,22 +3,11 @@
   <head>
     <?php include "templates/head_content.php" ?>
     <script type="text/javascript" src="js/jquery.media.js" ></script>
+    <script type="text/javascript" src="js/tabs-links.js" ></script>
     <script type="text/javascript">
       $(function() {
-          $('a.media').media({width:770, height:700});
+        $('a.media').media({width:770, height:700});
       });
-    </script>
-		<script type="text/javascript">
-      $(function(){
-				var url = document.location.toString();
-				if (url.match('#')){
-					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-					}
-				// Change hash for page-reload
-				$('.nav-tabs a').on('shown.bs.tab', function (e) {
-					window.location.hash = e.target.hash;
-				});
-			});
     </script>
   </head>
   <body>
@@ -30,13 +19,13 @@
             <a href="#sobre" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#horario" data-toggle="tab">Horários</a>
+            <a href="#horarios" data-toggle="tab">Horários</a>
           </li>
           <li role="presentation">
-            <a href="#docente" data-toggle="tab">Docentes</a>
+            <a href="#docentes" data-toggle="tab">Docentes</a>
           </li>
           <li role="presentation">
-            <a href="#disciplina" data-toggle="tab">Disciplinas</a>
+            <a href="#disciplinas" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
 
@@ -76,89 +65,89 @@
               </ul>
             </article>
           </div>
-          <div class="tab-pane fade" id="horario">
+          <div class="tab-pane fade" id="horarios">
             <article class="content">
               <h2 class="h2">Horários</h2>
               <hr>
               <h3 class="h3">Diurno</h3>
               <hr>
-              <div class="panel-group" id="horarios">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
-                          1º Semestre
-                        </div>
-                    </div>
-                    <div id="hor-pri-sem" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <img src="images/horarios/ads1.png" class="centralized img-responsive" >
+              <div class="panel-group" id="horarios" data-toggle="tab">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="panel-title" data-toggle="collapse" data-parent="#horarios" data-target="#hor-pri-sem">
+                        1º Semestre
                       </div>
+                  </div>
+                  <div id="hor-pri-sem" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <img src="images/horarios/ads1.png" class="centralized img-responsive" >
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
-                          2º Semestre
-                        </div>
-                    </div>
-                    <div id="hor-seg-sem" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <img src="images/horarios/ads2.png" class="centralized img-responsive" >
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-seg-sem">
+                        2º Semestre
                       </div>
+                  </div>
+                  <div id="hor-seg-sem" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <img src="images/horarios/ads2.png" class="centralized img-responsive" >
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
-                          3º Semestre
-                        </div>
-                    </div>
-                    <div id="hor-ter-sem" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <img src="images/horarios/ads3.png" class="centralized img-responsive" >
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-ter-sem">
+                        3º Semestre
                       </div>
+                  </div>
+                  <div id="hor-ter-sem" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <img src="images/horarios/ads3.png" class="centralized img-responsive" >
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
-                          4º Semestre
-                        </div>
-                    </div>
-                    <div id="hor-qua-sem" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <img src="images/horarios/ads4.png" class="centralized img-responsive" >
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qua-sem">
+                        4º Semestre
                       </div>
+                  </div>
+                  <div id="hor-qua-sem" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <img src="images/horarios/ads4.png" class="centralized img-responsive" >
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
-                          5º Semestre
-                        </div>
-                    </div>
-                    <div id="hor-qui-sem" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <img src="images/horarios/ads5.png" class="centralized img-responsive" >
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-qui-sem">
+                        5º Semestre
                       </div>
+                  </div>
+                  <div id="hor-qui-sem" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <img src="images/horarios/ads5.png" class="centralized img-responsive" >
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
-                          6º Semestre
-                        </div>
-                    </div>
-                    <div id="hor-sex-sem" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <img src="images/horarios/ads6.png" class="centralized img-responsive" >
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <div class="panel-title" data-toggle="collapse" data-parent="#horarios" href="#hor-sex-sem">
+                        6º Semestre
                       </div>
+                  </div>
+                  <div id="hor-sex-sem" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <img src="images/horarios/ads6.png" class="centralized img-responsive" >
                     </div>
                   </div>
+                </div>
               </div>
             </article>
             </div>
-          <div class="tab-pane fade" id="docente">
+          <div class="tab-pane fade" id="docentes">
             <article class="content">
               <h2 class="h2">Docentes</h2>
               <hr>
@@ -252,7 +241,7 @@
               </table>
             </article>
           </div>
-          <div class="tab-pane fade" id="disciplina">
+          <div class="tab-pane fade" id="disciplinas">
             <a class="media" href="pdf/disciplinas-ads.pdf"></a>
           </div>
         </div>

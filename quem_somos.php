@@ -2,18 +2,7 @@
 <html>
   <head>
     <?php include "templates/head_content.php" ?>
-  	<script type="text/javascript">
-      $(function(){
-				var url = document.location.toString();
-				if (url.match('#')){
-					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-					}
-				// Change hash for page-reload
-				$('.nav-tabs a').on('shown.bs.tab', function (e) {
-					window.location.hash = e.target.hash;
-				});
-			});
-    </script>
+    <script type="text/javascript" src="js/tabs-links.js" ></script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
@@ -43,9 +32,6 @@
 						<article class="content">
 							<h2>Fotos da Instituição</h2>
 							<hr>
-								<img class="img-responsive" src="photos/foto-fatec-1.jpg"></img><br>
-								<img class="img-responsive" src="photos/foto-fatec-2.jpg"></img><br>
-								<img class="img-responsive" src="photos/foto-fatec-3.jpg"></img><br>
 						</article>
 					</div>
 				</div>

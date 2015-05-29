@@ -12,17 +12,11 @@
       };
     </script>
 		<script type="text/javascript">
-      $(function(){
-				var url = document.location.toString();
-				if (url.match('#')){
-					$('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
-					}
-				// Change hash for page-reload
-				$('.nav-tabs a').on('shown.bs.tab', function (e) {
-					window.location.hash = e.target.hash;
-				});
-			});
+      $(function() {
+          $('a.media').media({width:770, height:700});
+      });
     </script>
+    <script type="text/javascript" src="js/tabs-links.js" ></script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
@@ -38,7 +32,7 @@
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="sobre">
+          <div class="tab-pane fade in active" id="sobre" data-toggle="tab">
             <article class="content">
               <h2 class="h2">O que é o TG?</h2>
               <hr>
@@ -64,7 +58,7 @@
               </ul>
             </article>
           </div>
-          <div class="tab-pane fade" id="arquivos">
+          <div class="tab-pane fade" id="arquivos" data-toggle="tab">
             <article class="content">
               <h2 class="h2">Arquivos do TG</h2>
               <hr>

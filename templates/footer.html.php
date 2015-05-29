@@ -34,9 +34,9 @@
             <h5>Biocombustíveis</h5>
             <ul>
               <li><a href="curso_bio.php#sobre">O curso</a></li>
-              <li><a href="curso_bio.php#docente">Docentes</a></li>
-              <li><a href="curso_bio.php#disciplina">Disciplinas</a></li>
-              <li><a href="curso_bio.php#horario">Horario das Aulas</a></li>
+              <li><a href="curso_bio.php#docentes">Docentes</a></li>
+              <li><a href="curso_bio.php#disciplinas">Disciplinas</a></li>
+              <li><a href="curso_bio.php#horarios">Horario das Aulas</a></li>
               <li><a href="curso_bio.php">Atendimento</a></li>
             </ul>
           </div>
@@ -44,9 +44,9 @@
             <h5>ADS</h5>
             <ul>
               <li><a href="curso_ads.php#sobre">O curso</a></li>
-              <li><a href="curso_ads.php#docente">Docentes</a></li>
-              <li><a href="curso_ads.php#disciplina">Disciplinas</a></li>
-              <li><a href="curso_ads.php#horario">Horario das Aulas</a></li>
+              <li><a href="curso_ads.php#docentes">Docentes</a></li>
+              <li><a href="curso_ads.php#disciplinas">Disciplinas</a></li>
+              <li><a href="curso_ads.php#horarios">Horario das Aulas</a></li>
               <li><a href="curso_ads.php">Atendimento</a></li>
             </ul>
           </div>
@@ -55,22 +55,22 @@
           <div class="col-md-6">
             <h5>Estágio</h5>
             <ul>
-              <li><a href="estagio.php#about">Sobre</a></li>
-							<li><a href="estagio.php#archives">Termo de Compromisso</a></li>
-              <li><a href="estagio.php#archives">Ficha de Início e Plano de Atividades</a></li>
-              <li><a href="estagio.php#archives">Relatório do Estágio</a></li>
-              <li><a href="estagio.php#archives">Avaliação do Desempenho</a></li>
+              <li><a href="estagio.php#sobre">Sobre</a></li>
+							<li><a href="estagio.php#arquivos">Termo de Compromisso</a></li>
+              <li><a href="estagio.php#arquivos">Ficha de Início e Plano de Atividades</a></li>
+              <li><a href="estagio.php#arquivos">Relatório do Estágio</a></li>
+              <li><a href="estagio.php#arquivos">Avaliação do Desempenho</a></li>
             </ul>
           </div>
           <div class="col-md-6">
             <h5>Trabalho de Graduação</h5>
             <ul>
-							<li><a href="trabalho_graduacao.php#about">Sobre</a></li>
-              <li><a href="trabalho_graduacao.php#archives">Orientação</a></li>
-              <li><a href="trabalho_graduacao.php#archives">Entrega do Boneco</a></li>
-              <li><a href="trabalho_graduacao.php#archives">Apresentação</a></li>
-              <li><a href="trabalho_graduacao.php#archives">Normas de ABNT</a></li>
-              <li><a href="trabalho_graduacao.php#archives">Modelo de Boneco</a></li>
+							<li><a href="trabalho_graduacao.php#sobre">Sobre</a></li>
+              <li><a href="trabalho_graduacao.php#arquivos">Orientação</a></li>
+              <li><a href="trabalho_graduacao.php#arquivos">Entrega do Boneco</a></li>
+              <li><a href="trabalho_graduacao.php#arquivos">Apresentação</a></li>
+              <li><a href="trabalho_graduacao.php#arquivos">Normas de ABNT</a></li>
+              <li><a href="trabalho_graduacao.php#arquivos">Modelo de Boneco</a></li>
             </ul>
           </div>
         </div>
