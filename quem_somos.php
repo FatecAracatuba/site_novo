@@ -3,21 +3,6 @@
   <head>
     <?php include "templates/head_content.php" ?>
     <script type="text/javascript" src="js/tabs-links.js" ></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-         $('li img').on('click',function(){
-          var src = $(this).attr('src');
-          var img = '<img src="' + src + '" class="img-responsive"/>';
-          $('#myModal').modal();
-          $('#myModal').on('shown.bs.modal', function(){
-              $('#myModal .modal-body').html(img);
-          });
-          $('#myModal').on('hidden.bs.modal', function(){
-              $('#myModal .modal-body').html('');
-          });
-         });
-      })
-		</script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
@@ -47,24 +32,6 @@
 						<article class="content">
 							<h2>Fotos da Instituição</h2>
 							<hr>
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-body">
-										</div>
-									</div>
-								</div>
-							</div>
-							<ul class="row" id="ul-img">
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-0.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-1.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-2.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-3.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-4.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-5.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-6.jpg"></img></li>
-								<li id="li-img" class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img class="img-responsive" src="photos/foto-fatec-7.jpg"></img></li>
-							</ul>
 						</article>
 					</div>
 				</div>

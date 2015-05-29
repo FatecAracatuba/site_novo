@@ -1,3 +1,0 @@
-$(function() {		
-	$( '#ri-grid' ).gridrotator();
-});
