@@ -6,12 +6,10 @@ $(function() {
 			rows	: 2,
 			columns	: 3
 		},
-
 		w768: {
 			rows	: 2,
 			columns	: 3
 		},
-
 		w480: {
 			rows	: 2,
 			columns	: 2
@@ -28,5 +26,4 @@ $(function() {
 		interval: 4000,
 		preventClick : false
 	});
-	
 });
