@@ -3,25 +3,29 @@
   <head>
     <?php include "templates/head_content.php" ?>
     <script type="text/javascript" src="js/tabs-links.js" ></script>
+    <link rel='stylesheet' href='css/ResponsiveImageGrid/css/style.css'/>
+    <!--[if lt IE 9]><link rel='stylesheet' href='css/ResponsiveImageGrid/css/fallback.css'/><![endif]-->
+    <script type="text/javascript" src="css/ResponsiveImageGrid/js/modernizr.custom.26633.js"></script>
+    <script type="text/javascript" src="css/ResponsiveImageGrid/js/jquery.gridrotator.js"></script>
+    <script type="text/javascript" src="js/grid.js"></script>
     <script type="text/javascript">
-		$(document).ready(function(){
-         	$('li a img').on('click',function(){
-          		var src = $(this).attr('src');
-          		var img = '<img src="' + src + '" class="img-responsive"/>';
-          		$('#myModal').modal();
-          		$('#myModal').on('shown.bs.modal', function(){
-              		$('#myModal .modal-body').html(img);
-          		});
-          		$('#myModal').on('hidden.bs.modal', function(){
-              		$('#myModal .modal-body').html('');
-          		});
-         	});
-      	})
-	</script>
-	<script type="text/javascript" src="css/ResponsiveImageGrid/js/modernizr.custom.26633.js"></script>
-	<script type="text/javascript" src="css/ResponsiveImageGrid/js/jquery.gridrotator.js"></script>
-	<script type="text/javascript" src="js/grid.js"></script>
-	<link rel='stylesheet' href='css/ResponsiveImageGrid/css/style.css'/>
+  		$function(){
+       	$('li a.image').on('click',function(){
+          alert(this);
+      		var src = $(this).attr('src');
+      		var img = '<img src="' + src + '" class="img-responsive"/>';
+      		$('#myModal').modal();
+
+      		$('#myModal').on('shown.bs.modal', function(){
+          	$('#myModal .modal-body').html(img);
+      		});
+
+      		$('#myModal').on('hidden.bs.modal', function(){
+          	$('#myModal .modal-body').html('');
+      		});
+       	});
+    	})
+	  </script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
@@ -47,32 +51,34 @@
 								a graduação a distância de Gestão Empresarial.
 						</article>
 					</div>
-					 <div class="tab-pane fade" id="fotos">
-						<article class="content">
-							<h2>Fotos da Instituição</h2>
-							<hr>
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-body">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="ri-grid" class="ri-grid ri-grid-size-2 ri-shadow">
-								<ul>
-									<li><a href=""><img src="photos/foto-fatec-0.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-1.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-2.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-3.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-4.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-5.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-6.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-									<li><a href=""><img src="photos/foto-fatec-7.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
-								</ul>
-							</div>
-						</article>
-					</div>
+            <div class="tab-pane fade" id="fotos">
+             <article class="content">
+               <h2>Fotos da Instituição</h2>
+               <hr>
+               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                 <div class="modal-dialog">
+                   <div class="modal-content">
+                     <div class="modal-body">
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div id="ri-grid" class="ri-grid ri-grid-size-2 ri-shadow">
+                 <ul>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-0.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-1.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-2.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-3.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-4.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-5.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-6.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-7.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-8.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                   <li><a class='image' href="#"><img src="photos/foto-fatec-9.jpg" alt="Foto-Fatec-Araçatuba"></a></li>
+                 </ul>
+               </div>
+             </article>
+           </div>
 				</div>
 			</div>
 		</div>
