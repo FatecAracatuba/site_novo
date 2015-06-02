@@ -195,6 +195,12 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>Luciane Berti Ribeiro, Esp</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="" target="_blank"></a>
+                    </td>
+                  </tr>
+                  <tr>
                     <td>Lucilena de Lima, Me</td>
                     <td>
                       <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="http://lattes.cnpq.br/0062050183642603" target="_blank"></a>

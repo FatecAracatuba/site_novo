@@ -18,9 +18,6 @@
             <a href="#about" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#schedule" data-toggle="tab">Horários</a>
-          </li>
-          <li role="presentation">
             <a href="#prof" data-toggle="tab">Docentes</a>
           </li>
           <li role="presentation">
@@ -46,19 +43,61 @@
 								particulares, tais como cooperativas e associações.
 							</p>
             </article>    
-          </div>
-          <div class="tab-pane fade" id="schedule">
-            <article class="content">
-              
-            </article>
-            </div>        
+          </div>      
           <div class="tab-pane fade" id="prof">
             <article class="content">
-              
+              <h2 class="h2"> Docentes</h2>
+              <hr>
+              <table class="table table-striped table-responsive col-sm-12 ">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th class="text-center">Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Euclides Teixeira Neto, Esp</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="http://lattes.cnpq.br/4500925161423594" target="_blank"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Fernando Cesar Balbino, Me</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="http://lattes.cnpq.br/2571435611020296" target="_blank"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gabriela Cristiane Mendes Rahal, Me</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="http://lattes.cnpq.br/9152928525800668" target="_blank"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Luciana Passos Marcondes Scarsiotta, Me</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="http://lattes.cnpq.br/0804789469499768" target="_blank"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Luciane Berti Ribeiro, Esp</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="" target="_blank"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lucilena de Lima, Me</td>
+                    <td>
+                      <a class="glyphicon glyphicon-link centralized" aria-hidden="true" href="http://lattes.cnpq.br/0062050183642603" target="_blank"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </article>
           </div>
-          <div class="tab-pane fade" id="discipline">
-            
+          <div class="tab-pane fade" id="discipline">         
+            <a class="media" href="pdf/disciplinas-gestao.pdf"></a> 
           </div>
         </div>
       </div>
