@@ -3,7 +3,7 @@
 </div>
 <nav class="navbar navbar-default text-center">
   <div class="container">
-    <div class="col-md-1">  
+    <div class="col-sm-2">  
     </div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fatec-menu">
