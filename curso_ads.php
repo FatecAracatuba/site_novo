@@ -242,7 +242,7 @@
             </article>
           </div>
           <div class="tab-pane fade" id="disciplinas">
-            <a class="media" href="pdf/disciplinas-ads.pdf"></a>
+            <a class="media" href="pdf/matriz_ads.pdf"></a>
           </div>
         </div>
       </div>

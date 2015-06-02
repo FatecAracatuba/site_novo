@@ -350,7 +350,7 @@
             </article>
           </div>
           <div class="tab-pane fade" id="disciplinas">
-            <a class="media" href="pdf/disciplinas-bio.pdf"></a>
+            <a class="media" href="pdf/matriz_bio.pdf"></a>
           </div>
         </div>
       </div>
