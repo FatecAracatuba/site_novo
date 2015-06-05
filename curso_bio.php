@@ -8,36 +8,37 @@
           $('a.media').media({width:770, height:700});
       });
     </script>
+    <script type="text/javascript" src="js/tabs-links.js" ></script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container main">  
+    <div class="container main">
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#about" data-toggle="tab">Sobre</a>
+            <a href="#sobre" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#schedule" data-toggle="tab">Horários</a>
+            <a href="#horarios" data-toggle="tab">Horários</a>
           </li>
           <li role="presentation">
-            <a href="#prof" data-toggle="tab">Docentes</a>
+            <a href="#docentes" data-toggle="tab">Docentes</a>
           </li>
           <li role="presentation">
-            <a href="#discipline" data-toggle="tab">Disciplinas</a>
+            <a href="#disciplinas" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="about">
+          <div class="tab-pane fade in active" id="sobre">
             <article class="content">
               <h2 class="h2">Sobre</h2>
               <hr>
               <p class="lead">Perfil do Profissional</p>
-              <p>O profissional atua nos processo de produção de biocombustíveis (etanol, biodiesel, biogás, biomassa e carvão vegetal), açúcar 
-              e biomassa explorável para produção de energia. Planeja, executa e gerencia as atividades pertinentes aos processos de utilização 
-              de biomassa como fonte de energia, numa perspectiva de respeito ao ambiente e de conservação dos recursos naturais, de forma 
-              sustentada. O Tecnólogo em Biocombustíveis é um profissional habilitado a trabalhar nos diferentes setores da produção de energia 
+              <p>O profissional atua nos processo de produção de biocombustíveis (etanol, biodiesel, biogás, biomassa e carvão vegetal), açúcar
+              e biomassa explorável para produção de energia. Planeja, executa e gerencia as atividades pertinentes aos processos de utilização
+              de biomassa como fonte de energia, numa perspectiva de respeito ao ambiente e de conservação dos recursos naturais, de forma
+              sustentada. O Tecnólogo em Biocombustíveis é um profissional habilitado a trabalhar nos diferentes setores da produção de energia
               através do uso da biomassa.</p>
               <hr>
               <p class="lead">Esse profissional deverá ser capaz de:</p>
@@ -48,16 +49,16 @@
                 <li>
                   Trabalhar na pesquisa de novas tecnologias e de processos de produção de energia e de gestão ambiental.
                 </li>
-                <li>Elaborar documentação técnica relativa aos processos em que atua, obedecendo a legislação e normas legais, 
+                <li>Elaborar documentação técnica relativa aos processos em que atua, obedecendo a legislação e normas legais,
                 nacionais e internacionais.</li>
-                <li>Além disso, o tecnólogo em biocombustíveis deve ter como princípios a promoção da sustentabilidade dos 
+                <li>Além disso, o tecnólogo em biocombustíveis deve ter como princípios a promoção da sustentabilidade dos
                 processos, a conservação ambiental e a inclusão social.</li>
-            
-                
+
+
               </ul>
-            </article>    
+            </article>
           </div>
-          <div class="tab-pane fade" id="schedule">
+          <div class="tab-pane fade" id="horarios">
             <article class="content">
               <h2 class="h2">Horários</h2>
               <hr>
@@ -72,7 +73,7 @@
                     </div>
                     <div id="hor-pri-sem-vesp" class="panel-collapse collapse">
                         <div class="panel-body">
-                          <img src="images/horarios/bio1v.png" class="centralized img-responsive" > 
+                          <img src="images/horarios/bio1v.png" class="centralized img-responsive" >
                       </div>
                     </div>
                   </div>
@@ -137,8 +138,8 @@
                     </div>
                   </div>
               </div>
-              
-              
+
+
               <hr>
               <h3 class="h3">Noturno</h3>
               <hr>
@@ -151,7 +152,7 @@
                     </div>
                     <div id="hor-pri-sem-not" class="panel-collapse collapse">
                         <div class="panel-body">
-                          <img src="images/horarios/bio1n.png" class="centralized img-responsive" > 
+                          <img src="images/horarios/bio1n.png" class="centralized img-responsive" >
                       </div>
                     </div>
                   </div>
@@ -217,8 +218,8 @@
                   </div>
               </div>
             </article>
-            </div>        
-          <div class="tab-pane fade" id="prof">
+            </div>
+          <div class="tab-pane fade" id="docentes">
             <article class="content">
               <h2 class="h2">Docentes</h2>
               <hr>
@@ -348,12 +349,12 @@
               </table>
             </article>
           </div>
-          <div class="tab-pane fade" id="discipline">
-            <a class="media" href="pdf/disciplinas-bio.pdf"></a> 
+          <div class="tab-pane fade" id="disciplinas">
+            <a class="media" href="pdf/disciplinas-bio.pdf"></a>
           </div>
         </div>
       </div>
-   
+
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>

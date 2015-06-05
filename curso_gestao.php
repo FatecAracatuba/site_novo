@@ -11,7 +11,7 @@
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container main">  
+    <div class="container main">
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
@@ -31,19 +31,19 @@
               <h2 class="h2">Sobre</h2>
               <hr>
               <p class="lead">Perfil do Profissional</p>
-              <p>O tecnólogo desta área elabora e implementa planos de negócios, utilizando métodos e técnicas de gestão na formação e organização empresarial 
-							especificamente  nos processos de comercialização,  suprimento,  armazenamento,  movimentação  de materiais e no gerenciamento  de recursos 
-							financeiros e humanos. A habilidade para lidar com pessoas, a capacidade de comunicação, o trabalho em equipe, liderança, negociação, busca 
-							de informações, tomada de decisão em contextos econômicos, políticos, culturais e sociais distintos são requisitos importantes a esse 
+              <p>O tecnólogo desta área elabora e implementa planos de negócios, utilizando métodos e técnicas de gestão na formação e organização empresarial
+							especificamente  nos processos de comercialização,  suprimento,  armazenamento,  movimentação  de materiais e no gerenciamento  de recursos
+							financeiros e humanos. A habilidade para lidar com pessoas, a capacidade de comunicação, o trabalho em equipe, liderança, negociação, busca
+							de informações, tomada de decisão em contextos econômicos, políticos, culturais e sociais distintos são requisitos importantes a esse
 							profissional.</p>
               <hr>
               <p class="lead">Mercado de trabalho</p>
               <p>
-								Em negócio próprio (consultoria, turismo, comércio, indústria etc.); médias e pequenas empresas; setor público e em entidades 
+								Em negócio próprio (consultoria, turismo, comércio, indústria etc.); médias e pequenas empresas; setor público e em entidades
 								particulares, tais como cooperativas e associações.
 							</p>
             </article>    
-          </div>      
+          </div>
           <div class="tab-pane fade" id="prof">
             <article class="content">
               <h2 class="h2"> Docentes</h2>
@@ -96,8 +96,8 @@
               </table>
             </article>
           </div>
-          <div class="tab-pane fade" id="discipline">         
-            <a class="media" href="pdf/disciplinas-gestao.pdf"></a> 
+          <div class="tab-pane fade" id="discipline">
+            <a class="media" href="pdf/disciplinas-gestao.pdf"></a>
           </div>
         </div>
       </div>

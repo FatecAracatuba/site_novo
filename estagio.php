@@ -11,46 +11,47 @@
         $('a.media').media({width:770, height:1000});
       };
     </script>
+    <script type="text/javascript" src="js/tabs-links.js" ></script>
   </head>
   <body>
     <?php include ("templates/menu.html.php") ?>
-    <div class="container main">  
+    <div class="container main">
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#about" data-toggle="tab">Sobre</a>
+            <a href="#sobre" data-toggle="tab" data-toggle="tab">Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#prof" data-toggle="tab">Arquivos do Estágio</a>
+            <a href="#arquivos" data-toggle="tab" data-toggle="tab">Arquivos do Estágio</a>
           </li>
         </ul>
 
         <div class="tab-content">
-          <div class="tab-pane fade in active" id="about">
+          <div class="tab-pane fade in active" id="sobre">
             <article class="content">
               <h2 class="h2">Como funciona o estágio na Fatec de Araçatuba?</h2>
               <hr>
               <p class="lead">O estágio é obrigatório?</p>
               <p>Sim, inclusive é previsto na grade curricular dos cursos. O estudante que não cumpre
-                 240 horas, não pode colar grau. 
+                 240 horas, não pode colar grau.
               </p>
               <hr>
               <p class="lead">Onde posso estagiar?</p>
               <p>O estudante deve realizar o estágio em empresas que possuem afinidade com sua área
                  de formação profissional. Atualmente, a faculdade possui 18 convênios para estágio.
-                 (Confira lista no final desta postagem). 
+                 (Confira lista no final desta postagem).
               </p>
               <hr>
               <p class="lead">De que parte a iniciativa para iniciar o estágio?</p>
               <p>Sempre do aluno. O estudante deve observar o mercado para perceber as empresas que
                  se enquadram no seu desejo profissional. Após isso, deve buscar o contato da pessoa
-                 responsável pelo Recursos Humanos para o iniciar o diálogo sobre o estágio.  
+                 responsável pelo Recursos Humanos para o iniciar o diálogo sobre o estágio.
               </p>
               <hr>
               <p class="lead">A empresa em que desejo estagiar não possui convênio com a Fatec. E agora?</p>
               <p>Neste caso, envie e-mail para <a href="emailto:ota.fatec@gmail.com">ota.fatec@gmail.com</a>. Por meio da comunicação, o
                  coordenador de estágios, Roberto Ota, buscará o diálogo para convênio. Depois do
-                 acordo formalizado, o aluno pode retomar o contato para a viabilização do estágio. 
+                 acordo formalizado, o aluno pode retomar o contato para a viabilização do estágio.
               </p>
               <hr>
               <p class="lead">A partir de qual semestre posso estagiar? </p>
@@ -59,7 +60,7 @@
               <p class="lead">Todo estágio deve ter um professor orientador? </p>
               <p>Sim, inclusive o professor orientador precisa ser da mesma área em que o aluno vai
                  estagiar. O estudante deve indicar o nome do professor na hora da formalização do
-                 contrato.  
+                 contrato.
               </p>
               <hr>
               <p class="lead">Qual a carga horária do estágio obrigatório? </p>
@@ -67,19 +68,19 @@
               <hr>
               <p class="lead">Já escolhi a empresa em que desejo estagiar e obtive resposta positiva do Recursos
               Humanos da organização. O que devo fazer agora?</p>
-              
-            <ul>  
+
+            <ul>
               <li>
                 <b>1º Passo:</b>
                 <p>Comunicar o coordenador de estágio pelo <a href="emailto:ota.fatec@gmail.com">ota.fatec@gmail.com</a> e no mesmo e-mail
                 solicitar a carta de apresentação da faculdade para ser apresentada na empresa. A
                 comunicação de solicitação precisa conter: nome completo, curso e termo. Depois
-                disso, o estudante deve procurar o coordenador de estágio, pessoalmente, para adquirir a 
+                disso, o estudante deve procurar o coordenador de estágio, pessoalmente, para adquirir a
                 carta de apresentação assinada por ele. Com a carta em mãos, o estudante procura a
                 empresa de interesse e, e se ambas as partes concordarem com os termos do estágio, é
                 hora de formalizar o contrato.</p>
               </li>
-              
+
               <li>
                 <b>2º Passo:</b>
                 <p>Para formalizar o contrato, uma seguradora deve ser indicada: o estudante pode utilizar
@@ -119,10 +120,10 @@
               <li>Usina Ipê – Pedra Agroindustrial</li>
               <li>Viralcool </li>
             </ul>
-            </article>    
-          </div>  
+            </article>
+          </div>
 
-          <div class="tab-pane fade" id="prof">
+          <div class="tab-pane fade" id="arquivos">
             <article class="content">
               <h2 class="h2">Arquivos do Estágio</h2>
               <hr>
@@ -138,7 +139,7 @@
                 <tbody>
                   <tr>
                     <td>Termo de Compromisso</td>
-                    <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/termo_compromisso.pdf');" href="#"></a></td>        
+                    <td><a class="glyphicon glyphicon-play-circle centralized" onClick="preview('pdf/termo_compromisso.pdf');" href="#"></a></td>
                     <td><a class="glyphicon glyphicon-download-alt centralized" href="pdf/termo_compromisso.pdf" target="_blank" ></a></td>
                     <td><a class="glyphicon glyphicon-download-alt centralized" href="docx/termo_compromisso.docx" target="_blank" ></a></td>
                   </tr>

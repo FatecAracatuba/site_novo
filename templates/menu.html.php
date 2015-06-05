@@ -3,7 +3,8 @@
 </div>
 <nav class="navbar navbar-default text-center">
   <div class="container">
-    <div class="col-sm-2"> </div>
+    <div class="col-sm-2">
+    </div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fatec-menu">
         <span class="sr-only">Alternar Navegação</span>
@@ -39,7 +40,7 @@
         </li>
         <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
         <li><a href="estagio.php">Estágio</a></li>
-		<li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
+		    <li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
       </ul>
     </div>
   </div>

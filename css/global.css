@@ -2,28 +2,26 @@ body .container.main{
   min-height: 755px;
   margin: 20px auto;
 }
-
 .media{
   margin: 0 auto;
 }
-
 .centralized{
   text-align: center;
   vertical-align: middle;
   display: block;
   margin: auto;
 }
-
 .row .col-lg-4{
   margin-bottom: 20px;
   text-align: center;
 }
-
+.graduacoes img{
+  margin-bottom: 15px;
+}
 /*Torna a fb like box responsiva*/
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 100% !important;
 }
-
 #img-slider .item {
   max-height: 780px;
 }
