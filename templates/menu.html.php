@@ -3,6 +3,8 @@
 </div>
 <nav class="navbar navbar-default text-center">
   <div class="container">
+    <div class="col-sm-2">
+    </div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fatec-menu">
         <span class="sr-only">Alternar Navegação</span>
@@ -33,7 +35,7 @@
         <li class="dropdown">
           <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Graduação <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="curso_ads.php">Análise e Desenvolvimento de Sistemas</a></li>
+            <li><a href="curso_ads.php">ADS</a></li>
             <li><a href="curso_bio.php">Biocombustíveis</a></li>
           </ul>
         </li>
