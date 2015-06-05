@@ -23,9 +23,7 @@
           <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Instituição <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="quem_somos.php">Quem Somos</a></li>
-            <li><a href="turmas.php">Turmas Formadas</a></li>
             <li><a href="biblioteca.php">Biblioteca</a></li>
-            <li><a href="#">Servidores</a></li>
       			<li><a href="monitoria.php">Monitoria</a></li>
       			<li><a href="iniciacao.php">Iniciação Científica</a></li>
       			<li><a href="concursos.php">Concursos</a></li>
@@ -37,6 +35,7 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="curso_ads.php">ADS</a></li>
             <li><a href="curso_bio.php">Biocombustíveis</a></li>
+            <li><a href="curso_gestao.php">Gestão Empresarial</a></li>
           </ul>
         </li>
         <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
