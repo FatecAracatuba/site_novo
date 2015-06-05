@@ -23,3 +23,13 @@ body .container.main{
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 100% !important;
 }
+
+#img-slider .item {
+  max-height: 780px;
+}
+
+#img-slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
