@@ -1,4 +1,5 @@
 <?php
+  error_reporting(E_ALL ^ E_DEPRECATED);
   $database_connection = new Connection($conf['server'], $conf['user'], $conf['pass'], $conf['database']);
 
   class Connection{
