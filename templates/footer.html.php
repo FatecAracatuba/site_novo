@@ -1,4 +1,40 @@
 <footer class="footer">
+  <?php
+    include 'conf.php';
+    include 'modules/connection.php';
+    include 'modules/mail.class.php';
+  ?>
+  <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+      /// Quando usuário clicar em salvar será feito todos os passo abaixo
+      $('#save').click(function() {
+        var data = $('#sendMail').serialize();
+        $.ajax({
+          type: 'POST',
+          dataType: 'json',
+          url: 'modules/savemail.php',
+          data: data,
+          success: function(response) {
+            resp = response;
+            if(response.error)
+              alert(response.error)
+
+            if(response.success){
+              alert("Mensagem enviada com sucesso, obrigado.");
+              $('#nomeCompleto').val('');
+              $('#Mail').val('');
+              $('#Phone').val('');
+              $('#message').val('');
+            }
+          },
+          error: function(response){
+            console.log(response);
+          }
+        });
+          return false;
+      });
+    });
+  </script>
   <div class="container">
     <div class="row down">
       <center><span class="glyphicon glyphicon-chevron-down"></span></center>
@@ -10,7 +46,7 @@
             <h3>Fale Com a Direção</h3>
           </div>
         </div>
-        <form>
+        <form id="sendMail">
           <div class="row">
             <div class="col-md-11">
               <div class="input-group">
@@ -45,7 +81,7 @@
           </div>
           <div class="row">
             <div class="col-md-11">
-              <button type="submit" target="modules/send-mail.php" class="btn btn-large btn-warning">Enviar</button>
+              <button type="submit" class="btn btn-large btn-warning" id="save">Enviar</button>
             </div>
           </div>
         </form>

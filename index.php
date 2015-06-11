@@ -30,7 +30,7 @@
             O Tecnólogo em Gestão Empresarial (Processos Gerenciais) elabora e implementa planos de negócios, utilizando métodos e técnicas de gestão na formação e organização empresarial especificamente
             nos processos de comercialização, suprimento, armazenamento, movimentação de materiais e no gerenciamento de recursos financeiros e humanos.
 		      </p>
-          <a href="curso_ead.php" class="btn btn-large btn-warning centrali">Saiba Mais</a>
+          <a href="curso_gestao.php" class="btn btn-large btn-warning centrali">Saiba Mais</a>
         </div>
         <div class="col-lg-4">
           <p class="lead">Biocombustíveis</p>

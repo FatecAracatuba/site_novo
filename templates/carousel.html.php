@@ -8,33 +8,36 @@
 	  </ol>
 
 	  <!--imagens-->
-		
+
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="images/flor1.jpg" alt="fatec">
+				<img src="images/banner-blue.png" alt="fatec">
 				<div class="carousel-caption">
-					<h1 class="h1">Vestibular</h1>
+					<h1 class="h1">Vestibular Fatec</h1>
 					<p>
-						<a href="http://www.vestibularfatec.com.br/home" target="_blank" class="btn btn-primary btn-large" role="button">Saiba Mais</a>
+						<strong>Quer fazer parte dos nossos alunos e se preparar para o mercado de trabalho?</strong>
 					</p>
+						<a href="http://www.vestibularfatec.com.br/home" target="_blank" class="btn btn-primary btn-large" role="button">Saiba Mais</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/flor.jpg" alt="fatec">
+				<img src="images/banner-yellow.png" alt="fatec">
 				<div class="carousel-caption">
 					<h1 class="h1">Quem Somos</h1>
 					<p>
-						<a href="quem_somos.php" class="btn btn-primary btn-large" role="button">Ler</a>
+						<strong>Saiba mais sobre a Fatec Araçatuba!</strong>
 					</p>
+					<a href="quem_somos.php" class="btn btn-primary btn-large" role="button">Quero saber!</a>
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/flor.jpg" alt="fatec">
+				<img src="images/banner-pink.png" alt="fatec">
 				<div class="carousel-caption">
-					<h1 class="h1">Calendário</h1>
+					<h1 class="h1">Facebook</h1>
 					<p>
-						<a href="" class="btn btn-primary btn-large" role="button">Ver</a>
+						<strong>Curta nossa página no facebook para ficar por dentro da Fatec Araçatuba.</strong>
 					</p>
+						<a href="https://www.facebook.com/fatecaracatuba" target="_blank" class="btn btn-primary btn-large" role="button">Curtir!</a>
 				</div>
 			</div>
 
