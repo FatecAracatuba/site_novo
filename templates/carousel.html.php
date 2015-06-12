@@ -31,7 +31,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="images/banner-pink.png" alt="fatec">
+				<img src="images/banner-blue.png" alt="fatec">
 				<div class="carousel-caption">
 					<h1 class="h1">Facebook</h1>
 					<p>
