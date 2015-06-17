@@ -41,6 +41,11 @@
         <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
         <li><a href="estagio.php">Estágio</a></li>
 		    <li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
+        <?php
+          if(isset($_SESSION['logged'])){
+            echo "<li><a href='modules/login.php'>Sair</a></li>";
+          }
+        ?>
       </ul>
     </div>
   </div>

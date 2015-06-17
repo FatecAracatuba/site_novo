@@ -28,6 +28,42 @@
       }
     }
 
+    static function allMail(){
+      try{
+        $query = "SELECT * FROM mail ORDER BY created_at DESC";
+        $result = mysql_query($query);
+
+        while ( $rs = mysql_fetch_assoc($result)) {
+          $data[] = $rs;
+        }
+
+        if (isset($data))
+          return $data;
+        return false;
+      }catch (Exception $e) {
+        echo 'Error: ',  $e->getMessage(), "\n";
+        return false;
+      }
+    }
+
+    static function find($id){
+      try{
+        $query = "SELECT * FROM mail where id = $id";
+        $result = mysql_query($query);
+
+        while ( $rs = mysql_fetch_assoc($result)) {
+          $data[] = $rs;
+        }
+
+        if (isset($data))
+          return $data;
+        return false;
+      }catch (Exception $e) {
+        echo 'Error: ',  $e->getMessage(), "\n";
+        return false;
+      }
+    }
+
     function send(){
       $to = "oargus.g@gmail.com";//precisa colocar o do Giuliano
       $subject = "Site da Fatec - " . $this->name;

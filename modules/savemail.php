@@ -4,9 +4,9 @@
   include "connection.php";
   include "mail.class.php";
 
-  $nome = isset($_POST['name']) ? mysql_real_escape_string($_POST['name']) : "Anônimo";
-  $email = isset($_POST['mail']) ? mysql_real_escape_string($_POST['mail']) : "Anônimo";
-  $phone =  isset($_POST['phone']) ? mysql_real_escape_string($_POST['phone']) : "Anônimo";
+  $nome = isset($_POST['name']) && !empty($_POST['name']) ? mysql_real_escape_string($_POST['name']) : "Anônimo";
+  $email = isset($_POST['mail']) && !empty($_POST['mail']) ? mysql_real_escape_string($_POST['mail']) : "Anônimo";
+  $phone =  isset($_POST['phone']) && !empty($_POST['phone']) ? mysql_real_escape_string($_POST['phone']) : "Anônimo";
   $message =  isset($_POST['message']) ? mysql_real_escape_string($_POST['message']) : "";
   $date = date("Y-m-d H:i:s");
 

@@ -1,8 +1,8 @@
 <footer class="footer">
   <?php
-    include 'conf.php';
-    include 'modules/connection.php';
-    include 'modules/mail.class.php';
+    require_once 'conf.php';
+    require_once 'modules/connection.php';
+    require_once 'modules/mail.class.php';
   ?>
   <script type="text/javascript" language="javascript">
     $(document).ready(function() {
@@ -158,11 +158,12 @@
     <hr>
     <div class="row">
       <div class="col-md-4">
-        <h3>Desenvedores</h3>
+        <h3>Desenvolvedores</h3>
         <ul>
-          <li>Douglas Xavier</li>
-          <li>Luana Santos</li>
-          <li>Lucas Anjos</li>
+          <li>Douglas Xavier da Silva</li>
+          <li>Luana I. S. Santos</li>
+          <li>Lucas Anjos dos Santos</li>
+          <li>Prof. Me. Saulo F. F. Zambotti</li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -191,34 +192,36 @@
   <div class="modal fade bs-example-modal-sm" id="loginForm" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Login</h4>
-        </div>
-        <div class="modal-body">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <div class="input-group">
-              <span class="input-group-addon" id="user-addon"><span class="glyphicon glyphicon-user"></span></span>
-              <input type="text" class="form-control" name="user" required placeholder="Usuário" aria-describedby="user-addon" autofocus/>
+        <form method="post" action="./modules/login.php">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">z
+              <div class="input-group">
+                <span class="input-group-addon" id="user-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" name="user" required placeholder="Usuário" aria-describedby="user-addon" autofocus/>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" class="form-control" name="pwd" required placeholder="Senha" aria-describedby="pass-addon"/>
+              </div>
             </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
-              <input type="password" class="form-control" name="pwd" required placeholder="Senha" aria-describedby="pass-addon"/>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-success">Entrar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+              </div>
             </div>
           </div>
-          <div class="col-md-3"></div>
-        </div>
-        <div class="modal-footer">
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <button type="button" class="btn btn-success">Entrar</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

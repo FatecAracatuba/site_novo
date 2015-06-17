@@ -1,17 +1,14 @@
 <?php
-	
 	class access{
-
 		public $id;
 		public $date;
 		public $User_id;
-
-		 function __construct($id, $date, $user_id)
-		{
+		
+		function __construct($id, $date, $user_id){
 			$this->id = $id;
 			$this->date = $date;
 			$this->user_id = $user_id;
-			
+
 		}
 
 		function save(){
