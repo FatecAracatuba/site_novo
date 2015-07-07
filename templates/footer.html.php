@@ -60,7 +60,7 @@
         <p><span class="glyphicon glyphicon-time"></span> Segunda à Sexta-feira das 7:30 às 22:30</p>
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
-        <a type="button" class="btn btn-large btn-warning text-center" href="mapa.php">Veja o Mapa</a>
+        <a type="button" class="btn btn-large btn-warning text-center"  data-toggle="modal" data-target="#mapModal">Veja o Mapa</a>
         <a type="button" class="btn btn-large btn-warning text-center" data-toggle="modal" data-target="#loginForm">
           <i class="glyphicon glyphicon-log-in"></i>
           Área Restrita
@@ -179,6 +179,33 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <button type="button" class="btn btn-success">Entrar</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bs-example-modal-sm" id="mapModal" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Como chegar na Fatec Araçatuba?</h4>
+        </div>
+        <div class="modal-body">  
+          <center>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+            <script src="js/map.js"></script>       
+            <div id="map-canvas"></div>
+          </center>    
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
             </div>
           </div>
