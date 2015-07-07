@@ -31,3 +31,9 @@ body .container.main{
     width: 100%;
     height: auto;
 }
+
+#map-canvas{
+  max-width: 550px;
+  max-height: 380px;
+  overflow: hidden;
+}
