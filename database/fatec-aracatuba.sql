@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Maio-2015 às 19:51
+-- Generation Time: 21-Jul-2015 às 17:46
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -32,6 +32,34 @@ CREATE TABLE IF NOT EXISTS `acessos` (
   `idUsuario` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `banners`
+--
+
+CREATE TABLE IF NOT EXISTS `banners` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(150) COLLATE utf8_bin NOT NULL,
+  `imagem` varchar(250) COLLATE utf8_bin NOT NULL,
+  `ativo` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `horarios`
+--
+
+CREATE TABLE IF NOT EXISTS `horarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `curso` varchar(75) COLLATE utf8_bin NOT NULL,
+  `semestre` int(11) NOT NULL,
+  `imagem` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

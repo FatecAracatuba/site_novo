@@ -1,43 +1,44 @@
 <?php
-	class user{
-		public $id;
-		public $name;
-		public $password;
-		public $type;
+	class schedule{
 
-		function __construct($id, $name, $password, $type){
-			$this->id = $id;
-			$this->name = $name;
-			$this->password = $password;
-			$this->type = $type;
+		public $id;
+		public $course;
+		public $semester;
+		public $image;
+
+		function __construct($id, $course, $semester, $image){
+			$this->id =$id;
+			$this->course =$course;
+			$this->semester =$semester;
+			$this->image =$image;
 		}
 
 		function save(){
 			try {
-				$query = "INSERT INTO usuario VALUES (null, $this->name,$this->password, $this->type)";
+				$query = "INSERT INTO horarios VALUES (null, $this->course, $this->semester,$this->image) ";
 				mysql_query($query);
-				return true;
+				return true;	
 			} catch (Exception $e) {
 				echo 'Erro: ', $e->getmessage() ,"\n";
-				return false;
+				return false;	
 			}
 		}
 
-		function update()){
+		function update($course, $semester){
 			try {
-				$query = "UPDATE  usuario SET('nome','senha','tipo') VALUES ( $this->name,$this->password, $this->type)";
+				$query = "UPDATE horarios SET('imagem') VALUES($image) WHERE curso = $course AND semestre = $semester";
 				mysql_query($query);
-				return true;
+				return true;	
 			} catch (Exception $e) {
 				echo 'Erro: ', $e->getmessage() ,"\n";
-				return false;
+				return false;	
 			}
 		}
 
-
-		function delete(){
+		function delete()
+		{
 			try {
-				$query = "DELETE * FROM usuario WHERE id = $this->id)";
+				$query = "DELETE FROM horarios WHERE id = $this->id ";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {
@@ -45,11 +46,10 @@
 				return false;
 			}
 		}
-
 
 		function select_all(){
 			try {
-				$query = "SELECT * FROM usuario";
+				$query = "SELECT * FROM horarios";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {
@@ -60,7 +60,7 @@
 
 		function find($id){
 			try {
-				$query = "SELECT * FROM usuario WHERE id = $id";
+				$query = "SELECT * FROM horarios WHERE id = $id";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {
@@ -68,4 +68,7 @@
 				return false;
 			}
 		}
+
+
 	}
+?>
