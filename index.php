@@ -1,3 +1,4 @@
+<?php include "index_modules.php"; ?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -30,7 +31,7 @@
             O Tecnólogo em Gestão Empresarial (Processos Gerenciais) elabora e implementa planos de negócios, utilizando métodos e técnicas de gestão na formação e organização empresarial especificamente
             nos processos de comercialização, suprimento, armazenamento, movimentação de materiais e no gerenciamento de recursos financeiros e humanos.
 		      </p>
-          <a href="curso_ead.php" class="btn btn-large btn-warning centrali">Saiba Mais</a>
+          <a href="curso_gestao.php" class="btn btn-large btn-warning centrali">Saiba Mais</a>
         </div>
         <div class="col-lg-4">
           <p class="lead">Biocombustíveis</p>
@@ -43,7 +44,46 @@
           <a href="curso_bio.php" class="btn btn-large btn-warning text-center">Saiba Mais</a>
         </div>
       </div>
+			<?php 
+				if(isset($_SESSION['logged'])){
+			?>
+			<hr>
+				<h2 class="h2 text-center">Avisos</h2>
       <hr>
+				<div class="row">
+					<div class="col-md-12">
+						<?php
+							$aviso = new Aviso();
+							$avisos = $aviso->select_five();
+					?>
+									<?php 
+										foreach($avisos as $aviso){
+									?>
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4><?=$aviso['titulo']?></h4>
+											</div>
+											<div class="panel-body">
+												<p><?=$aviso['conteudo']?></p><br>
+												<a class="btn btn-default" href="aviso_detalhe.php">Ver mais</a>
+											</div>
+										</div>
+										
+									<?php 
+										}
+									?>
+					</div>
+					<div class="col-md-3">
+						<a class="btn btn-info" href="avisos.php">Ver todos os avisos</a>
+					</div>
+					<div class="col-md-3">
+						<a class="btn btn-info">Painel de Avisos</a>
+					</div>
+				</div>
+			<?php 
+				}
+			?>
+			<hr>
       <h2 class="h2 text-center">Notícias no Facebook</h2>
       <hr>
       <div class="row">

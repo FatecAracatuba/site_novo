@@ -1,3 +1,4 @@
+<?php include "index_modules.php"; ?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -36,15 +37,15 @@
   						<h2>Fotos da Instituição</h2>
   						<hr>
   						<div id="img-slider" class="owl-carousel owl-theme">
-  							<div class="item"><img src="photos/foto-fatec-0.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-1.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-3.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-4.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-5.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-6.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-7.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-8.jpg" alt=""></div>
-  							<div class="item"><img src="photos/foto-fatec-9.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-0.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-1.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-3.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-4.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-5.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-6.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-7.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-8.jpg" alt=""></div>
+  							<div class="item"><img class="img-thumbnail img-responsive" src="photos/foto-fatec-9.jpg" alt=""></div>
   						</div>
   					</article>
   				</div>

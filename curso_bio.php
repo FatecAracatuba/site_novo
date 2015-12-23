@@ -1,3 +1,4 @@
+<?php include "index_modules.php"; ?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -59,7 +60,19 @@
             </article>
           </div>
           <div class="tab-pane fade" id="horarios">
-            <article class="content">
+						<hr>
+							<?php 
+								$horario_atual = new Horario();
+								$Horario_atual = $horario_atual->select_by_curso_ativo(1);
+								foreach($Horario_atual as $horario_atual){
+							?>
+							<a class="media" href="<?=$horario_atual['horario_pdf']?>"></a>
+							<?php 
+								}
+							?>
+						<hr>
+					</div>
+          <!--  <article class="content">
               <h2 class="h2">Horários</h2>
               <hr>
               <h3 class="h3">Vespertino</h3>
@@ -218,7 +231,7 @@
                   </div>
               </div>
             </article>
-            </div>
+            </div>-->
           <div class="tab-pane fade" id="docentes">
             <article class="content">
               <h2 class="h2">Docentes</h2>

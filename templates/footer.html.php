@@ -1,4 +1,41 @@
 <footer class="footer">
+  <?php
+    require_once 'conf.php';
+    require_once 'modules/connection.php';
+    require_once 'modules/mail.class.php';
+		//require_once 'modules/login.php';
+  ?>
+  <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+      /// Quando usuário clicar em salvar será feito todos os passo abaixo
+      $('#save').click(function() {
+        var data = $('#sendMail').serialize();
+        $.ajax({
+          type: 'POST',
+          dataType: 'json',
+          url: 'modules/savemail.php',
+          data: data,
+          success: function(response) {
+            resp = response;
+            if(response.error)
+              alert(response.error)
+
+            if(response.success){
+              alert("Mensagem enviada com sucesso, obrigado.");
+              $('#nomeCompleto').val('');
+              $('#Mail').val('');
+              $('#Phone').val('');
+              $('#message').val('');
+            }
+          },
+          error: function(response){
+            console.log(response);
+          }
+        });
+          return false;
+      });
+    });
+  </script>
   <div class="container">
     <div class="row down">
       <center><span class="glyphicon glyphicon-chevron-down"></span></center>
@@ -10,7 +47,7 @@
             <h3>Fale Com a Direção</h3>
           </div>
         </div>
-        <form>
+        <form id="sendMail">
           <div class="row">
             <div class="col-md-11">
               <div class="input-group">
@@ -45,7 +82,7 @@
           </div>
           <div class="row">
             <div class="col-md-11">
-              <button type="submit" target="modules/send-mail.php" class="btn btn-large btn-warning">Enviar</button>
+              <button type="submit" class="btn btn-large btn-warning" id="save">Enviar</button>
             </div>
           </div>
         </form>
@@ -60,7 +97,7 @@
         <p><span class="glyphicon glyphicon-time"></span> Segunda à Sexta-feira das 7:30 às 22:30</p>
         <p><span class="glyphicon glyphicon-envelope"></span> falecom@fatecaracatuba.edu.br</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> (18) 3625-9917</p>
-        <a type="button" class="btn btn-large btn-warning text-center" href="mapa.php">Veja o Mapa</a>
+        <a type="button" class="btn btn-large btn-warning text-center"  data-toggle="modal" data-target="#mapModal">Veja o Mapa</a>
         <a type="button" class="btn btn-large btn-warning text-center" data-toggle="modal" data-target="#loginForm">
           <i class="glyphicon glyphicon-log-in"></i>
           Área Restrita
@@ -122,11 +159,12 @@
     <hr>
     <div class="row">
       <div class="col-md-4">
-        <h3>Desenvedores</h3>
+        <h3>Desenvolvedores</h3>
         <ul>
-          <li>Douglas Xavier</li>
-          <li>Luana Santos</li>
-          <li>Lucas Anjos</li>
+          <li>Douglas Xavier da Silva</li>
+          <li>Luana I. S. Santos</li>
+          <li>Lucas Anjos dos Santos</li>
+          <li>Prof. Me. Saulo F. F. Zambotti</li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -155,30 +193,59 @@
   <div class="modal fade bs-example-modal-sm" id="loginForm" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Login</h4>
-        </div>
-        <div class="modal-body">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <div class="input-group">
-              <span class="input-group-addon" id="user-addon"><span class="glyphicon glyphicon-user"></span></span>
-              <input type="text" class="form-control" name="user" required placeholder="Usuário" aria-describedby="user-addon" autofocus/>
+        <form method="post">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon" id="user-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" name="user" required placeholder="Usuário" aria-describedby="user-addon" autofocus />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" class="form-control" name="pwd" required placeholder="Senha" aria-describedby="pass-addon"/>
+              </div>
             </div>
-            <div class="input-group">
-              <span class="input-group-addon" id="pass-addon"><span class="glyphicon glyphicon-lock"></span></span>
-              <input type="password" class="form-control" name="pwd" required placeholder="Senha" aria-describedby="pass-addon"/>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <button type="submit" name="logar" class="btn btn-success">Entrar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+              </div>
             </div>
           </div>
-          <div class="col-md-3"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bs-example-modal-sm" id="mapModal" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Como chegar na Fatec Araçatuba?</h4>
+        </div>
+        <div class="modal-body">  
+          <center>
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+            <script src="js/map.js"></script>       
+            <div id="map-canvas"></div>
+          </center>    
         </div>
         <div class="modal-footer">
           <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
             <div class="col-md-6">
-              <button type="button" class="btn btn-success">Entrar</button>
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
             </div>
           </div>

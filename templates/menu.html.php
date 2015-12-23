@@ -1,5 +1,15 @@
 <div class="banner">
-  <img src="images/banner_blue.png" alt="">
+  <!--<img src="images/banner_blue.png" alt="">-->
+	<?php 
+		//include "modules/banner.class.php";
+		$BannerAtual = new Banner();
+		$bannerAtual = $BannerAtual->select_ativo();
+		foreach($bannerAtual as $banner_atual){
+	?>
+		<img src="<?=$banner_atual['banner_img']?>" alt="">
+	<?php
+		}
+	?>
 </div>
 <nav class="navbar navbar-default text-center">
   <div class="container">
@@ -25,6 +35,7 @@
             <li><a href="quem_somos.php">Quem Somos</a></li>
             <li><a href="biblioteca.php">Biblioteca</a></li>
       			<li><a href="monitoria.php">Monitoria</a></li>
+						<li><a href="servidores.php">Servidores</a></li>
       			<li><a href="iniciacao.php">Iniciação Científica</a></li>
       			<li><a href="concursos.php">Concursos</a></li>
           </ul>
@@ -40,7 +51,16 @@
         </li>
         <li><a href="trabalho_graduacao.php">Trabalho de Graduação</a></li>
         <li><a href="estagio.php">Estágio</a></li>
+				<li><a href="formandos.php">Formandos</a></li>
 		    <li><a href="https://www.sigacentropaulasouza.com.br/fatec/login.aspx" target="_blank">Siga</a></li>
+				<li>
+					<?php
+						if(isset($_SESSION['logged'])){ 
+							echo '<a href="restritos.php">Área Restrita</a>';
+							echo '<a href="logout.php">Sair</a>';
+						}
+					?>
+				</li>
       </ul>
     </div>
   </div>

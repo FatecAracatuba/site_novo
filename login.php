@@ -1,3 +1,4 @@
+<?php include "index_modules.php"; ?>
 <!DOCTYPE html>
 <html>
   <head>

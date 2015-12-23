@@ -1,0 +1,17 @@
+<?php
+	
+	class turma{
+		
+		public $semestre;
+		public $data_inicio;
+		public $data_termino;
+		public $curso;
+		
+		function __construct($semestre = ' ', $data_inicio = ' ', $data_termino = ' ', $curso = ' '){
+			$this->semestre = $semestre; 
+			$this->data_inicio = $data_inicio;
+			$this->data_termino = $data_termino;
+		}
+	}
+	
+?>

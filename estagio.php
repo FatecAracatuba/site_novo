@@ -1,3 +1,4 @@
+<?php include "index_modules.php"; ?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -19,10 +20,10 @@
       <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#sobre" data-toggle="tab" data-toggle="tab">Sobre</a>
+            <a href="#sobre" data-toggle="tab"> Sobre</a>
           </li>
           <li role="presentation">
-            <a href="#arquivos" data-toggle="tab" data-toggle="tab">Arquivos do Estágio</a>
+            <a href="#arquivos" data-toggle="tab"> Arquivos do Estágio</a>
           </li>
         </ul>
 

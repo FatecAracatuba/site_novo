@@ -1,3 +1,4 @@
+<?php include "index_modules.php"; ?>
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -30,7 +31,7 @@
 							<h2 class="h2">Horários de monitoria</h2>
                 <h3 class="h3 text-center"> Análise e Desenvolvimento de Sistemas</h3>
                 <hr>
-                <p class="text-center lead"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>:  Douglas Xavier Silva  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 9</p>
+                <p class="text-center"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>:  Douglas Xavier Silva  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 9</p>
                 <table class="table table-striped table-bordered ">
                   <thead>
                     <tr>
@@ -52,7 +53,8 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="text-center lead"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>:   Lucas Anjos do Santos  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 9</p>
+                <hr>
+                <p class="text-center"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>:   Lucas Anjos do Santos  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 9</p>
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -75,9 +77,10 @@
                   </tbody>
                 </table>
                 <hr>
+                <hr>
                 <h3 class="h3 text-center"> Biocombustíveis</h3>
                 <hr>
-                <p class="text-center lead"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Bruce Wellington  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 11</p>
+                <p class="text-center"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Bruce Wellington  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 11</p>
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -99,7 +102,8 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="text-center lead"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Luiz Cláudio dos Santos  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 12</p>
+                <hr>
+                <p class="text-center"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Luiz Cláudio dos Santos  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 12</p>
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -121,7 +125,8 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="text-center lead"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Luís Fernando Marchesini  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 12</p>
+                <hr>
+                <p class="text-center"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Luís Fernando Marchesini  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Sala 12</p>
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -143,7 +148,8 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="text-center lead"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Bruno de Souza  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Laboratório de Informática I</p>
+                <hr>
+                <p class="text-center"><span class="glyphicon glyphicon-user"></span><strong> Monitor</strong>: Bruno de Souza  <span class="glyphicon glyphicon-map-marker"></span><strong> Local</strong>: Laboratório de Informática I</p>
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -160,6 +166,7 @@
                     </tr>
                   </tbody>
                 </table>
+                <hr>
 						</article>
 					</div>
 				</div>
