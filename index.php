@@ -63,9 +63,12 @@
 											<div class="panel-heading">
 												<h4><?=$aviso['titulo']?></h4>
 											</div>
+											<p class="pull-right"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$aviso['data_envio']?> &nbsp Alterado em <?=$aviso['data_alteracao']?></small></p>
+												<br><br>
 											<div class="panel-body">
 												<p><?=$aviso['conteudo']?></p><br>
-												<a class="btn btn-default" href="aviso_detalhe.php">Ver mais</a>
+												<hr>
+												<a class="btn btn-default" href="aviso_detalhe.php?AVISO=<?=$aviso['id']?>">Ver mais</a>
 											</div>
 										</div>
 										
@@ -77,7 +80,7 @@
 						<a class="btn btn-info" href="avisos.php">Ver todos os avisos</a>
 					</div>
 					<div class="col-md-3">
-						<a class="btn btn-info">Painel de Avisos</a>
+						<a class="btn btn-info" href="avisos_painel.php">Painel de Avisos</a>
 					</div>
 				</div>
 			<?php 

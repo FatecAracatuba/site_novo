@@ -15,7 +15,10 @@ if(isset($_POST['inserir_horario'])){
 	$up = new upload($arquivo);
   $arquivo = $up->horario_upload();
 	
-	$horario = new Horario('', $data_envio, $arquivo, $curso, 0);
+	$semestre = $_POST['semestre'];
+	$ano = $_POST['ano'];
+	
+	$horario = new Horario('', $data_envio, $arquivo, $semestre, $ano, $curso, 0);
 	$horario->save();
 	
 	header("Location: horarios_painel.php");
@@ -31,9 +34,11 @@ if(isset($_POST['editar_horario'])){
   } else {
 		$arquivo = $_POST['antigo_horario'];
   }
-	
+	$semestre = $_POST['semestre'];
+	$ano = $_POST['ano'];
 	$curso = $_POST['curso'];
-	$horario = new Horario($id, '', $arquivo, $curso, 0);
+	
+	$horario = new Horario($id, '', $arquivo, $semestre, $ano, $curso, 0);
 	$horario->update();
 	
 	if($horario == false){
@@ -178,7 +183,7 @@ if(!empty($_POST['operacaoAjax'])){
 										foreach($horarios as $horario){
 									?>
 										<tr>
-											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$horario['data_envio']?></a></td>
+											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$horario['data_envio']?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?> </a></td>
 											<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
 											</tr>
 									<?php 
@@ -235,7 +240,7 @@ if(!empty($_POST['operacaoAjax'])){
 										foreach($horarios as $horario){
 									?>
 										<tr>
-											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$horario['data_envio']?></a></td>
+											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$horario['data_envio']?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?></a></td>
 											<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
 											</tr>
 									<?php 

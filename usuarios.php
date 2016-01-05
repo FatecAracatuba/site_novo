@@ -79,6 +79,7 @@ if(!empty($_POST['operacaoAjax'])){
     <script type="text/javascript" src="js/grid.js"></script>
   	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
   	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="css/users.css">
   	<script src="css/owl-carousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/datatables/dataTables.bootstrap.css">
     <script type="text/javascript" language="javascript" src="js/datatables/jquery.dataTables.min.js"></script>
@@ -182,7 +183,7 @@ if(!empty($_POST['operacaoAjax'])){
                   echo
                     "<tr>
                       <td> <span class='glyphicon glyphicon-user'></span> <a data-id='$id' data-toggle='modal' data-target='#dados_usuario'> Detalhes </a> </td>
-                      <td> <img class='img-responsive' src='$photo'></img> </td>
+                      <td> <img class='user_photo img-responsive' src='$photo'></img> </td>
                       <td> $username </td>
                       <td> $name </td>
                       <td> $mail </td>

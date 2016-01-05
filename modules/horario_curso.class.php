@@ -3,13 +3,17 @@
 		public $id;
 		public $data_envio;
 		public $pdf_horario;
+		public $semestre;
+		public $ano;
 		public $curso;
 		public $ativo;
 		
-		function __construct($id="", $data_envio="", $pdf_horario="", $curso="", $ativo=""){
+		function __construct($id="", $data_envio="", $pdf_horario="", $semestre="", $ano="", $curso="", $ativo=""){
 			$this->id = $id;
 			$this->data_envio = $data_envio;
 			$this->pdf_horario = $pdf_horario;
+			$this->semestre = $semestre;
+			$this->ano = $ano;
 			$this->curso = $curso;
 			$this->ativo = $ativo;
 		}
@@ -33,7 +37,7 @@
 		
 		function save(){
 			try {
-				$query = "INSERT INTO horarios (data_envio, horario_pdf, ativo, id_curso) VALUES ('$this->data_envio', '$this->pdf_horario', $this->ativo, $this->curso)";
+				$query = "INSERT INTO horarios (data_envio, horario_pdf, ativo, semestre, ano, id_curso) VALUES ('$this->data_envio', '$this->pdf_horario', $this->ativo, '$this->semestre', $this->ano, $this->curso)";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {
@@ -44,7 +48,7 @@
 		
 		function update(){
 			try {
-				$query = "UPDATE horarios SET horario_pdf = '$this->pdf_horario', id_curso = $this->curso, ativo = $this->ativo WHERE id = $this->id";
+				$query = "UPDATE horarios SET horario_pdf = '$this->pdf_horario', semestre = '$this->semestre', ano = $this->ano, id_curso = $this->curso, ativo = $this->ativo WHERE id = $this->id";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {

@@ -56,8 +56,13 @@
 				<li>
 					<?php
 						if(isset($_SESSION['logged'])){ 
-							echo '<a href="restritos.php">Área Restrita</a>';
-							echo '<a href="logout.php">Sair</a>';
+					?>
+							<a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Área Restrita <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="restritos.php">Painel</a></li>
+								<li><a href="logout.php">Sair</a></li>
+							</ul>
+					<?php
 						}
 					?>
 				</li>

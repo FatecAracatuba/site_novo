@@ -53,22 +53,22 @@
 						</a>
 						<a href="formandos_painel.php">
 							<div class="opcao_link col-lg-3 col-md-6 col-xs-12">
-								<span class=" glyphicon glyphicon-education"></span> Página - Inserção de Formandos
+								<span class=" glyphicon glyphicon-education"></span> Página - Cadastro de Formandos
 							</div>
 						</a>
 						<a href="banners_painel.php">
 							<div class="opcao_link col-lg-3 col-md-6 col-xs-12">
-								<span class=" glyphicon glyphicon-picture"></span> Página - Inserção de Banners
+								<span class=" glyphicon glyphicon-picture"></span> Página - Cadastro de Banners
 							</div>
 						</a>
 						<a href="horarios_painel.php">
 							<div class="opcao_link col-lg-3 col-md-6 col-xs-12">
-								<span class=" glyphicon glyphicon-time"></span> Página - Inserção de Horários
+								<span class=" glyphicon glyphicon-time"></span> Página - Cadastro de Horários
 							</div>
 						</a>
 						<a href="avisos_painel.php">
 							<div class="opcao_link col-lg-3 col-md-6 col-xs-12">
-								<span class=" glyphicon glyphicon-bell"></span> Página - Inserção de Avisos
+								<span class=" glyphicon glyphicon-bell"></span> Página - Cadastro de Avisos
 							</div>
 						</a>
 						<a href="#">

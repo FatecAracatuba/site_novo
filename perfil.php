@@ -64,6 +64,7 @@ if(!empty($_POST['operacaoAjax'])){
     <script type="text/javascript" src="js/grid.js"></script>
   	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
   	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="css/profile.css">
   	<script src="css/owl-carousel/owl.carousel.min.js"></script>
 		<script src="js/usuarios.js"></script>
 	</head>
@@ -98,7 +99,7 @@ if(!empty($_POST['operacaoAjax'])){
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3 col-lg-3 " align="center"> <img alt="<?=$perfil['nome']?>" src="<?=$perfil['foto']?>" class="img-circle img-responsive"> </div>
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="<?=$perfil['nome']?>" src="<?=$perfil['foto']?>" class="profile-photo img-circle img-responsive"> </div>
                 <div class=" col-md-9 col-lg-9 "> 
                   <table class="table table-user-information">
                     <tbody>
@@ -128,7 +129,7 @@ if(!empty($_POST['operacaoAjax'])){
               </div>
             </div>
 							<div class="panel-footer">
-								<a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+								<a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary" href="mailto:<?=$perfil['email']?>"><i class="glyphicon glyphicon-envelope"></i></a>
                 <span class="pull-right">
 									<a data-toggle="modal" data-target="#modal_editar_perfil" class="btn btn-sm btn-warning" data-id="<?=$perfil['id']?>" href="#"><i class="glyphicon glyphicon-edit"></i> Editar Perfil</a>
                   <a class="btn btn-sm btn-danger" onclick="excluir_perfil(<?=$perfil['id']?>);"><i class="glyphicon glyphicon-remove"></i>Apagar Perfil</a>

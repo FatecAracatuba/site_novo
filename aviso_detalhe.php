@@ -15,7 +15,7 @@
 					<div class="col-md-12">
 						<?php
 							$aviso = new Aviso();
-							$avisos = $aviso->details(1);
+							$avisos = $aviso->details($_GET['AVISO']);
 					?>
 									<?php 
 										foreach($avisos as $aviso){
@@ -25,6 +25,8 @@
 												<h4><?=$aviso['titulo']?></h4>
 											</div>
 											<div class="panel-body">
+												<p class="pull-right"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$aviso['data_envio']?> &nbsp Alterado em <?=$aviso['data_alteracao']?></small></p>
+												<br><br>
 												<p><?=$aviso['conteudo']?></p>
 											</div>
 										</div>
@@ -35,6 +37,9 @@
 					</div>
 					<div class="col-md-3">
 						<a class="btn btn-info" href="index.php">Voltar ao Início</a>
+					</div>
+					<div class="col-md-3">
+						<a class="btn btn-info" href="avisos.php">Voltar aos Avisos</a>
 					</div>
 					<div class="col-md-3">
 						<a class="btn btn-info" href="avisos_painel.php">Painel de Avisos</a>

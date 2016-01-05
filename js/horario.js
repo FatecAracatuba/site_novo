@@ -67,7 +67,9 @@ function desativar_horario(id_horario){
 						modal.find('#input_id_horario').val(data.id);
 						modal.find('#input_antigo_horario').val(data.horario_pdf);
 						modal.find('#input_antigo_horario_pdf').val(data.horario_pdf); // Este valor veio de um campo somente leitura. Deve ser por isso que não é enviado ao servidor caso ocorra cadastro sem upload de arquivo
-            modal.find('#input_curso').val(data.id_curso);
+            modal.find('#input_semestre').val(data.semestre);
+						modal.find('#input_ano').val(data.ano);
+						modal.find('#input_curso').val(data.id_curso);
           }, "json");
         });
       });

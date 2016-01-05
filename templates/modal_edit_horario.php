@@ -17,8 +17,24 @@
               <input type="file" class="form-control" id="input_horario_pdf" name="horario_pdf">
             </div>
           </div>
+					<div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Semestre</label><br>
+              <select name="semestre" class="form-control" id="input_semestre">
+								<option value="1">1º Semestre</option>
+								<option value="2">2º Semestre</option>
+              </select>
+            </div>
+          </div>
+					<div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Ano</label>
+              <input type="text" class="form-control" name="ano" id="input_ano">
+            </div>
+          </div>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Curso</label><br>
               <select name="curso" class="form-control" id="input_curso">
                 <?php
                   $curso = new Curso();

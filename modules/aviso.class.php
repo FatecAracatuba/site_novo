@@ -141,6 +141,23 @@
 			}
 		}
 		
+		static function find_aviso($id){
+			try {
+				$query = "SELECT * FROM avisos WHERE id = $id";
+				$result = mysql_query($query);
+				while ( $rs = mysql_fetch_assoc($result)) {
+					$data[] = $rs;
+				}
+				if (isset($data))
+					return $data;
+				
+				return false;
+			} catch (Exception $e) {
+				echo 'Erro: ', $e->getmessage() ,"\n";
+				return false;
+			}
+		}
+		
 		function details($id){
 			try {
 				$query = "SELECT * FROM avisos WHERE id = $id";
