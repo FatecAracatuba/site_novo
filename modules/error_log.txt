@@ -535,3 +535,15 @@
 [05-Jan-2016 18:10:52 America/Sao_Paulo] PHP Notice:  Undefined variable: ativo in C:\xampp\htdocs\site_novo\avisos_painel.php on line 163
 [05-Jan-2016 18:10:52 America/Sao_Paulo] PHP Notice:  Undefined variable: ativo in C:\xampp\htdocs\site_novo\avisos_painel.php on line 163
 [05-Jan-2016 18:10:52 America/Sao_Paulo] PHP Notice:  Undefined variable: ativo in C:\xampp\htdocs\site_novo\avisos_painel.php on line 163
+[05-Jan-2016 18:22:17 America/Sao_Paulo] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in C:\xampp\htdocs\site_novo\avisos_painel.php on line 24
+[05-Jan-2016 18:22:49 America/Sao_Paulo] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in C:\xampp\htdocs\site_novo\avisos_painel.php on line 24
+[05-Jan-2016 18:50:38 America/Sao_Paulo] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in C:\xampp\htdocs\site_novo\avisos_painel.php on line 26
+[05-Jan-2016 19:12:56 America/Sao_Paulo] PHP Fatal error:  Cannot use object of type Aviso as array in C:\xampp\htdocs\site_novo\avisos_painel.php on line 154
+[05-Jan-2016 20:03:04 America/Sao_Paulo] PHP Notice:  Undefined index: semestre in C:\xampp\htdocs\site_novo\horarios_painel.php on line 37
+[05-Jan-2016 20:03:27 America/Sao_Paulo] PHP Notice:  Undefined index: semestre in C:\xampp\htdocs\site_novo\horarios_painel.php on line 37
+[05-Jan-2016 20:04:10 America/Sao_Paulo] PHP Notice:  Undefined index: semestre in C:\xampp\htdocs\site_novo\horarios_painel.php on line 37
+[05-Jan-2016 20:20:58 America/Sao_Paulo] PHP Strict Standards:  Only variables should be passed by reference in C:\xampp\htdocs\site_novo\modules\upload.class.php on line 58
+[05-Jan-2016 20:23:23 America/Sao_Paulo] PHP Strict Standards:  Only variables should be passed by reference in C:\xampp\htdocs\site_novo\modules\upload.class.php on line 58
+[05-Jan-2016 20:24:16 America/Sao_Paulo] PHP Strict Standards:  Only variables should be passed by reference in C:\xampp\htdocs\site_novo\modules\upload.class.php on line 58
+[05-Jan-2016 20:45:45 America/Sao_Paulo] PHP Strict Standards:  Only variables should be passed by reference in C:\xampp\htdocs\site_novo\modules\upload.class.php on line 58
+[05-Jan-2016 20:47:00 America/Sao_Paulo] PHP Strict Standards:  Only variables should be passed by reference in C:\xampp\htdocs\site_novo\modules\upload.class.php on line 58

@@ -8,7 +8,7 @@ include ("index_modules.php");
 
 if(isset($_POST['inserir_horario'])){
 	
-	$data_envio = date_format(time(), "Y/m/d");
+	$data_envio = date('d/m/Y H:i:s');
 	$curso = $_POST['curso'];
 	
 	$arquivo = $_FILES['horario_pdf']['name'];
@@ -31,14 +31,16 @@ if(isset($_POST['editar_horario'])){
 		$arquivo = $_FILES['horario_pdf']['name'];
     $up = new upload($arquivo);
     $arquivo = $up->horario_upload();
+		$data_envio = date('d/m/Y H:i:s');
   } else {
 		$arquivo = $_POST['antigo_horario'];
+		$data_envio = $_POST['antiga_data'];
   }
 	$semestre = $_POST['semestre'];
 	$ano = $_POST['ano'];
 	$curso = $_POST['curso'];
 	
-	$horario = new Horario($id, '', $arquivo, $semestre, $ano, $curso, 0);
+	$horario = new Horario($id, $data_envio, $arquivo, $semestre, $ano, $curso, 0);
 	$horario->update();
 	
 	if($horario == false){
@@ -181,9 +183,10 @@ if(!empty($_POST['operacaoAjax'])){
 									<tbody>
 									<?php 
 										foreach($horarios as $horario){
+											$data_envio = date("d/m/Y H:i:s", strtotime($horario['data_envio']));
 									?>
 										<tr>
-											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$horario['data_envio']?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?> </a></td>
+											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$data_envio?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?> </a></td>
 											<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
 											</tr>
 									<?php 
@@ -238,9 +241,10 @@ if(!empty($_POST['operacaoAjax'])){
 									<tbody>
 									<?php 
 										foreach($horarios as $horario){
+											$data_envio = date("d/m/Y H:i:s", strtotime($horario['data_envio']));
 									?>
 										<tr>
-											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$horario['data_envio']?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?></a></td>
+											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$data_envio?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?></a></td>
 											<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
 											</tr>
 									<?php 

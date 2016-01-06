@@ -10,6 +10,7 @@
         <form method="post" enctype="multipart/form-data">
           <input type="hidden" name="id_horario" id="input_id_horario">
 					<input type="hidden" name="antigo_horario" id="input_antigo_horario">
+					<input type="hidden" name="antiga_data" id="input_antiga_data">
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Arquivo PDF do Horário</label>

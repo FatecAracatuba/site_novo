@@ -7,7 +7,7 @@
 include ("index_modules.php");
 
 if(isset($_POST['inserir_banner'])){
-	$Data_envio = date_format(time(), "Y/m/d");
+	$Data_envio = date('d/m/Y H:i:s');
 	$Img = $_FILES['banner_img']['name'];
 	$up = new upload($Img);
 	$arquivo = $up->banner_upload();

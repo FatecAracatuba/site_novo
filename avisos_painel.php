@@ -11,8 +11,10 @@ if(!isset($_SESSION)){
 }
 
 if(isset($_POST['inserir_aviso'])){
-	$Data_envio = date_format(time(), "Y/m/d");
-	$Data_alteracao = date_format("Y/m/d", time());
+	$Data_envio = date('d/m/Y H:i:s');
+	//$Data_envio .= ' '.date('H:i:s');
+	$Data_alteracao = date('d/m/Y H:i:s');
+	//$Data_alteracao .= ' '.date('H:i:s');
 	$Titulo = $_POST['titulo_aviso'];
 	$Conteudo = $_POST['conteudo_aviso'];
 	$Id_usuario = $_SESSION['id'];
@@ -21,13 +23,15 @@ if(isset($_POST['inserir_aviso'])){
 }
 
 if(isset($_POST['editar_aviso'])){
-	$Data_alteracao = date_format("Y/m/d", time());
+	$Data_alteracao = date('d/m/Y H:i:s');
+	//$Data_alteracao .= ' '.date('H:i:s');
 	$Id_aviso = $_POST['id_aviso'];
 	$Titulo = $_POST['titulo'];
 	$Conteudo = $_POST['conteudo'];
 	$Id_usuario = $_POST['id_usuario'];
 	$aviso = new Aviso($Id_aviso, $Titulo, $Conteudo, '', $Data_alteracao, '', $Id_usuario);
 	$aviso->update();
+	header("location:avisos_painel.php");
 }
 
 if(!empty($_POST['operacaoAjax'])){
@@ -147,8 +151,8 @@ if(!empty($_POST['operacaoAjax'])){
                   $id = $avisos[$i]['id'];
 									$titulo = $avisos[$i]['titulo'];
 									$conteudo = $avisos[$i]['conteudo'];
-									$data_envio = $avisos[$i]['data_envio'];
-									$data_alteracao = $avisos[$i]['data_alteracao'];
+									$data_envio = date("d/m/Y H:i:s", strtotime($avisos[$i]['data_envio']));
+									$data_alteracao = date("d/m/Y H:i:s", strtotime($avisos[$i]['data_alteracao']));
                   //$day = date("d/m/Y", strtotime($avisos[$i]['created_at']));
                   //$hour = date("H:i:s", strtotime($avisos[$i]['created_at']));
                   echo
@@ -195,13 +199,15 @@ if(!empty($_POST['operacaoAjax'])){
 					<hr>
 									<?php 
 										foreach($avisos as $aviso){
+											$data_envio = date("d/m/Y H:i:s", strtotime($aviso['data_envio']));
+											$data_alteracao = date("d/m/Y H:i:s", strtotime($aviso['data_alteracao']));
 									?>
 										<div class="panel panel-default">
 											<div class="panel-heading">
 												<h4><?=$aviso['titulo']?></h4>
 											</div>
 											<div class="panel-body">
-												<p class="pull-center"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$aviso['data_envio']?> &nbsp Alterado em <?=$aviso['data_alteracao']?></small></p>
+												<p class="pull-center"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$data_envio?> &nbsp Alterado em <?=$data_alteracao?></small></p>
 												<br><br>
 												<p><?=$aviso['conteudo']?></p>
 												<br>

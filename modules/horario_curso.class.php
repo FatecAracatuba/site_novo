@@ -48,7 +48,7 @@
 		
 		function update(){
 			try {
-				$query = "UPDATE horarios SET horario_pdf = '$this->pdf_horario', semestre = '$this->semestre', ano = $this->ano, id_curso = $this->curso, ativo = $this->ativo WHERE id = $this->id";
+				$query = "UPDATE horarios SET horario_pdf = '$this->pdf_horario', semestre = '$this->semestre', data_envio = '$this->data_envio', ano = $this->ano, id_curso = $this->curso, ativo = $this->ativo WHERE id = $this->id";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {

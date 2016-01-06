@@ -17,8 +17,8 @@
 			$json['id'] = $aviso[0]['id'];
 			$json['titulo'] = $aviso[0]['titulo'];
 			$json['conteudo'] = $aviso[0]['conteudo'];
-			$json['data_envio'] = $aviso[0]['data_envio'];
-			$json['data_alteracao'] = $aviso[0]['data_alteracao'];
+			$json['data_envio'] = date("d/m/Y H:i:s", strtotime($aviso[0]['data_envio']));
+			$json['data_alteracao'] = date("d/m/Y H:i:s", strtotime($aviso[0]['data_alteracao']));
     }else{
       $json['error'] = "Aviso não encontrado.";
     }

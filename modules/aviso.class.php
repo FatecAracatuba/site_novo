@@ -31,7 +31,7 @@
 		
 		function update(){
 			try {
-				$query = "UPDATE avisos SET titulo = '$this->titulo', conteudo = '$this->conteudo', data_envio = '$this->data_envio', data_alteracao = '$this->data_alteracao' WHERE id = $this->id";
+				$query = "UPDATE avisos SET titulo = '$this->titulo', conteudo = '$this->conteudo', data_alteracao = NOW() WHERE id = $this->id";
 				mysql_query($query);
 				return true;
 			} catch (Exception $e) {

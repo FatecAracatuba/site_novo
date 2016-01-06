@@ -65,6 +65,7 @@ function desativar_horario(id_horario){
           $.post( "horarios_painel.php", { operacaoAjax: "buscar_horario", idhorario: id_horario }, function( data ) {
             console.log(data);
 						modal.find('#input_id_horario').val(data.id);
+						modal.find('#input_antiga_data').val(data.data_envio);
 						modal.find('#input_antigo_horario').val(data.horario_pdf);
 						modal.find('#input_antigo_horario_pdf').val(data.horario_pdf); // Este valor veio de um campo somente leitura. Deve ser por isso que não é enviado ao servidor caso ocorra cadastro sem upload de arquivo
             modal.find('#input_semestre').val(data.semestre);
