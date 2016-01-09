@@ -1,7 +1,0 @@
-[18-Nov-2015 13:12:04 America/Sao_Paulo] PHP Warning:  mysql_connect(): No connection could be made because the target machine actively refused it.
- in C:\xampp\htdocs\site_novo\modules\connection.php on line 9
-[18-Nov-2015 13:12:05 America/Sao_Paulo] PHP Warning:  mysql_select_db(): No connection could be made because the target machine actively refused it.
- in C:\xampp\htdocs\site_novo\modules\connection.php on line 10
-[18-Nov-2015 13:12:05 America/Sao_Paulo] PHP Warning:  mysql_select_db(): A link to the server could not be established in C:\xampp\htdocs\site_novo\modules\connection.php on line 10
-[18-Nov-2015 13:12:05 America/Sao_Paulo] PHP Warning:  mysql_set_charset() expects parameter 2 to be resource, boolean given in C:\xampp\htdocs\site_novo\modules\connection.php on line 11
-[18-Dec-2015 22:45:16 Europe/Berlin] PHP Fatal error:  Class 'Horario' not found in C:\xampp\htdocs\site_novo\horarios_painel.php on line 58

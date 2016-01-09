@@ -4,53 +4,53 @@
 	ini_set('error_log', dirname(__FILE__) . '/error_log.txt');
 	error_reporting(E_ALL & ~E_NOTICE);
 	
-	include "index_modules.php"; 
+include "index_modules.php"; 
 	
-	if(isset($_POST['inserir_usuario'])){
-		$Name = $_POST['nome'];
-		$Email = $_POST['email'];
-		$Username = $_POST['username'];
-		$Password = $_POST['senha'];
-		$Photo = $_FILES['foto']['name'];
+if(isset($_POST['inserir_usuario'])){
+	$Name = $_POST['nome'];
+	$Email = $_POST['email'];
+	$Username = $_POST['username'];
+	$Password = $_POST['senha'];
+	$Photo = $_FILES['foto']['name'];
+	$Up = new upload($Photo);
+	$Arquivo = $Up->user_photo_upload();
+	$Type = $_POST['tipo'];
+	$Phone = $_POST['telefone'];
+	$usuario = new User('', $Name, $Email, $Username, $Password, $Arquivo, $Type, $Phone);
+	$usuario->save();
+	header("Location: usuarios.php");
+}
+	
+if(isset($_POST['editar_usuario'])){
+	$Id = $_POST['id'];
+	$Name = $_POST['nome'];
+	$Email = $_POST['email'];
+	$Username = $_POST['username'];
+	$Photo = $_FILES['foto_usuario']['name'];
+	if(!empty($_FILES['foto_usuario']['name'])){
 		$Up = new upload($Photo);
 		$Arquivo = $Up->user_photo_upload();
-		$Type = $_POST['tipo'];
-		$Phone = $_POST['telefone'];
-		$usuario = new User('', $Name, $Email, $Username, $Password, $Arquivo, $Type, $Phone);
-		$usuario->save();
-		header("Location: usuarios.php");
+	} else {
+		$Arquivo = $_POST['antiga_foto'];
 	}
+	$Type = $_POST['tipo'];
+	$Phone = $_POST['telefone'];
+	$usuario = new User($Id, $Name, $Email, $Username, '', $Arquivo, $Type, $Phone);
+	$usuario->update();
+	header("Location: usuarios.php");
+}
 	
-	if(isset($_POST['editar_usuario'])){
-		$Id = $_POST['id'];
-		$Name = $_POST['nome'];
-		$Email = $_POST['email'];
-		$Username = $_POST['username'];
-		$Photo = $_FILES['foto_usuario']['name'];
-		if(!empty($_FILES['foto_usuario']['name'])){
-			$Up = new upload($Photo);
-			$Arquivo = $Up->user_photo_upload();
-		} else {
-			$Arquivo = $_POST['antiga_foto'];
-		}
-		$Type = $_POST['tipo'];
-		$Phone = $_POST['telefone'];
-		$usuario = new User($Id, $Name, $Email, $Username, '', $Arquivo, $Type, $Phone);
-		$usuario->update();
-		header("Location: usuarios.php");
+if(isset($_POST['editar_senha'])){
+	$Id = $_POST['id_usuario_senha'];
+	if(!empty($_POST['nova_senha'])){
+		$Password = $_POST['nova_senha'];
+	} else {
+		$Password = $_POST['antiga_senha'];
 	}
-	
-	if(isset($_POST['editar_senha'])){
-		$Id = $_POST['id_usuario_senha'];
-		if(!empty($_POST['nova_senha'])){
-			$Password = $_POST['nova_senha'];
-		} else {
-			$Password = $_POST['antiga_senha'];
-		}
-		$usuario = new User($Id, '', '', '', $Password, '', '', '');
-		$usuario->update_password();
-		header("Location: usuarios.php");
-	}
+	$usuario = new User($Id, '', '', '', $Password, '', '', '');
+	$usuario->update_password();
+	header("Location: usuarios.php");
+}
 	
 if(!empty($_POST['operacaoAjax'])){
 		
@@ -109,9 +109,6 @@ if(!empty($_POST['operacaoAjax'])){
 							modal.find('#password').text(message.senha)
 							modal.find('#type').text(message.tipo)
               modal.find('#phone').text(message.telefone)
-              //modal.find('#day').text(message.day)
-             // modal.find('#hour').text(message.hour)
-              //modal.find('#message').text(message.message)
             },
             error: function(data){
               console.log("Error!")
@@ -129,7 +126,6 @@ if(!empty($_POST['operacaoAjax'])){
       if(!isset($_SESSION['logged'])){
         header('Location: ./');
       }
-
     ?>
     <div class="container main">
   		<div class="container">
@@ -178,8 +174,6 @@ if(!empty($_POST['operacaoAjax'])){
 									$password = $usuarios[$i]['senha'];
 									$type = $usuarios[$i]['tipo'];
                   $phone = $usuarios[$i]['telefone'];
-                  //$day = date("d/m/Y", strtotime($mails[$i]['created_at']));
-                  //$hour = date("H:i:s", strtotime($mails[$i]['created_at']));
                   echo
                     "<tr>
                       <td> <span class='glyphicon glyphicon-user'></span> <a data-id='$id' data-toggle='modal' data-target='#dados_usuario'> Detalhes </a> </td>

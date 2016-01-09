@@ -29,7 +29,6 @@
             <a href="#disciplinas" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
-
         <div class="tab-content">
           <div class="tab-pane fade in active" id="sobre">
             <article class="content">
@@ -45,17 +44,10 @@
               <p class="lead">Esse profissional deverá ser capaz de:</p>
               <ul>
                 <li>Executar e gerenciar o funcionamento de máquinas e equipamentos, bem como processos de análises físico-químicas e biológicas.</li>
-                <li>Implementar e gerencia sistemas, coordenando as respectivas equipes técnicas.
-                </li>
-                <li>
-                  Trabalhar na pesquisa de novas tecnologias e de processos de produção de energia e de gestão ambiental.
-                </li>
-                <li>Elaborar documentação técnica relativa aos processos em que atua, obedecendo a legislação e normas legais,
-                nacionais e internacionais.</li>
-                <li>Além disso, o tecnólogo em biocombustíveis deve ter como princípios a promoção da sustentabilidade dos
-                processos, a conservação ambiental e a inclusão social.</li>
-
-
+                <li>Implementar e gerencia sistemas, coordenando as respectivas equipes técnicas.</li>
+                <li>Trabalhar na pesquisa de novas tecnologias e de processos de produção de energia e de gestão ambiental.</li>
+                <li>Elaborar documentação técnica relativa aos processos em que atua, obedecendo a legislação e normas legais, nacionais e internacionais.</li>
+                <li>Além disso, o tecnólogo em biocombustíveis deve ter como princípios a promoção da sustentabilidade dos processos, a conservação ambiental e a inclusão social.</li>
               </ul>
             </article>
           </div>
@@ -367,7 +359,6 @@
           </div>
         </div>
       </div>
-
     </div>
   <?php include ("templates/footer.html.php") ?>
   </body>

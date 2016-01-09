@@ -71,9 +71,9 @@
 								<span class=" glyphicon glyphicon-bell"></span> Página - Cadastro de Avisos
 							</div>
 						</a>
-						<a href="#">
+						<a href="estatisticas_painel.php">
 							<div class="opcao_link col-lg-3 col-md-6 col-xs-12">
-								<span class=" glyphicon glyphicon-signal"></span> Página - Estatísticas de Acessos
+								<span class=" glyphicon glyphicon-signal"></span> Página - Estatísticas
 							</div>
 						</a>
 						<a href="#">

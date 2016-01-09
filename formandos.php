@@ -19,23 +19,23 @@
 			<ul class="nav nav-tabs">
         <?php lista_tabs(); ?>
       </ul>
-
-				<div class="tab-content">
-          <?php
-            $curso = new curso();
-            $cursos = $curso->select_all();
-
-            foreach($cursos as $curso){
-              cria_tabs_curso($curso['id']);
-            }
-          ?>
+			<div class="tab-content">
+        <?php
+          $curso = new curso();
+          $cursos = $curso->select_all();
+           foreach($cursos as $curso){
+            cria_tabs_curso($curso['id']);
+          }
+        ?>
 				</div>
 				<div class="row">
 					<div class="col-sm-3 col-sm-6 col-md-2 col-lg-2 pull-right">
 						<?php 
+							if(isset($_SESSION['logged'])){
 						?>
 						<button class="btn btn-link"><a href="formandos_painel.php">Painel</a></button>
 						<?php 
+							}
 						?>
 					</div>
 				</div>

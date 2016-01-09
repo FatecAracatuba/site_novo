@@ -25,7 +25,6 @@
             <a href="#discipline" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
-
         <div class="tab-content">
           <div class="tab-pane fade in active" id="about">
             <article class="content">

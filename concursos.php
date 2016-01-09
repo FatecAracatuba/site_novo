@@ -28,14 +28,12 @@
 						<article class="content">
 							<h2>Como funciona</h2>
 							<hr>
-
 						</article>
 					</div>
 					<div class="tab-pane fade" id="horarios">
 						<article class="content">
 							<h2>Inscrições</h2>
 							<hr>
-
 						</article>
 					</div>
 					<div class="tab-pane fade" id="datas">
@@ -43,14 +41,12 @@
 							<h2>Datas</h2>             
               <p class="lead text-center">Não existem concursos abertos</p>
 							<hr>
-
 						</article>
 					</div>
 					<div class="tab-pane fade" id="aprovados">
 						<article class="content">
 							<h2>Aprovados</h2>
 							<hr>
-
 						</article>
 					</div>
 				</div>

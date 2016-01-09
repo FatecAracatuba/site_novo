@@ -35,7 +35,7 @@ if(isset($_POST['editar_aviso'])){
 }
 
 if(!empty($_POST['operacaoAjax'])){
-	
+
 	if($_POST['operacaoAjax'] == 'apagar_aviso'){
     $aviso = new Aviso();
     $aviso->delete($_POST['idaviso']);
@@ -104,9 +104,8 @@ if(!empty($_POST['operacaoAjax'])){
       });
 		</script>
 		<div class="container main">
-		<div class="container">
+			<div class="container">
 			<hr>
-			<div class="row">
 				<div class="row">
 					<div class="col-sm-3 col-sm-6 col-md-2 col-lg-2 pull-left">
 						<button class="btn btn-link"><a href="restritos.php">Voltar aos links</a></button>
@@ -115,66 +114,63 @@ if(!empty($_POST['operacaoAjax'])){
 						<button class="btn btn-success" data-toggle="modal" data-target="#modal_aviso">Cadastrar Aviso</button>
 					</div>
 				</div>
-			</div>
-			<hr>
-			<ul class="nav nav-tabs">
+				<hr>
+				<ul class="nav nav-tabs">
           <li role="presentation" class="active">
             <a href="#banners" data-toggle="tab">Avisos</a>
           </li>
-			</ul>
-			<div class="tab-content">
-				<div class="tab-pane fade in active" id="banners">
-					<?php
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="banners">
+						<?php
 							$aviso = new Aviso();
 							$avisos = $aviso->select_all();
-					?>
-					<hr>
-				<?php
+						?>
+						<hr>
+						<?php
 							if ($avisos != false):
-        ?>
-          <table id="to-view" class="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th>Detalhes</th>
-								<th>Titulo</th>
-                <th>Conteúdo</th>
-								<th>Enviado em</th>
-								<th>Alterado em</th>
-								<th></th>
-								<th></th>
-								<th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php
-                for ($i=0; $i < sizeof($avisos); $i++) {
-                  $id = $avisos[$i]['id'];
-									$titulo = $avisos[$i]['titulo'];
-									$conteudo = $avisos[$i]['conteudo'];
-									$data_envio = date("d/m/Y H:i:s", strtotime($avisos[$i]['data_envio']));
-									$data_alteracao = date("d/m/Y H:i:s", strtotime($avisos[$i]['data_alteracao']));
-                  //$day = date("d/m/Y", strtotime($avisos[$i]['created_at']));
-                  //$hour = date("H:i:s", strtotime($avisos[$i]['created_at']));
-                  echo
-                    "<tr>
-                      <td> <span class='glyphicon glyphicon-bell'></span> <a data-id='$id' data-toggle='modal' data-target='#dados_aviso'> Detalhes </a> </td>
-                      <td> $titulo </td>
-                      <td> $conteudo </td>
-                      <td> $data_envio </td>
-                      <td> $data_alteracao </td>
-											<td> <a>Fechar</a> </td>
-											<td> <a data-toggle='modal' data-target='#modal_editar_aviso' data-id='$id' href='#'>Editar</a> </td>
-											<td> <a onclick='excluir_aviso($id)' href='#'>Apagar</a> </td>
-                    </tr>";
-                }
-              ?>
-						</tbody>
-          </table>
-        <?php else: ?>
-          <h3>Nenhum Aviso :^)</h3>
-          <hr>
-        <?php endif; ?>
-					<hr>
+						?>
+						<table id="to-view" class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>Detalhes</th>
+									<th>Titulo</th>
+									<th>Conteúdo</th>
+									<th>Enviado em</th>
+									<th>Alterado em</th>
+									<th></th>
+									<th></th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
+									for ($i=0; $i < sizeof($avisos); $i++) {
+										$id = $avisos[$i]['id'];
+										$titulo = $avisos[$i]['titulo'];
+										$conteudo = $avisos[$i]['conteudo'];
+										$data_envio = date("d/m/Y H:i:s", strtotime($avisos[$i]['data_envio']));
+										$data_alteracao = date("d/m/Y H:i:s", strtotime($avisos[$i]['data_alteracao']));
+										echo
+											"<tr>
+												<td> <span class='glyphicon glyphicon-bell'></span> <a data-id='$id' data-toggle='modal' data-target='#dados_aviso'> Detalhes </a> </td>
+												<td> $titulo </td>
+												<td> $conteudo </td>
+												<td> $data_envio </td>
+												<td> $data_alteracao </td>
+												<td> <a>Fechar</a> </td>
+												<td> <a data-toggle='modal' data-target='#modal_editar_aviso' data-id='$id' href='#'>Editar</a> </td>
+												<td> <a onclick='excluir_aviso($id)' href='#'>Apagar</a> </td>
+											</tr>";
+									}
+								?>
+							</tbody>
+						</table>
+						<?php else: ?>
+							<h3>Nenhum Aviso :^)</h3>
+							<hr>
+						<?php endif; ?>
+						<hr>
 						<p class="lead">Filtros de pesquisa:</p>
 						<form class="form-horizontal">
 							<fieldset>
@@ -196,43 +192,40 @@ if(!empty($_POST['operacaoAjax'])){
 								</div>
 							</fieldset>
 						</form>
-					<hr>
-									<?php 
-										foreach($avisos as $aviso){
-											$data_envio = date("d/m/Y H:i:s", strtotime($aviso['data_envio']));
-											$data_alteracao = date("d/m/Y H:i:s", strtotime($aviso['data_alteracao']));
-									?>
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4><?=$aviso['titulo']?></h4>
-											</div>
-											<div class="panel-body">
-												<p class="pull-center"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$data_envio?> &nbsp Alterado em <?=$data_alteracao?></small></p>
-												<br><br>
-												<p><?=$aviso['conteudo']?></p>
-												<br>
-												<hr>
-												<a class="btn btn-default" href="aviso_detalhe.php?AVISO=<?=$aviso['id']?>">Ver mais</a>
-												<a class="btn btn-success" data-toggle="modal" data-target="#modal_editar_aviso" data-id="<?=$aviso['id']?>">Editar</a>
-												<a class="btn btn-warning">Fechar</a>
-												<a class="btn btn-danger" onclick="excluir_aviso(<?=$aviso['id']?>)">Excluir</a>
-											</div>
-										</div>
-										
-									<?php 
-										}
-									?>
-									
+						<hr>
+						<?php 
+							foreach($avisos as $aviso){
+								$data_envio = date("d/m/Y H:i:s", strtotime($aviso['data_envio']));
+								$data_alteracao = date("d/m/Y H:i:s", strtotime($aviso['data_alteracao']));
+						?>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4><?=$aviso['titulo']?></h4>
+									</div>
+									<div class="panel-body">
+										<p class="pull-center"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$data_envio?> &nbsp Alterado em <?=$data_alteracao?></small></p>
+										<br><br>
+										<p><?=$aviso['conteudo']?></p>
+										<br>
+										<hr>
+										<a class="btn btn-default" href="aviso_detalhe.php?AVISO=<?=$aviso['id']?>">Ver mais</a>
+										<a class="btn btn-success" data-toggle="modal" data-target="#modal_editar_aviso" data-id="<?=$aviso['id']?>">Editar</a>
+										<a class="btn btn-warning">Fechar</a>
+										<a class="btn btn-danger" onclick="excluir_aviso(<?=$aviso['id']?>)">Excluir</a>
+									</div>
+								</div>
+						<?php 
+							}
+						?>		
+					</div>
 				</div>
-				</div>
+			</div>
 		</div>
-		</div>
-          <?php
-				include ("templates/modal_dados_aviso.php");
-				include ("templates/modal_insert_aviso.php");
-				include ("templates/modal_edit_aviso.php");
-        include ("templates/footer.html.php");
-				
-      ?>
+    <?php
+			include ("templates/modal_dados_aviso.php");
+			include ("templates/modal_insert_aviso.php");
+			include ("templates/modal_edit_aviso.php");
+      include ("templates/footer.html.php");
+    ?>
   </body>
 </html>

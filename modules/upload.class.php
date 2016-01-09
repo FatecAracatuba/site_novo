@@ -89,7 +89,6 @@
 		
 			if(!empty($banner['banner_img']['name'])){
 				$error = array();
-
 				
 				$largura = 2000;
 				$altura = 140;
@@ -117,8 +116,7 @@
 					preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $banner["name"], $ext);
 					$nome_imagem = sha1(uniqid(time())) . "." . $ext[1];
 					$caminho_imagem = "Banners/" . $nome_imagem;
-					move_uploaded_file($banner["tmp_name"], $caminho_imagem);
-					
+					move_uploaded_file($banner["tmp_name"], $caminho_imagem);				
 				}
 				
 				return $caminho_imagem;

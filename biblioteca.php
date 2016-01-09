@@ -55,7 +55,6 @@
 								<li>Comutação Bibliográfica. </li>
 								<li>Auxílio na Normalização Bibliográfica.</li>
 							</ul>
-
 						</article>
 					</div>
 					<div class="tab-pane fade" id="funcionamento">
@@ -71,7 +70,6 @@
 							<h2 class="text-center">Contato</h2>
 							<hr>
               <p class="text-center"><span class="glyphicon glyphicon-envelope"></span> e.aracatuba.bibli@centropaulasouza.sp.gov.br</p>
-
 						</article>
 					</div>
 				</div>

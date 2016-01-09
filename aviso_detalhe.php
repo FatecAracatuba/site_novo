@@ -11,40 +11,39 @@
 			<hr>
 				<h2 class="h2 text-center">Avisos</h2>
       <hr>
-				<div class="row">
-					<div class="col-md-12">
-						<?php
-							$aviso = new Aviso();
-							$avisos = $aviso->details($_GET['AVISO']);
+			<div class="row">
+				<div class="col-md-12">
+					<?php
+						$aviso = new Aviso();
+						$avisos = $aviso->details($_GET['AVISO']);
 					?>
-									<?php 
-										foreach($avisos as $aviso){
-									?>
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4><?=$aviso['titulo']?></h4>
-											</div>
-											<div class="panel-body">
-												<p class="pull-right"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$aviso['data_envio']?> &nbsp Alterado em <?=$aviso['data_alteracao']?></small></p>
-												<br><br>
-												<p><?=$aviso['conteudo']?></p>
-											</div>
-										</div>
-										
-									<?php 
-										}
-									?>
-					</div>
-					<div class="col-md-3">
-						<a class="btn btn-info" href="index.php">Voltar ao Início</a>
-					</div>
-					<div class="col-md-3">
-						<a class="btn btn-info" href="avisos.php">Voltar aos Avisos</a>
-					</div>
-					<div class="col-md-3">
-						<a class="btn btn-info" href="avisos_painel.php">Painel de Avisos</a>
-					</div>
+					<?php 
+						foreach($avisos as $aviso){
+					?>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4><?=$aviso['titulo']?></h4>
+								</div>
+								<div class="panel-body">
+									<p class="pull-right"><small><span class="glyphicon glyphicon-time"></span> Enviado em <?=$aviso['data_envio']?> &nbsp Alterado em <?=$aviso['data_alteracao']?></small></p>
+									<br><br>
+									<p><?=$aviso['conteudo']?></p>
+								</div>
+							</div>			
+					<?php 
+						}
+					?>
 				</div>
+				<div class="col-md-3">
+					<a class="btn btn-info" href="index.php">Voltar ao Início</a>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-info" href="avisos.php">Voltar aos Avisos</a>
+				</div>
+				<div class="col-md-3">
+					<a class="btn btn-info" href="avisos_painel.php">Painel de Avisos</a>
+				</div>
+			</div>
 			<hr>
     </div>
   <?php include ("templates/footer.html.php") ?>

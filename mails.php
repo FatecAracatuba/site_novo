@@ -61,8 +61,8 @@
           <h1>E-mails da direção</h1>
         </div>
         <?php
-          $mail = new Mail();
-					$mails = $mail->allMail();
+        $mail = new Mail();
+				$mails = $mail->allMail();
 
         if ($mails != false):
         ?>
@@ -140,7 +140,6 @@
                 <p id="message"></p>
               </div>
             </div>
-						
           </div>
         </div>
       </div>

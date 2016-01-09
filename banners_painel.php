@@ -76,7 +76,7 @@ if(!empty($_POST['operacaoAjax'])){
       include ("templates/menu.html.php");
 		?>
 		<script type="text/javascript" src="js/banner.js"></script>
-    <div class="container main">
+		<div class="container main">
 		<div class="container">
 			<hr>
 			<div class="row">
@@ -102,87 +102,84 @@ if(!empty($_POST['operacaoAjax'])){
 				<div class="tab-pane fade in active" id="banner_recente">
 					<hr>
 					<?php
-							$banner = new Banner();
-							$banners_ativo = $banner->select_ativo();
+						$banner = new Banner();
+						$banners_ativo = $banner->select_ativo();
 					?>
-									<?php 
-										foreach($banners_ativo as $banner){
-									?>
-											<div class="row">
-												<?php botoes_banner($banner['id'], $banner['ativo']); ?>
-											</div>
-											<br>
-											<div class="row">
-												<div class="col-sm-12">
-													<img src="<?=$banner['banner_img']?>" class="banner_img img-responsive"></img>
-												</div>
-											</div>
-									<?php 
-										}
-									?>
+					<!-- Eu iria colocar alguma coisa em HTML aqui, mas não lembro o quê...-->
+					<?php 
+						foreach($banners_ativo as $banner){
+					?>
+							<div class="row">
+								<?php botoes_banner($banner['id'], $banner['ativo']); ?>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<img src="<?=$banner['banner_img']?>" class="banner_img img-responsive"></img>
+								</div>
+							</div>
+					<?php 
+						}
+					?>
 				</div>
 				<div class="tab-pane fade in" id="banners">
 					<hr>
 					<?php
-							$banner = new Banner();
-							$banners = $banner->select_all();
+						$banner = new Banner();
+						$banners = $banner->select_all();
 					?>
-									<?php 
-										foreach($banners as $banner){
-									?>
-											<div class="row">
-												<?php botoes_banner($banner['id'], $banner['ativo']); ?>
-											</div>
-											<br>
-											<div class="row">
-												<div class="col-sm-12">
-													<img src="<?=$banner['banner_img']?>" class="banner_img img-responsive"></img>
-												</div>
-											</div>		
-											<hr>											
-									<?php 
-										}
-									?>
-									
+					<?php 
+						foreach($banners as $banner){
+					?>
+							<div class="row">
+								<?php botoes_banner($banner['id'], $banner['ativo']); ?>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-sm-12">
+									<img src="<?=$banner['banner_img']?>" class="banner_img img-responsive"></img>
+								</div>
+							</div>		
+							<hr>											
+							<?php 
+								}
+							?>			
+					</div>
 				</div>
 			</div>
 		</div>
-		</div>
     <?php
-		
-				function botoes_banner($id_banner, $ativo){
-					$banner_ativo = new Banner();
-					$banners_ativos = $banner_ativo->select_qtde_ativo();
-						if($ativo == 0){
-							if($banners_ativos < 1){
-					?>
+			function botoes_banner($id_banner, $ativo){
+				$banner_ativo = new Banner();
+				$banners_ativos = $banner_ativo->select_qtde_ativo();
+				if($ativo == 0){
+					if($banners_ativos < 1){
+		?>
 					<div class="col-sm-2 col-md-2 col-lg-2">
 						<a class="btn btn-success" onclick="ativar_banner(<?=$id_banner?>)" href="#" id="btn_ativar_banner"><i class="glyphicon glyphicon-edit"></i> Ativar</a>
 					</div>
-					<?php 
-							}
-					?>
-					<div class="col-sm-2 col-md-2 col-lg-2">
-						<a class="btn btn-info" data-toggle="modal" data-target="#modal_editar_banner" data-id="<?=$id_banner?>" href="#" id="btn_editar_banner"><i class="glyphicon glyphicon-edit"></i> Editar</a>
-					</div>
-					<div class="col-sm-2 col-md-2 col-lg-2">
-						<a class="btn btn-danger" onclick="excluir_banner(<?=$id_banner?>)" href="#" id="btn_excluir_banner"><i class="glyphicon glyphicon-remove"></i> Excluir</a>
-					</div>
-					<?php 
-						} else {
-					?>
-					<div class="col-sm-2 col-md-2 col-lg-2">
-						<a class="btn btn-warning" onclick="desativar_banner(<?=$id_banner?>)" href="#" id="btn_desativar_banner"><i class="glyphicon glyphicon-edit"></i> Desativar</a>
-					</div> 
-					<?php 
-									}
-
+				<?php 
+					}
+				?>
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				<a class="btn btn-info" data-toggle="modal" data-target="#modal_editar_banner" data-id="<?=$id_banner?>" href="#" id="btn_editar_banner"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+			</div>
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				<a class="btn btn-danger" onclick="excluir_banner(<?=$id_banner?>)" href="#" id="btn_excluir_banner"><i class="glyphicon glyphicon-remove"></i> Excluir</a>
+			</div>
+			<?php 
+				} else {
+			?>
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				<a class="btn btn-warning" onclick="desativar_banner(<?=$id_banner?>)" href="#" id="btn_desativar_banner"><i class="glyphicon glyphicon-edit"></i> Desativar</a>
+			</div> 
+			<?php 
 				}
+		}
 		
 				include ("templates/modal_insert_banner.php");
 				include ("templates/modal_edit_banner.php");
-        include ("templates/footer.html.php");
-				
+        include ("templates/footer.html.php");		
   ?>
   </body>
 </html>

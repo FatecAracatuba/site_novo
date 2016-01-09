@@ -13,15 +13,15 @@
     <div class="container main">
   		<div class="container">
   			<ul class="nav nav-tabs">
-  	          <li role="presentation" class="active">
-  	            <a href="#sobre" data-toggle="tab">Sobre</a>
-  	          </li>
-  	          <li role="presentation">
-  	            <a href="#fotos" data-toggle="tab">Fotos</a>
-  	          </li>
-  	        </ul>
+					<li role="presentation" class="active">
+						<a href="#sobre" data-toggle="tab">Sobre</a>
+  	      </li>
+  	      <li role="presentation">
+						<a href="#fotos" data-toggle="tab">Fotos</a>
+  	      </li>
+				</ul>
   			<div class="tab-content">
-  	          	<div class="tab-pane fade in active" id="sobre">
+  	      <div class="tab-pane fade in active" id="sobre">
   					<article class="content">
   						<h2>A Fatec de Araçatuba</h2>
   						<hr>

@@ -181,130 +181,129 @@ if(!empty($_POST['operacaoAjax'])){
 			</div>
 			<hr>
 			<ul class="nav nav-tabs">
-          <li role="presentation" class="active">
+        <li role="presentation" class="active">
             <a href="#cursos" data-toggle="tab">Cursos</a>
-          </li>
-          <li role="presentation">
-            <a href="#turmas" data-toggle="tab">Turmas</a>
-          </li>
-          <li role="presentation">
-            <a href="#alunos" data-toggle="tab">Alunos</a>
-					</li>
+        </li>
+        <li role="presentation">
+          <a href="#turmas" data-toggle="tab">Turmas</a>
+        </li>
+        <li role="presentation">
+          <a href="#alunos" data-toggle="tab">Alunos</a>
+				</li>
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane fade in active" id="cursos">
 					<hr>
 					<?php
-							$curso = new Curso();
-							$cursos = $curso->select_all();
+						$curso = new Curso();
+						$cursos = $curso->select_all();
 					?>
-								<table class="table table-default table-responsive col-sm-12">
-									<thead>
-										<th>Curso</th>
-										<th>&nbsp;</th>
-									</thead>
-									<tbody>
-									<?php 
-										foreach($cursos as $curso){
-									?>
-										<tr>
-											<td><?=$curso['nome']?></td>
-											<td><a data-toggle="modal" data-target="#modal_editar_curso" data-id="<?=$curso['id']?>" href="#" id="btn_editar_curso"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
-											<td><a onclick="excluir_curso(<?=$curso['id']?>)" href="#" id="btn_excluir_curso"><i class="glyphicon glyphicon-remove"></i> Excluir</a></td>
-										</tr>
-									<?php 
-										}
-									?>
-									</tbody>
-								</table>
+					<table class="table table-default table-responsive col-sm-12">
+						<thead>
+							<th>Curso</th>
+							<th>&nbsp;</th>
+						</thead>
+						<tbody>
+							<?php 
+								foreach($cursos as $curso){
+							?>
+									<tr>
+										<td><?=$curso['nome']?></td>
+										<td><a data-toggle="modal" data-target="#modal_editar_curso" data-id="<?=$curso['id']?>" href="#" id="btn_editar_curso"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
+										<td><a onclick="excluir_curso(<?=$curso['id']?>)" href="#" id="btn_excluir_curso"><i class="glyphicon glyphicon-remove"></i> Excluir</a></td>
+									</tr>
+							<?php 
+								}
+							?>
+						</tbody>
+					</table>
 				</div>
 				<div class="tab-pane fade in" id="turmas">
 					<hr>
 					<?php
-									$turma = new Turma();
-									$turmas = $turma->select_all();
-								?>
-								<table class="table table-default table-responsive col-sm-12">
-									<thead>
-										<th>Turma</th>
-										<th>Curso</th>
-										<th>&nbsp;</th>
-									</thead>
-									<tbody>
-									<?php 
-										foreach($turmas as $turma){
-									?>
-										<tr>
-											<td><?=$turma['descricao']?></td>
-											<td><?=mostrar_curso_da_turma($turma['curso'])?></td>
-											<td>&nbsp;</td>
-											<td><a data-toggle="modal" data-target="#modal_editar_turma" data-id="<?=$turma['id']?>" href="#" id="btn_editar_turma"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
-											<td><a onclick="excluir_turma(<?=$turma['id']?>)" href="#" id="btn_excluir_turma"><i class="glyphicon glyphicon-remove"></i> Excluir</a></td>
-										</tr>
-									<?php 
-										}
-									?>
-									</tbody>
-								</table>
+						$turma = new Turma();
+						$turmas = $turma->select_all();
+					?>
+					<table class="table table-default table-responsive col-sm-12">
+						<thead>
+							<th>Turma</th>
+							<th>Curso</th>
+							<th>&nbsp;</th>
+						</thead>
+						<tbody>
+						<?php 
+							foreach($turmas as $turma){
+						?>
+							<tr>
+								<td><?=$turma['descricao']?></td>
+								<td><?=mostrar_curso_da_turma($turma['curso'])?></td>
+								<td>&nbsp;</td>
+								<td><a data-toggle="modal" data-target="#modal_editar_turma" data-id="<?=$turma['id']?>" href="#" id="btn_editar_turma"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
+								<td><a onclick="excluir_turma(<?=$turma['id']?>)" href="#" id="btn_excluir_turma"><i class="glyphicon glyphicon-remove"></i> Excluir</a></td>
+							</tr>
+						<?php 
+							}
+						?>
+						</tbody>
+					</table>
 				</div>
 				<div class="tab-pane fade in" id="alunos">
-				<hr>
-								<?php
-									$aluno = new Aluno();
-									$alunos = $aluno->select_all();
-								?>
-								<table class="table table-default table-responsive col-sm-12">
-									<thead>
-										<th>Aluno</th>
-										<th>Trabalho de Graduação</th>
-										<th>Turma</th>
-										<th>&nbsp;</th>
-									</thead>
-									<tbody>
-									<?php 
-										foreach($alunos as $aluno){
-									?>
-										<tr>
-											<td><?=$aluno['nome']?></td>
-											<td><a href="<?=$aluno['tg_pdf']?>" target="_blank">Link</a></td>
-											<td><?=mostrar_turma_do_aluno($aluno['id_turma'])?></td>
-											<td><a data-toggle="modal" data-target="#modal_editar_aluno" data-id="<?=$aluno['id']?>" href="#" id="btn_editar_aluno"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
-											<td><a onclick="excluir_aluno(<?=$aluno['id']?>)" href="#" id="btn_excluir_aluno"><i class="glyphicon glyphicon-remove"></i> Excluir</a></td>
-										</tr>
-									<?php 
-										}
-									?>
-									</tbody>
-								</table>
+					<hr>
+					<?php
+						$aluno = new Aluno();
+						$alunos = $aluno->select_all();
+					?>
+					<table class="table table-default table-responsive col-sm-12">
+						<thead>
+							<th>Aluno</th>
+							<th>Trabalho de Graduação</th>
+							<th>Turma</th>
+							<th>&nbsp;</th>
+						</thead>
+						<tbody>
+						<?php 
+							foreach($alunos as $aluno){
+						?>
+							<tr>
+								<td><?=$aluno['nome']?></td>
+								<td><a href="<?=$aluno['tg_pdf']?>" target="_blank">Link</a></td>
+								<td><?=mostrar_turma_do_aluno($aluno['id_turma'])?></td>
+								<td><a data-toggle="modal" data-target="#modal_editar_aluno" data-id="<?=$aluno['id']?>" href="#" id="btn_editar_aluno"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
+								<td><a onclick="excluir_aluno(<?=$aluno['id']?>)" href="#" id="btn_excluir_aluno"><i class="glyphicon glyphicon-remove"></i> Excluir</a></td>
+							</tr>
+							<?php 
+								}
+							?>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
-          <?php
-					
-					function mostrar_curso_da_turma($id_curso){
-						$Nome_curso = new Curso();
-						$nome_curso = $Nome_curso->find($id_curso);
-						foreach($nome_curso as $Nome_curso){
-							echo $Nome_curso['nome'];
-						}
-					}
-					
-					function mostrar_turma_do_aluno($id_turma){
-						$Nome_turma = new Turma();
-						$nome_turma = $Nome_turma->find($id_turma);
-						foreach($nome_turma as $Nome_turma){
-							echo $Nome_turma['descricao'];
-						}
-					}
+    <?php			
+			function mostrar_curso_da_turma($id_curso){
+				$Nome_curso = new Curso();
+				$nome_curso = $Nome_curso->find($id_curso);
+				foreach($nome_curso as $Nome_curso){
+					echo $Nome_curso['nome'];
+				}
+			}		
+			
+			function mostrar_turma_do_aluno($id_turma){
+				$Nome_turma = new Turma();
+				$nome_turma = $Nome_turma->find($id_turma);
+				foreach($nome_turma as $Nome_turma){
+					echo $Nome_turma['descricao'];
+				}
+			}
 
-				//include ("templates/loading.html.php");
-        include ("templates/footer.html.php");
-				include ("templates/modal_insert_aluno.php");
-        include ("templates/modal_insert_turma.php");
-				include ("templates/modal_insert_curso.php");
-				include ("templates/modal_edit_aluno.php");
-        include ("templates/modal_edit_turma.php");
-				include ("templates/modal_edit_curso.php");
-      ?>
+			//include ("templates/loading.html.php");
+      include ("templates/footer.html.php");
+			include ("templates/modal_insert_aluno.php");
+      include ("templates/modal_insert_turma.php");
+			include ("templates/modal_insert_curso.php");
+			include ("templates/modal_edit_aluno.php");
+      include ("templates/modal_edit_turma.php");
+			include ("templates/modal_edit_curso.php");
+    ?>
   </body>
 </html>

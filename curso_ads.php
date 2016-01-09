@@ -29,7 +29,6 @@
             <a href="#disciplinas" data-toggle="tab">Disciplinas</a>
           </li>
         </ul>
-
         <div class="tab-content">
           <div class="tab-pane fade in active" id="sobre">
             <article class="content">
@@ -41,11 +40,8 @@
               <p class="lead">Esse profissional deverá ser capaz de:</p>
               <ul>
                 <li>Propor e coordenar mudanças organizacionais, definir políticas e diretrizes decorrentes da tecnologia da informação.</li>
-                <li>Analisar as áreas funcionais da empresa e suas necessidades em relação aos sistemas de informação.
-                </li>
-                <li>
-                  Planejar e desenvolver o modelo de dados que atendam às necessidades atuais e futuras da empresa.
-                </li>
+                <li>Analisar as áreas funcionais da empresa e suas necessidades em relação aos sistemas de informação.</li>
+                <li>Planejar e desenvolver o modelo de dados que atendam às necessidades atuais e futuras da empresa.</li>
                 <li>Elaborar os planos de desenvolvimento de sistemas de informação focalizando todas as áreas de negócio da empresa.</li>
                 <li>Organizar e apresentar de maneira clara aos usuários os processos envolvidos nos sistemas.</li>
                 <li>Transformar o potencial dos sistemas de informação em suporte para toda a empresa.</li>

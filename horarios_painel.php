@@ -121,13 +121,10 @@ if(!empty($_POST['operacaoAjax'])){
 			<div class="tab-content">
 				<div class="tab-pane fade in" id="horarios_recentes">
 					<hr>	
-						<?php 				 
-							panel_cursos_ativo();
-						?>
+					<?php 				 
+						panel_cursos_ativo();
+					?>
 					<hr>
-				<?php 
-						
-				?>
 				</div>
 				<div class="tab-pane fade in" id="horarios">
 					<hr>
@@ -138,148 +135,133 @@ if(!empty($_POST['operacaoAjax'])){
 				</div>
 			</div>
 		</div>
-      <?php 
+    <?php 
 			// Início Horários Ativos
-			
 			function panel_cursos_ativo(){
-					
-						$curso = new Curso();
-						$cursos = $curso->select_all();
-						
-						foreach($cursos as $curso){
-							
-					?>
-						
-								<div class="panel-group col-md-12" id="accordion_ativo_<?=$curso['id']?>" role="tablist" aria-multiselectable="true">
-                    <br><br>
-                    <div class="panel panel-default accor">
-                      <div class="panel-heading" role="tab" id="curso_ativo_<?=$curso['id']?>">
-                        <h4 class="panel-title">
-                          <a role="button" data-toggle="collapse" data-parent="#accordion_ativo_<?=$curso['id']?>" href="#collapseCursoAtivo<?=$curso['id']?>" aria-controls="collapseCursoAtivo<?=$curso['id']?>">Horários do Curso <?=$curso['nome']?></a>
-                        </h4>
-                      </div>
-                      <div id="collapseCursoAtivo<?=$curso['id']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="curso_ativo_<?=$curso['id']?>">
-                        <div class="panel-body">
-                          <?php lista_horarios_curso_ativo($curso['id']); ?>
-                        </div>
-                      </div>
-                    </div>
+				$curso = new Curso();
+				$cursos = $curso->select_all();
+				foreach($cursos as $curso){
+		?>
+					<div class="panel-group col-md-12" id="accordion_ativo_<?=$curso['id']?>" role="tablist" aria-multiselectable="true">
+            <br><br>
+            <div class="panel panel-default accor">
+              <div class="panel-heading" role="tab" id="curso_ativo_<?=$curso['id']?>">
+                <h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion_ativo_<?=$curso['id']?>" href="#collapseCursoAtivo<?=$curso['id']?>" aria-controls="collapseCursoAtivo<?=$curso['id']?>">Horários do Curso <?=$curso['nome']?></a>
+                </h4>
+              </div>
+              <div id="collapseCursoAtivo<?=$curso['id']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="curso_ativo_<?=$curso['id']?>">
+                <div class="panel-body">
+									<?php lista_horarios_curso_ativo($curso['id']); ?>
                 </div>
-					<?php 
-						}
-						
-				}
-				
+              </div>
+            </div>
+          </div>
+		<?php 
+				}		
+			}
+			
 				function lista_horarios_curso_ativo($idcurso){
 					$horario = new Horario();
 					$horarios = $horario->select_by_curso_ativo($idcurso);
-					
 					?>
 					<table class="table table-default table-responsive col-sm-12">
-									<thead>
-										<th>Horário</th>
-										<th>&nbsp;</th>
-									</thead>
-									<tbody>
-									<?php 
-										foreach($horarios as $horario){
-											$data_envio = date("d/m/Y H:i:s", strtotime($horario['data_envio']));
-									?>
-										<tr>
-											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$data_envio?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?> </a></td>
-											<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
-											</tr>
-									<?php 
-										}
-									?>
-									</tbody>
-								</table>
-					<?php
+						<thead>
+							<th>Horário</th>
+							<th>&nbsp;</th>
+						</thead>
+						<tbody>
+						<?php 
+							foreach($horarios as $horario){
+								$data_envio = date("d/m/Y H:i:s", strtotime($horario['data_envio']));
+						?>
+								<tr>
+									<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$data_envio?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?> </a></td>
+									<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
+								</tr>
+						<?php 
+							}
+						?>
+						</tbody>
+					</table>
+			<?php
 				}
 			
 			// Fim Horários Ativos
 			
 				function panel_cursos(){
-					
-						$curso = new Curso();
-						$cursos = $curso->select_all();
-						
-						foreach($cursos as $curso){
-							
-					?>
-						
-								<div class="panel-group col-md-12" id="accordion_<?=$curso['id']?>" role="tablist" aria-multiselectable="true">
-                    <br><br>
-                    <div class="panel panel-default accor">
-                      <div class="panel-heading" role="tab" id="curso_<?=$curso['id']?>">
-                        <h4 class="panel-title">
-                          <a role="button" data-toggle="collapse" data-parent="#accordion_<?=$curso['id']?>" href="#collapseCurso<?=$curso['id']?>" aria-controls="collapseCurso<?=$curso['id']?>">Horários do Curso <?=$curso['nome']?></a>
-                        </h4>
-                      </div>
-                      <div id="collapseCurso<?=$curso['id']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="curso_<?=$curso['id']?>">
-                        <div class="panel-body">
-                          <?php lista_horarios_curso($curso['id']); ?>
-                        </div>
-                      </div>
-                    </div>
+					$curso = new Curso();
+					$cursos = $curso->select_all();
+					foreach($cursos as $curso){
+			?>		
+						<div class="panel-group col-md-12" id="accordion_<?=$curso['id']?>" role="tablist" aria-multiselectable="true">
+              <br><br>
+              <div class="panel panel-default accor">
+                <div class="panel-heading" role="tab" id="curso_<?=$curso['id']?>">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion_<?=$curso['id']?>" href="#collapseCurso<?=$curso['id']?>" aria-controls="collapseCurso<?=$curso['id']?>">Horários do Curso <?=$curso['nome']?></a>
+                  </h4>
                 </div>
-					<?php 
-						}
-						
+                <div id="collapseCurso<?=$curso['id']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="curso_<?=$curso['id']?>">
+                  <div class="panel-body">
+                    <?php lista_horarios_curso($curso['id']); ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<?php 
+					}	
 				}
 				
 				function lista_horarios_curso($idcurso){
 					$horario = new Horario();
 					$horarios = $horario->select_by_curso($idcurso);
-					
 					?>
 					<table class="table table-default table-responsive col-sm-12">
-									<thead>
-										<th>Horário</th>
-										<th>&nbsp;</th>
-									</thead>
-									<tbody>
-									<?php 
-										foreach($horarios as $horario){
-											$data_envio = date("d/m/Y H:i:s", strtotime($horario['data_envio']));
-									?>
-										<tr>
-											<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$data_envio?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?></a></td>
-											<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
-											</tr>
-									<?php 
-										}
-									?>
-									</tbody>
-								</table>
-					<?php
+						<thead>
+							<th>Horário</th>
+							<th>&nbsp;</th>
+						</thead>
+						<tbody>
+						<?php 
+							foreach($horarios as $horario){
+								$data_envio = date("d/m/Y H:i:s", strtotime($horario['data_envio']));
+						?>
+								<tr>
+									<td><a href="<?=$horario['horario_pdf']?>" target="_blank">Horário enviado em <?=$data_envio?> do <?=$horario['semestre']?>º Semestre de <?=$horario['ano']?></a></td>
+									<?php comandos_horarios_cursos($horario['id'], $horario['ativo'], $horario['id_curso']); ?>
+								</tr>
+						<?php 
+							}
+						?>
+						</tbody>
+					</table>
+			<?php
 				}
 				
 				function comandos_horarios_cursos ($id_horario, $ativo, $id_curso){
-					
 					$horario_ativo = new Horario();
 					$horarios_ativos = $horario_ativo->select_qtde_ativo($id_curso);
 					if($ativo < 1){
 						if($horarios_ativos < 1){
-							?>
+					?>
 							<td><a onclick="ativar_horario(<?=$id_horario?>, <?=$id_curso?>)" href="#" id="btn_ativar_horario"><i class="glyphicon glyphicon-edit"></i> Ativar</a></td>
-							<?php
+					<?php
 						}
-						?>
-						<td><a data-toggle="modal" data-target="#modal_editar_horario" data-id="<?=$id_horario?>" href="#" id="btn_editar_horario"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
-						<td><a onclick="excluir_horario(<?=$id_horario?>)" href="#" id="btn_excluir_horario"><i class="glyphicon glyphicon-remove"></i> Apagar</a></td>			
-						<?php 
+					?>
+							<td><a data-toggle="modal" data-target="#modal_editar_horario" data-id="<?=$id_horario?>" href="#" id="btn_editar_horario"><i class="glyphicon glyphicon-edit"></i> Editar</a></td>
+							<td><a onclick="excluir_horario(<?=$id_horario?>)" href="#" id="btn_excluir_horario"><i class="glyphicon glyphicon-remove"></i> Apagar</a></td>			
+					<?php 
 					}else{
-						?>
+					?>
 						<td><a onclick="desativar_horario(<?=$id_horario?>, <?=$id_curso?>)" href="#" id="btn_ativar_horario"><i class="glyphicon glyphicon-edit"></i> Desativar</a></td>
-						<?php
+		<?php
 					}
-					
 				}
-			
-        include ("templates/footer.html.php");
-				include ("templates/modal_insert_horario.php");
-				include ("templates/modal_edit_horario.php");
-      ?>
+				
+      include ("templates/footer.html.php");
+			include ("templates/modal_insert_horario.php");
+			include ("templates/modal_edit_horario.php");
+    ?>
   </body>
 </html>
