@@ -226,7 +226,6 @@
       </div>
     </div>
   </div>
-
   <div class="modal fade bs-example-modal-sm" id="mapModal" aria-labelledby="myModalLabel" aria-hidden="true" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">

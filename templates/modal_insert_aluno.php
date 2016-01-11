@@ -9,7 +9,6 @@
       <div class="modal-body">
         <form method="post" enctype="multipart/form-data">
           <input type="hidden" name="inserir_aluno">
-
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Nome</label>
